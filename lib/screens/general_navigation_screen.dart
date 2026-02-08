@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 import '../data/models/question_model.dart';
-import '../data/questions/air_law_questions.dart';
+import '../data/questions/general_navigation_questions.dart';
 
-class AirLawScreen extends StatefulWidget {
-  const AirLawScreen({super.key});
+class GeneralNavigationScreen extends StatefulWidget {
+  const GeneralNavigationScreen({super.key});
 
   @override
-  State<AirLawScreen> createState() => _AirLawScreenState();
+  State<GeneralNavigationScreen> createState() => _GeneralNavigationScreenState();
 }
 
-class _AirLawScreenState extends State<AirLawScreen> {
+class _GeneralNavigationScreenState extends State<GeneralNavigationScreen> {
   // Use the questions from the separate file
-  List<Question> questions = AirLawQuestions.getQuestions(); // CHANGE: Remove 'final'
+  List<Question> questions = GeneralNavigationQuestions.getQuestions();
 
   int currentQuestionIndex = 0;
   int? selectedAnswer;
   bool showResult = false;
 
-  // ADD THIS SHUFFLE FUNCTION HERE:
+  // SHUFFLE FUNCTION
   void _shuffleQuestions() {
     setState(() {
       questions.shuffle(); // Shuffle the questions
@@ -27,11 +27,11 @@ class _AirLawScreenState extends State<AirLawScreen> {
     });
   }
 
-  // ADD THIS initState METHOD:
+  // Automatically shuffle on start
   @override
   void initState() {
     super.initState();
-    _shuffleQuestions(); // Shuffle questions when screen loads
+    _shuffleQuestions(); // Shuffle when screen loads
   }
 
   void goToPreviousQuestion() {
@@ -64,7 +64,7 @@ class _AirLawScreenState extends State<AirLawScreen> {
               ),
             ),
             content: Text(
-              'You have completed all ${questions.length} Air Law questions.\n\nWould you like to review again?',
+              'You have completed all ${questions.length} General Navigation questions.\n\nWould you like to review again?',
               style: const TextStyle(
                 color: Colors.white70,
               ),
@@ -83,7 +83,7 @@ class _AirLawScreenState extends State<AirLawScreen> {
               ElevatedButton(
                 onPressed: () {
                   Navigator.pop(context);
-                  _shuffleQuestions(); // CHANGE: Call shuffle function instead
+                  _shuffleQuestions(); // Shuffle again when reviewing
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFF3B82F6),
@@ -117,7 +117,7 @@ class _AirLawScreenState extends State<AirLawScreen> {
       appBar: AppBar(
         backgroundColor: const Color(0xFF001F3F),
         title: const Text(
-          'Air Law - Study Mode',
+          'General Navigation - Study Mode',
           style: TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.w600,
@@ -129,15 +129,6 @@ class _AirLawScreenState extends State<AirLawScreen> {
           onPressed: () => Navigator.pop(context),
         ),
         actions: [
-          // Optional: Add a visible shuffle button if you want
-          /*
-          IconButton(
-            icon: const Icon(Icons.shuffle, color: Colors.white),
-            onPressed: _shuffleQuestions,
-            tooltip: 'Shuffle Questions',
-          ),
-          const SizedBox(width: 8),
-          */
           Padding(
             padding: const EdgeInsets.only(right: 16),
             child: Text(

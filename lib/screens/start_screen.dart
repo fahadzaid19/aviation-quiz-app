@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'airlaw_screen.dart';
+import 'airlaw_screen.dart';                     // Same folder
+import 'principles_of_flight_screen.dart';        // Same folder
+import 'general_navigation_screen.dart';         // Same folder // ADD THIS IMPORT
 
 class StartScreen extends StatelessWidget {
   const StartScreen({super.key});
@@ -82,7 +84,7 @@ class StartScreen extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  // Logo - Scales with screen size
+                  // Logo
                   Container(
                     width: isLargeScreen ? 80 : 60,
                     height: isLargeScreen ? 80 : 60,
@@ -116,13 +118,6 @@ class StartScreen extends StatelessWidget {
                             fontWeight: FontWeight.w800,
                             color: Colors.white,
                             letterSpacing: 0.8,
-                            shadows: [
-                              const Shadow(
-                                blurRadius: 10,
-                                color: Colors.black45,
-                                offset: Offset(2, 2),
-                              ),
-                            ],
                           ),
                         ),
                         const SizedBox(height: 4),
@@ -132,7 +127,6 @@ class StartScreen extends StatelessWidget {
                             fontSize: isLargeScreen ? 16 : 14,
                             color: Colors.white70,
                             fontWeight: FontWeight.w500,
-                            letterSpacing: 0.5,
                           ),
                         ),
                       ],
@@ -142,10 +136,7 @@ class StartScreen extends StatelessWidget {
               ),
             ),
 
-            // Mode Selection - Responsive layout
-
-
-            // Subjects List - Responsive grid for large screens
+            // Subjects List
             Expanded(
               child: Padding(
                 padding: EdgeInsets.symmetric(
@@ -156,9 +147,6 @@ class StartScreen extends StatelessWidget {
                     : _buildListLayout(context, isLargeScreen),
               ),
             ),
-
-            // Simple Footer
-
           ],
         ),
       ),
@@ -166,7 +154,6 @@ class StartScreen extends StatelessWidget {
   }
 
   Widget _buildGridLayout(BuildContext context, bool isLargeScreen) {
-    // Create a flat list of all subjects for grid
     final allSubjects = <MapEntry<String, String>>[];
     for (var category in subjectCategories.entries) {
       for (var subject in category.value) {
@@ -205,7 +192,6 @@ class StartScreen extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 20),
       physics: const BouncingScrollPhysics(),
       children: [
-        // Build each category
         for (var category in subjectCategories.entries)
           _buildCategorySection(
             context: context,
@@ -214,69 +200,6 @@ class StartScreen extends StatelessWidget {
             isLargeScreen: isLargeScreen,
           ),
       ],
-    );
-  }
-
-  Widget _buildModeCard({
-    required IconData icon,
-    required String label,
-    required String subtitle,
-    required bool isActive,
-    required Color color,
-    required bool isLargeScreen,
-  }) {
-    return Expanded(
-      child: Container(
-        decoration: BoxDecoration(
-          color: isActive ? color.withOpacity(0.2) : const Color(0xFF1A365D),
-          borderRadius: BorderRadius.circular(20),
-          border: Border.all(
-            color: isActive ? color.withOpacity(0.5) : Colors.white.withOpacity(0.1),
-            width: isActive ? 2 : 1,
-          ),
-          boxShadow: [
-            if (isActive)
-              BoxShadow(
-                color: color.withOpacity(0.3),
-                blurRadius: 10,
-                spreadRadius: 2,
-              ),
-          ],
-        ),
-        child: Padding(
-          padding: EdgeInsets.all(isLargeScreen ? 24 : 16),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Icon(
-                icon,
-                size: isLargeScreen ? 36 : 28,
-                color: isActive ? color : Colors.white70,
-              ),
-              SizedBox(height: isLargeScreen ? 16 : 12),
-              Text(
-                label,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: isLargeScreen ? 20 : 16,
-                  fontWeight: FontWeight.w700,
-                  color: isActive ? color : Colors.white,
-                ),
-              ),
-              SizedBox(height: isLargeScreen ? 8 : 4),
-              Text(
-                subtitle,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: isLargeScreen ? 14 : 12,
-                  color: isActive ? color.withOpacity(0.8) : Colors.white60,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
     );
   }
 
@@ -302,7 +225,6 @@ class StartScreen extends StatelessWidget {
               fontSize: isLargeScreen ? 22 : 18,
               fontWeight: FontWeight.w700,
               color: Colors.white,
-              letterSpacing: 0.5,
             ),
           ),
         ),
@@ -360,13 +282,11 @@ class StartScreen extends StatelessWidget {
         child: InkWell(
           onTap: onTap,
           borderRadius: BorderRadius.circular(isLargeScreen ? 20 : 16),
-          splashColor: Colors.blue.withOpacity(0.2),
-          highlightColor: Colors.blue.withOpacity(0.1),
           child: Padding(
             padding: EdgeInsets.all(isLargeScreen ? 24 : 18),
             child: Row(
               children: [
-                // Icon with background
+                // Icon
                 Container(
                   width: isLargeScreen ? 60 : 50,
                   height: isLargeScreen ? 60 : 50,
@@ -393,12 +313,11 @@ class StartScreen extends StatelessWidget {
                             fontSize: isLargeScreen ? 15 : 13,
                             fontWeight: FontWeight.w700,
                             color: Colors.white70,
-                            letterSpacing: 1,
                           ),
                         ),
                       if (!isGrid) SizedBox(height: isLargeScreen ? 6 : 4),
                       Text(
-                        isGrid ? subject : subject.substring(5), // Remove code prefix in list view
+                        isGrid ? subject : subject.substring(5),
                         style: TextStyle(
                           fontSize: isLargeScreen ? 18 : 16,
                           fontWeight: FontWeight.w600,
@@ -435,11 +354,10 @@ class StartScreen extends StatelessWidget {
     );
   }
 
-  // Keep your existing _showModeConfirmation and _buildModeSelectionButton methods
   void _showModeConfirmation(BuildContext context, String subject) {
     final isLargeScreen = MediaQuery.of(context).size.width > 600;
     final subjectCode = subject.substring(0, 3);
-    final subjectName = subject.substring(5); // Remove code "021  "
+    final subjectName = subject.substring(5);
 
     showModalBottomSheet(
       context: context,
@@ -448,7 +366,7 @@ class StartScreen extends StatelessWidget {
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
       builder: (context) {
-        return SingleChildScrollView(  // ← ADD THIS LINE
+        return SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.all(isLargeScreen ? 32 : 24),
             child: Column(
@@ -462,11 +380,10 @@ class StartScreen extends StatelessWidget {
                     fontSize: isLargeScreen ? 18 : 16,
                     fontWeight: FontWeight.w700,
                     color: Colors.white70,
-                    letterSpacing: 1,
                   ),
                 ),
                 SizedBox(height: isLargeScreen ? 8 : 4),
-                // Subject name (with proper overflow handling)
+                // Subject name
                 Text(
                   subjectName,
                   style: TextStyle(
@@ -474,7 +391,7 @@ class StartScreen extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                     color: Colors.white,
                   ),
-                  maxLines: 3,  // ← ALLOW MULTIPLE LINES
+                  maxLines: 3,
                   overflow: TextOverflow.ellipsis,
                 ),
                 SizedBox(height: isLargeScreen ? 12 : 8),
@@ -496,17 +413,39 @@ class StartScreen extends StatelessWidget {
                   onPressed: () {
                     Navigator.pop(context);
 
-                    // Navigate to Air Law screen when "010 Air Law" is selected
+                    // NAVIGATE TO CORRECT SCREEN BASED ON SUBJECT CODE
                     if (subject.startsWith('010')) {
+                      // Air Law
                       Navigator.push(
                         context,
                         MaterialPageRoute(
                           builder: (context) => const AirLawScreen(),
                         ),
                       );
+                    } else if (subject.startsWith('081')) {
+                      // Principles of Flight
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const PrinciplesOfFlightScreen(),
+                        ),
+                      );
+                    } else if (subject.startsWith('061')) {
+                      // General Navigation - ADDED
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const GeneralNavigationScreen(),
+                        ),
+                      );
                     } else {
-                      // TODO: Add other subject screens as you create them
-                      print('Starting Study Mode for $subject');
+                      // Other subjects (to be implemented)
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text('$subjectName coming soon!'),
+                          backgroundColor: Colors.blue,
+                        ),
+                      );
                     }
                   },
                   isLargeScreen: isLargeScreen,
@@ -521,8 +460,12 @@ class StartScreen extends StatelessWidget {
                   color: const Color(0xFF10B981),
                   onPressed: () {
                     Navigator.pop(context);
-                    // TODO: Navigate to test mode for selected subject
-                    print('Starting Test Mode for $subject');
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text('Test Mode for $subjectName coming soon!'),
+                        backgroundColor: Colors.green,
+                      ),
+                    );
                   },
                   isLargeScreen: isLargeScreen,
                 ),
@@ -597,7 +540,6 @@ class StartScreen extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
-        elevation: 2,
         alignment: Alignment.centerLeft,
       ),
     );
