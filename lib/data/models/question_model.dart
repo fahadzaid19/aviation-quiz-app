@@ -1,51 +1,46 @@
-// lib/data/models/question_model.dart
-
 class Question {
   final String question;
-  final List<String> options;
+  final List<String> originalOptions;
   final int correctAnswer;
-  final String? explanation; // Make optional with ?
+  List<String> shuffledOptions;
+  int shuffledCorrectIndex;
+  final String? explanation;  // ADD THIS LINE - makes explanation optional
 
-  const Question({
+  Question({
     required this.question,
-    required this.options,
+    required List<String> options,
     required this.correctAnswer,
-    this.explanation, // Optional parameter
-  });
+    this.explanation,  // ADD THIS LINE (no 'required' keyword)
+  }) : originalOptions = List<String>.from(options),
+        shuffledOptions = List<String>.from(options),
+        shuffledCorrectIndex = correctAnswer;
 
-  // Method to shuffle options and track new correct position
-  ShuffledQuestion shuffle() {
-    // Create a copy of options
-    final List<String> shuffledOptions = List.from(options);
+  void shuffleOptions() {
+    // Create a list of options with their original indices
+    final List<Map<String, dynamic>> indexedOptions = [];
 
-    // Remember the correct answer text
-    final String correctOption = options[correctAnswer];
+    for (int i = 0; i < originalOptions.length; i++) {
+      indexedOptions.add({
+        'text': originalOptions[i],
+        'index': i,
+      });
+    }
 
-    // Shuffle the options
-    shuffledOptions.shuffle();
+    // Shuffle randomly
+    indexedOptions.shuffle();
+
+    // Get shuffled texts
+    shuffledOptions = [];
+    for (var item in indexedOptions) {
+      shuffledOptions.add(item['text']);
+    }
 
     // Find where the correct answer moved to
-    final int newCorrectIndex = shuffledOptions.indexOf(correctOption);
-
-    return ShuffledQuestion(
-      question: question,
-      shuffledOptions: shuffledOptions,
-      shuffledCorrectIndex: newCorrectIndex,
-      explanation: explanation, // Pass optional explanation
-    );
+    for (int i = 0; i < indexedOptions.length; i++) {
+      if (indexedOptions[i]['index'] == correctAnswer) {
+        shuffledCorrectIndex = i;
+        break;
+      }
+    }
   }
-}
-
-class ShuffledQuestion {
-  final String question;
-  final List<String> shuffledOptions;
-  final int shuffledCorrectIndex;
-  final String? explanation; // Also optional here
-
-  ShuffledQuestion({
-    required this.question,
-    required this.shuffledOptions,
-    required this.shuffledCorrectIndex,
-    this.explanation, // Optional
-  });
 }

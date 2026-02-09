@@ -11,23 +11,30 @@ class AirLawScreen extends StatefulWidget {
 
 class _AirLawScreenState extends State<AirLawScreen> {
   // Use the questions from the separate file
-  List<Question> questions = AirLawQuestions.getQuestions(); // CHANGE: Remove 'final'
+  List<Question> questions = AirLawQuestions.getQuestions();
 
   int currentQuestionIndex = 0;
   int? selectedAnswer;
   bool showResult = false;
 
-  // ADD THIS SHUFFLE FUNCTION HERE:
+  // Shuffle questions AND their answers
   void _shuffleQuestions() {
     setState(() {
-      questions.shuffle(); // Shuffle the questions
-      currentQuestionIndex = 0; // Reset to first question
+      // Shuffle the question order
+      questions.shuffle();
+
+      // Shuffle options for each question
+      for (var question in questions) {
+        question.shuffleOptions();
+      }
+
+      // Reset to first question
+      currentQuestionIndex = 0;
       selectedAnswer = null;
       showResult = false;
     });
   }
 
-  // ADD THIS initState METHOD:
   @override
   void initState() {
     super.initState();
@@ -83,7 +90,7 @@ class _AirLawScreenState extends State<AirLawScreen> {
               ElevatedButton(
                 onPressed: () {
                   Navigator.pop(context);
-                  _shuffleQuestions(); // CHANGE: Call shuffle function instead
+                  _shuffleQuestions(); // Shuffle again when reviewing
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFF3B82F6),
@@ -110,7 +117,7 @@ class _AirLawScreenState extends State<AirLawScreen> {
   @override
   Widget build(BuildContext context) {
     final currentQuestion = questions[currentQuestionIndex];
-    final isCorrect = selectedAnswer == currentQuestion.correctAnswer;
+    final isCorrect = selectedAnswer == currentQuestion.shuffledCorrectIndex; // CHANGED
 
     return Scaffold(
       backgroundColor: const Color(0xFF0A1F44),
@@ -252,16 +259,16 @@ class _AirLawScreenState extends State<AirLawScreen> {
 
               const SizedBox(height: 24),
 
-              // Options
+              // Options - USING SHUFFLED OPTIONS
               Expanded(
                 child: ListView.separated(
                   physics: const BouncingScrollPhysics(),
-                  itemCount: currentQuestion.options.length,
+                  itemCount: currentQuestion.shuffledOptions.length, // CHANGED
                   separatorBuilder: (context, index) => const SizedBox(height: 12),
                   itemBuilder: (context, index) {
-                    final option = currentQuestion.options[index];
+                    final option = currentQuestion.shuffledOptions[index]; // CHANGED
                     final isSelected = selectedAnswer == index;
-                    final isCorrectOption = index == currentQuestion.correctAnswer;
+                    final isCorrectOption = index == currentQuestion.shuffledCorrectIndex; // CHANGED
 
                     Color backgroundColor = const Color(0xFF1A365D);
                     Color borderColor = Colors.white.withOpacity(0.1);

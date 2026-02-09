@@ -21,6 +21,9 @@ class _GeneralNavigationScreenState extends State<GeneralNavigationScreen> {
   void _shuffleQuestions() {
     setState(() {
       questions.shuffle(); // Shuffle the questions
+      for (var question in questions) {
+        question.shuffleOptions();
+      }
       currentQuestionIndex = 0; // Reset to first question
       selectedAnswer = null;
       showResult = false;
@@ -110,7 +113,7 @@ class _GeneralNavigationScreenState extends State<GeneralNavigationScreen> {
   @override
   Widget build(BuildContext context) {
     final currentQuestion = questions[currentQuestionIndex];
-    final isCorrect = selectedAnswer == currentQuestion.correctAnswer;
+    final isCorrect = selectedAnswer == currentQuestion.shuffledCorrectIndex;
 
     return Scaffold(
       backgroundColor: const Color(0xFF0A1F44),
@@ -243,16 +246,16 @@ class _GeneralNavigationScreenState extends State<GeneralNavigationScreen> {
 
               const SizedBox(height: 24),
 
-              // Options
+              // Options - USING SHUFFLED OPTIONS
               Expanded(
                 child: ListView.separated(
                   physics: const BouncingScrollPhysics(),
-                  itemCount: currentQuestion.options.length,
+                  itemCount: currentQuestion.shuffledOptions.length, // FIXED
                   separatorBuilder: (context, index) => const SizedBox(height: 12),
                   itemBuilder: (context, index) {
-                    final option = currentQuestion.options[index];
+                    final option = currentQuestion.shuffledOptions[index]; // FIXED
                     final isSelected = selectedAnswer == index;
-                    final isCorrectOption = index == currentQuestion.correctAnswer;
+                    final isCorrectOption = index == currentQuestion.shuffledCorrectIndex; // FIXED
 
                     Color backgroundColor = const Color(0xFF1A365D);
                     Color borderColor = Colors.white.withOpacity(0.1);

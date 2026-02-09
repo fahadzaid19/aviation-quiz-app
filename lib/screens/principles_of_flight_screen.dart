@@ -21,6 +21,13 @@ class _PrinciplesOfFlightScreenState extends State<PrinciplesOfFlightScreen> {
   void _shuffleQuestions() {
     setState(() {
       questions.shuffle(); // Shuffle the questions
+
+      // ADD THESE 2 LINES:
+      for (var question in questions) {
+        question.shuffleOptions(); // Shuffle each question's options
+      }
+      // =========================
+
       currentQuestionIndex = 0; // Reset to first question
       selectedAnswer = null;
       showResult = false;
@@ -110,7 +117,7 @@ class _PrinciplesOfFlightScreenState extends State<PrinciplesOfFlightScreen> {
   @override
   Widget build(BuildContext context) {
     final currentQuestion = questions[currentQuestionIndex];
-    final isCorrect = selectedAnswer == currentQuestion.correctAnswer;
+    final isCorrect = selectedAnswer == currentQuestion.shuffledCorrectIndex; // CHANGED
 
     return Scaffold(
       backgroundColor: const Color(0xFF0A1F44),
@@ -243,16 +250,16 @@ class _PrinciplesOfFlightScreenState extends State<PrinciplesOfFlightScreen> {
 
               const SizedBox(height: 24),
 
-              // Options
+              // Options - USING SHUFFLED OPTIONS
               Expanded(
                 child: ListView.separated(
                   physics: const BouncingScrollPhysics(),
-                  itemCount: currentQuestion.options.length,
+                  itemCount: currentQuestion.shuffledOptions.length, // CHANGED
                   separatorBuilder: (context, index) => const SizedBox(height: 12),
                   itemBuilder: (context, index) {
-                    final option = currentQuestion.options[index];
+                    final option = currentQuestion.shuffledOptions[index]; // CHANGED
                     final isSelected = selectedAnswer == index;
-                    final isCorrectOption = index == currentQuestion.correctAnswer;
+                    final isCorrectOption = index == currentQuestion.shuffledCorrectIndex; // CHANGED
 
                     Color backgroundColor = const Color(0xFF1A365D);
                     Color borderColor = Colors.white.withOpacity(0.1); // FIXED
