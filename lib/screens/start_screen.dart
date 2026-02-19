@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
-import 'airlaw_screen.dart';                     // Same folder
-import 'principles_of_flight_screen.dart';        // Same folder
-import 'general_navigation_screen.dart';         // Same folder // ADD THIS IMPORT
+import 'airlaw_screen.dart';
+import 'principles_of_flight_screen.dart';
+import 'general_navigation_screen.dart';
+import 'agk_screen.dart';
+import 'instrumentation_screen.dart';
+import 'mass_balance_screen.dart';
+import 'performance_screen.dart';
+import 'flight_planning_screen.dart';
+import 'human_performance_screen.dart';
+import 'meteorology_screen.dart';
+import 'operational_procedures_screen.dart';
 
 class StartScreen extends StatelessWidget {
   const StartScreen({super.key});
@@ -20,8 +28,7 @@ class StartScreen extends StatelessWidget {
       '033  Flight Planning and Monitoring',
     ],
     'Navigation': [
-      '061  General Navigation',
-      '062  Radio Navigation',
+      '061  Navigation\nGeneral Navigation & Radio Navigation',
     ],
     'Human Factors & Procedures': [
       '040  Human Performance & Limitations',
@@ -307,29 +314,33 @@ class StartScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       if (!isGrid)
-                        Text(
-                          subject.substring(0, 3),
-                          style: TextStyle(
-                            fontSize: isLargeScreen ? 15 : 13,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.white70,
-                          ),
-                        ),
-                      if (!isGrid) SizedBox(height: isLargeScreen ? 6 : 4),
+                        SizedBox(height: isLargeScreen ? 6 : 4),
                       Text(
-                        isGrid ? subject : subject.substring(5),
+                        subject.substring(5).split('\n').first,
                         style: TextStyle(
                           fontSize: isLargeScreen ? 18 : 16,
                           fontWeight: FontWeight.w600,
                           color: Colors.white,
                           height: 1.3,
                         ),
-                        maxLines: isGrid ? 2 : 2,
+                        maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                       ),
-                      if (isGrid)
+                      if (subject.substring(5).contains('\n')) ...[
+                        SizedBox(height: isLargeScreen ? 4 : 2),
+                        Text(
+                          subject.substring(5).split('\n').last,
+                          style: TextStyle(
+                            fontSize: isLargeScreen ? 13 : 11,
+                            color: Colors.white60,
+                          ),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ],
+                      if (isGrid && !subject.substring(5).contains('\n'))
                         SizedBox(height: isLargeScreen ? 6 : 4),
-                      if (isGrid)
+                      if (isGrid && !subject.substring(5).contains('\n'))
                         Text(
                           category,
                           style: TextStyle(
@@ -357,7 +368,9 @@ class StartScreen extends StatelessWidget {
   void _showModeConfirmation(BuildContext context, String subject) {
     final isLargeScreen = MediaQuery.of(context).size.width > 600;
     final subjectCode = subject.substring(0, 3);
-    final subjectName = subject.substring(5);
+    final fullName = subject.substring(5);
+    final subjectTitle = fullName.split('\n').first;
+    final subjectSubtitle = fullName.contains('\n') ? fullName.split('\n').last : null;
 
     showModalBottomSheet(
       context: context,
@@ -373,19 +386,10 @@ class StartScreen extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                // Subject code
-                Text(
-                  subjectCode,
-                  style: TextStyle(
-                    fontSize: isLargeScreen ? 18 : 16,
-                    fontWeight: FontWeight.w700,
-                    color: Colors.white70,
-                  ),
-                ),
                 SizedBox(height: isLargeScreen ? 8 : 4),
                 // Subject name
                 Text(
-                  subjectName,
+                  subjectTitle,
                   style: TextStyle(
                     fontSize: isLargeScreen ? 22 : 18,
                     fontWeight: FontWeight.w700,
@@ -394,6 +398,16 @@ class StartScreen extends StatelessWidget {
                   maxLines: 3,
                   overflow: TextOverflow.ellipsis,
                 ),
+                if (subjectSubtitle != null) ...[
+                  SizedBox(height: isLargeScreen ? 6 : 4),
+                  Text(
+                    subjectSubtitle,
+                    style: TextStyle(
+                      fontSize: isLargeScreen ? 15 : 13,
+                      color: Colors.white60,
+                    ),
+                  ),
+                ],
                 SizedBox(height: isLargeScreen ? 12 : 8),
                 Text(
                   'Choose your learning mode',
@@ -413,37 +427,33 @@ class StartScreen extends StatelessWidget {
                   onPressed: () {
                     Navigator.pop(context);
 
-                    // NAVIGATE TO CORRECT SCREEN BASED ON SUBJECT CODE
                     if (subject.startsWith('010')) {
-                      // Air Law
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const AirLawScreen(),
-                        ),
-                      );
-                    } else if (subject.startsWith('081')) {
-                      // Principles of Flight
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const PrinciplesOfFlightScreen(),
-                        ),
-                      );
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const AirLawScreen()));
+                    } else if (subject.startsWith('021')) {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const AgkScreen()));
+                    } else if (subject.startsWith('022')) {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const InstrumentationScreen()));
+                    } else if (subject.startsWith('031')) {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const MassBalanceScreen()));
+                    } else if (subject.startsWith('032')) {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const PerformanceScreen()));
+                    } else if (subject.startsWith('033')) {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const FlightPlanningScreen()));
+                    } else if (subject.startsWith('040')) {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const HumanPerformanceScreen()));
+                    } else if (subject.startsWith('050')) {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const MeteorologyScreen()));
                     } else if (subject.startsWith('061')) {
-                      // General Navigation - ADDED
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const GeneralNavigationScreen(),
-                        ),
-                      );
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const GeneralNavigationScreen()));
+                    } else if (subject.startsWith('071')) {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const OperationalProceduresScreen()));
+                    } else if (subject.startsWith('081')) {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const PrinciplesOfFlightScreen()));
                     } else {
                       // Other subjects (to be implemented)
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
-                          content: Text('$subjectName coming soon!'),
-                          backgroundColor: Colors.blue,
+                          content: Text('$subjectTitle coming soon!'),
                         ),
                       );
                     }
@@ -462,7 +472,7 @@ class StartScreen extends StatelessWidget {
                     Navigator.pop(context);
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
-                        content: Text('Test Mode for $subjectName coming soon!'),
+                        content: Text('Test Mode for $subjectTitle coming soon!'),
                         backgroundColor: Colors.green,
                       ),
                     );
