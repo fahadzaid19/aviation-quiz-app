@@ -3299,6 +3299,1500 @@ class AirLawQuestions {
         correctAnswer: 2,
         explanation: 'ATS office must be notified immediately of accident with substantial damage.',
       ),
+      // Question 286
+      Question(
+        question: 'Which United Nations body is responsible for civil aviation matters?',
+        options: [
+          'ICAO',
+          'IATA',
+          'IFATCA',
+          'AFRASCO',
+        ],
+        correctAnswer: 0,
+        explanation: 'ICAO (International Civil Aviation Organization) is the UN body responsible for civil aviation matters.',
+      ),
+
+// Question 287
+      Question(
+        question: 'What is the validity for a Commercial Pilot Licence issued in Kenya for a pilot aged 45 years?',
+        options: [
+          '6 months',
+          '12 months',
+          '18 months',
+          '24 months',
+        ],
+        correctAnswer: 1,
+        explanation: 'CPL validity for pilots aged 45+ is 12 months.',
+      ),
+
+// Question 288
+      Question(
+        question: 'When shall an aircraft be expected to make a Special Air Report?',
+        options: [
+          'Severe icing or turbulence is encountered',
+          'A specific request is made before or during the flight',
+          'The observed weather at any time differs significantly from the given forecast weather',
+          'At specific points',
+        ],
+        correctAnswer: 0,
+        explanation: 'Special Air Reports are made when severe icing or turbulence is encountered.',
+      ),
+
+// Question 289
+      Question(
+        question: 'Reference is made to PAPI, the aircraft is on the correct glide slope when:',
+        options: [
+          'both near and far bars are white.',
+          'both near and far bars are red.',
+          'the near bars are red and the far bars are white.',
+          'the near bars are white and the far bars are red.',
+        ],
+        correctAnswer: 2,
+        explanation: 'On correct PAPI glide slope, near bars are red and far bars are white (2 red, 2 white).',
+      ),
+
+// Question 290
+      Question(
+        question: 'A marshaller with arms extended, palms facing inwards, then swung from the extended position inwards indicates:',
+        options: [
+          'chocks are inserted.',
+          'Insert chocks.',
+          'Chocks away.',
+          'Cut engines(s).',
+        ],
+        correctAnswer: 1,
+        explanation: 'Arms extended, palms inwards, swung inwards means Insert chocks.',
+      ),
+
+// Question 291
+      Question(
+        question: 'A red square with a yellow diagonal inside the signal square indicates:',
+        options: [
+          'aircraft may only land on paved areas.',
+          'landing is prohibited.',
+          'state of the manoeuvring area is poor.',
+          'due to poor surface areas, only light aircraft may use the manoeuvring area.',
+        ],
+        correctAnswer: 2,
+        explanation: 'Red square with yellow diagonal indicates poor state of manoeuvring area.',
+      ),
+
+// Question 292
+      Question(
+        question: 'The minimum height of letters permitted on the wing of an aircraft registered in Kenya is:',
+        options: [
+          '50cm',
+          '30cm',
+          '36cm',
+          '20cm',
+        ],
+        correctAnswer: 0,
+        explanation: 'Minimum letter height on wings is 50cm.',
+      ),
+
+// Question 293
+      Question(
+        question: 'In the aerodrome directory, the code that indicates hours of sunrise to sunset is:',
+        options: [
+          'HJ',
+          'HI',
+          'HN',
+          'HS',
+        ],
+        correctAnswer: 0,
+        explanation: 'HJ indicates sunrise to sunset hours.',
+      ),
+
+// Question 294
+      Question(
+        question: 'If radio communication is established during an interception but communications in a common language is not possible, which phrase should be pronounced by the intercepting aircraft to request the intercepted aircraft to descend for landing?',
+        options: [
+          'Descend',
+          'Let down',
+          'You land',
+          'Descend for landing',
+        ],
+        correctAnswer: 0,
+        explanation: 'The phrase "Descend" is used to request descent for landing.',
+      ),
+
+// Question 295
+      Question(
+        question: 'The height (ft.) above ground of all the TMAs in the Nairobi FIR is:',
+        options: [
+          '500',
+          '1500',
+          '2500',
+          '3000',
+        ],
+        correctAnswer: 0,
+        explanation: 'TMA height in Nairobi FIR is 500ft above ground.',
+      ),
+
+// Question 296
+      Question(
+        question: 'A controlled airspace extending upwards from a specified limit above the earth is referred to as:',
+        options: [
+          'Control zone',
+          'Traffic zone',
+          'Control area',
+          'All the above',
+        ],
+        correctAnswer: 2,
+        explanation: 'Control area extends upwards from a specified limit above earth.',
+      ),
+
+// Question 297
+      Question(
+        question: 'The minimum age for a person to acquire an Airline Transport Pilot\'s Licence in Kenya is:',
+        options: [
+          '18 years',
+          '24 years',
+          '21 years',
+          '17 years',
+        ],
+        correctAnswer: 2,
+        explanation: 'Minimum age for ATPL is 21 years.',
+      ),
+
+// Question 298
+      Question(
+        question: 'A white dumbbell with black stripes across each disc at right angles to the shaft indicates:',
+        options: [
+          'all movements are confined to paved surfaces.',
+          'take-offs may be made on grass areas, but landings are confined to paved surfaces.',
+          'take-off and landings only is confined to paved areas.',
+          'aircraft may take-off and land on the grass if they can.',
+        ],
+        correctAnswer: 0,
+        explanation: 'White dumbbell with black stripes indicates all movements confined to paved surfaces.',
+      ),
+
+// Question 299
+      Question(
+        question: 'The designated geographical location of an aerodrome is referred to as:',
+        options: [
+          'Aerodrome beacon',
+          'Aerodrome elevation',
+          'Aerodrome reference point',
+          'Name of aerodrome',
+        ],
+        correctAnswer: 2,
+        explanation: 'Aerodrome reference point is the designated geographical location.',
+      ),
+
+// Question 300
+      Question(
+        question: 'In order to reduce the number of accidents as a result of propellers and tail rotor strikes of all aircraft appropriate painting is made. What color is painted to anti-icing boots or stripes?',
+        options: [
+          'Black and white',
+          'Black and red',
+          'Red and white',
+          'No painting',
+        ],
+        correctAnswer: 2,
+        explanation: 'Anti-icing boots or stripes are painted red and white.',
+      ),
+
+// Question 301
+      Question(
+        question: 'Unless otherwise authorized, all VFR flights within the Nairobi FIR must squawk on mode A/3 code:',
+        options: [
+          '2000',
+          '2077',
+          '7600',
+          '7700',
+        ],
+        correctAnswer: 0,
+        explanation: 'VFR flights in Nairobi FIR squawk 2000 unless otherwise authorized.',
+      ),
+
+// Question 302
+      Question(
+        question: 'When overflying an aerodrome signal area and you see two red balls on a mast, what does this mean?',
+        options: [
+          'Balloon activities are in progress.',
+          'Gliding is taking place.',
+          'Take-off and landing directions do not necessarily coincide.',
+          'Aircraft may move on the manoeuvring area only with the permission of ATC.',
+        ],
+        correctAnswer: 1,
+        explanation: 'Two red balls on a mast indicate gliding is taking place.',
+      ),
+
+// Question 303
+      Question(
+        question: 'A red square with a yellow diagonal inside the signal square indicates:',
+        options: [
+          'aircraft may only land on paved areas.',
+          'landing is prohibited.',
+          'state of the manoeuvring area is poor.',
+          'due to poor surface areas, only light aircraft may use the manoeuvring area.',
+        ],
+        correctAnswer: 2,
+        explanation: 'Red square with yellow diagonal indicates poor state of manoeuvring area.',
+      ),
+
+// Question 304
+      Question(
+        question: 'Other than for a flight radio telephony operator\'s licence, the licence of any holder who suffers any illness involving incapacity to undertake the functions of that licence shall be rendered suspended:',
+        options: [
+          'immediately the holder starts to suffer the illness',
+          'if the illness persist for 20 days continuously',
+          'the illness persists for 28 days continuously',
+          'if the illness persists for a continuous period of six months',
+        ],
+        correctAnswer: 3,
+        explanation: 'Licence is suspended if illness persists for 6 months continuously.',
+      ),
+
+// Question 305
+      Question(
+        question: 'An entry in a license specifying a privilege or limiting the effect of a privilege is referred to as:',
+        options: [
+          'an endorsement',
+          'a rating',
+          'a limitation',
+          'a notification',
+        ],
+        correctAnswer: 0,
+        explanation: 'An endorsement specifies a privilege or limits its effect.',
+      ),
+
+// Question 306
+      Question(
+        question: 'The outbound time in a holding pattern at 14000ft or below in still air conditions is:',
+        options: [
+          '1 minute',
+          '2 minutes',
+          '1.5 minutes',
+          '30 seconds',
+        ],
+        correctAnswer: 0,
+        explanation: 'Outbound time at 14000ft or below is 1 minute.',
+      ),
+
+// Question 307
+      Question(
+        question: 'Which part of the AIP contains a brief description of areas and/or routes for which meteorological service is provided?',
+        options: [
+          'GEN',
+          'ENR',
+          'MET',
+          'AD',
+        ],
+        correctAnswer: 1,
+        explanation: 'ENR (En-route) contains meteorological service area descriptions.',
+      ),
+
+// Question 308
+      Question(
+        question: 'A continuous red light directed at an aircraft on the ground means the aircraft:',
+        options: [
+          'must stop.',
+          'must return to the parking area.',
+          'must clear the manoeuvring area.',
+          'may continue to hold, but must not move.',
+        ],
+        correctAnswer: 0,
+        explanation: 'Continuous red light means the aircraft must stop.',
+      ),
+
+// Question 309
+      Question(
+        question: 'An airship is classified as a:',
+        options: [
+          'Heavier than air aircraft',
+          'Mechanically driven aircraft',
+          'Lighter than air aircraft',
+          'Both mechanically driven aircraft and lighter than air aircraft',
+        ],
+        correctAnswer: 3,
+        explanation: 'Airship is both mechanically driven and lighter than air.',
+      ),
+
+// Question 310
+      Question(
+        question: 'A pilot experiencing a two-way radio communication failure may continue the flight in accordance with the current flight plan, arrange to arrive over the holding point as close as possible to ETA, transmit blind, commence descent at or as close as possible to EAT and land within ______ of the time the descent should have started:',
+        options: [
+          '10 minutes',
+          '30 minutes',
+          '60 minutes',
+          '45 minutes',
+        ],
+        correctAnswer: 1,
+        explanation: 'Land within 30 minutes of when descent should have started.',
+      ),
+
+// Question 311
+      Question(
+        question: 'Which part of the AIP gives detailed information about refuelling facilities and the fuel grades available?',
+        options: [
+          'AD',
+          'ENR',
+          'GEN',
+          'FAL',
+        ],
+        correctAnswer: 0,
+        explanation: 'AD (Aerodromes) contains refuelling facility information.',
+      ),
+
+// Question 312
+      Question(
+        question: 'Which of the following signals is not found in the signal area?',
+        options: [
+          'White dumb-bell',
+          'Red and yellow stripped arrow',
+          'A white letter H',
+          'Blue dumb-bell',
+        ],
+        correctAnswer: 3,
+        explanation: 'Blue dumb-bell is not found in the signal area.',
+      ),
+
+// Question 313
+      Question(
+        question: 'In the event of a missed approach: Land at the aerodrome of destination if this can be achieved within ________ of the time descent from the holding point should have started:',
+        options: [
+          '10 minutes',
+          '15 minutes',
+          '30 minutes',
+          '45 minutes',
+        ],
+        correctAnswer: 2,
+        explanation: 'Land within 30 minutes of descent start time after missed approach.',
+      ),
+
+// Question 314
+      Question(
+        question: 'The anti-collision light is required to:',
+        options: [
+          'Indicate the relative path of the aircraft to the observer.',
+          'Indicate the extremities of the structure.',
+          'Indicate that the engine is running.',
+          'Indicate that the aircraft is ready to move.',
+        ],
+        correctAnswer: 0,
+        explanation: 'Anti-collision light indicates relative path to observer.',
+      ),
+
+// Question 315
+      Question(
+        question: 'Which part of the AIP contains information relating to existing prohibited, restricted and danger areas?',
+        options: [
+          'ENR',
+          'GEN',
+          'AD',
+          'The AIP does not contain this information',
+        ],
+        correctAnswer: 0,
+        explanation: 'ENR contains prohibited, restricted and danger area information.',
+      ),
+
+// Question 316
+      Question(
+        question: 'A person acting as a member of the crew of an aeroplane shall not be permitted to do so, if:',
+        options: [
+          'he/she has consumed any alcohol within the past 8 hours.',
+          'he/she has consumed any alcohol within the past 5 hours.',
+          'the consumption of alcohol has impaired his/her ability to so act.',
+          'she/he has any smell of alcohol on breath.',
+        ],
+        correctAnswer: 2,
+        explanation: 'Crew member cannot act if alcohol impairs ability.',
+      ),
+
+// Question 317
+      Question(
+        question: 'A controlled airspace extending upwards from a specified limit above the earth is referred to as:',
+        options: [
+          'Control zone',
+          'Traffic zone',
+          'Control area',
+          'All the above',
+        ],
+        correctAnswer: 2,
+        explanation: 'Control area extends upwards from specified limit.',
+      ),
+
+// Question 318
+      Question(
+        question: 'A notice containing information concerning flight safety, air navigation, technical, administration or legislative matters and originated at the AIS of a state is called:',
+        options: [
+          'Aeronautical Information Circular (AIC)',
+          'Aeronautical Information Publication',
+          'NOTAM',
+          'AIRAC',
+        ],
+        correctAnswer: 0,
+        explanation: 'AIC contains flight safety, technical and legislative information.',
+      ),
+
+// Question 319
+      Question(
+        question: 'What light should be directed to an aircraft on ground from an aerodrome to indicate "you may move clear of the maneuvering area"?',
+        options: [
+          'Continuous green light',
+          'Continuous white light',
+          'White flashes',
+          'Green flashes',
+        ],
+        correctAnswer: 1,
+        explanation: 'Continuous white light means you may move clear of maneuvering area.',
+      ),
+
+// Question 320
+      Question(
+        question: 'The organization responsible for the licensing aerodromes in Kenya is:',
+        options: [
+          'Kenya Civil Aviation Authority',
+          'Kenya Airports Authority',
+          'Kenya Police',
+          'Kenya Wildlife Services',
+        ],
+        correctAnswer: 0,
+        explanation: 'KCAA is responsible for aerodrome licensing.',
+      ),
+
+// Question 321
+      Question(
+        question: 'After a subsequent weighing, the weight schedule for an aircraft with a valid Certificate of Airworthiness must be kept:',
+        options: [
+          'until next subsequent weighing.',
+          'for at least thirteen months.',
+          'for at least three months.',
+          'for at least six months.',
+        ],
+        correctAnswer: 3,
+        explanation: 'Weight schedule must be kept for at least 6 months.',
+      ),
+
+// Question 322
+      Question(
+        question: 'An aircraft entering the Nairobi FIR from a neighboring FIR on an IFR flight and not yet assigned a squawk:',
+        options: [
+          'shall operate transponder on Mode A/3 code 2000.',
+          'shall set transponder on Mode A/3 code 2077.',
+          'shall set transponder on Mode A/3 code 7600.',
+          'endeavour as much as practically possible to obtain code assigned immediately upon entering.',
+        ],
+        correctAnswer: 0,
+        explanation: 'Squawk 2000 when entering Nairobi FIR without assigned code.',
+      ),
+
+// Question 323
+      Question(
+        question: 'Within how many days after deviation from rules of the air for the purpose of avoiding immediate danger should a pilot submit written particulars to the authority?',
+        options: [
+          '1 day',
+          '10 days',
+          '2 weeks',
+          'As soon as possible',
+        ],
+        correctAnswer: 1,
+        explanation: 'Submit written particulars within 10 days after deviation.',
+      ),
+
+// Question 324
+      Question(
+        question: 'An aircraft overtaking another in the air in Kenya whether climbing, descending or in level flight will alter course to the right except:',
+        options: [
+          'An aircraft towing another aircraft or another object may turn to the right or to the left.',
+          'A glider overtaking another glider may turn to the right or to the left.',
+          'An aeroplane overtaking a glider may turn to the right or to the left.',
+          'Glider overtaking a balloon may turn to the right or to the left.',
+        ],
+        correctAnswer: 1,
+        explanation: 'Glider overtaking glider may turn right or left.',
+      ),
+
+// Question 325
+      Question(
+        question: 'A white dumbbell with black stripes across each disc at right angles to the shaft indicates:',
+        options: [
+          'all movements are confined to paved surfaces.',
+          'take-offs may be made on grass areas, but landings are confined to paved surfaces.',
+          'take-off and landings only is confined to paved areas.',
+          'aircraft may take-off and land on the grass if they can.',
+        ],
+        correctAnswer: 0,
+        explanation: 'White dumbbell with black stripes - all movements on paved surfaces.',
+      ),
+
+// Question 326
+      Question(
+        question: 'An aircraft of weight 8500kg is under which category of wake turbulence?',
+        options: [
+          'Light',
+          'Medium',
+          'Heavy',
+          'Fine',
+        ],
+        correctAnswer: 1,
+        explanation: '8500kg is Medium wake turbulence category.',
+      ),
+
+// Question 327
+      Question(
+        question: 'The maximum flight level a VFR flight may maintain to Mombasa from Nairobi considering all the small lone hills available along the route is:',
+        options: [
+          'FL 135',
+          'FL 75',
+          'FL 115',
+          'FL 95',
+        ],
+        correctAnswer: 1,
+        explanation: 'Maximum VFR flight level is FL 75.',
+      ),
+
+// Question 328
+      Question(
+        question: 'When overflying an aerodrome signals area, you see two red balls on a mast. What does this mean?',
+        options: [
+          'Balloon activities are in progress.',
+          'Gliding is taking place.',
+          'Take-off and landing directions do not necessarily coincide.',
+          'Aircraft may move on the manoeuvring area only with the permission of ATC.',
+        ],
+        correctAnswer: 1,
+        explanation: 'Two red balls indicate gliding is taking place.',
+      ),
+
+// Question 329
+      Question(
+        question: 'When is the use hand-held microphones for crew prohibited?',
+        options: [
+          'during landings',
+          'during take-offs',
+          'in a controlled airspace below flight level 150',
+          'all of the above',
+        ],
+        correctAnswer: 3,
+        explanation: 'Hand-held microphones prohibited during landings, take-offs, and below FL150.',
+      ),
+
+// Question 330
+      Question(
+        question: 'The alert phase (ALERFA) of an aircraft emergency is defined as a:',
+        options: [
+          'A situation where in uncertainty exists as to the safety of an aircraft and its occupants',
+          'A situation where in apprehension exists as to the safety of an aircraft and its occupants',
+          'A situation where in there is reasonable certainty that an aircraft and its occupants are threatened by grave danger or require immediate assistance',
+          'All of the above',
+        ],
+        correctAnswer: 1,
+        explanation: 'Alert phase is when apprehension exists as to safety.',
+      ),
+
+// Question 331
+      Question(
+        question: 'Flight Information Service, Alerting Services and Area Control Service within Nairobi FIR are provided by:',
+        options: [
+          'Various approach controls as appropriate',
+          'Nairobi Approach',
+          'Nairobi Area Control Centre',
+          'Mombasa Approach',
+        ],
+        correctAnswer: 2,
+        explanation: 'Nairobi ACC provides FIS, Alerting and Area Control in Nairobi FIR.',
+      ),
+
+// Question 332
+      Question(
+        question: 'A defined area on land or water, including any buildings, installations and equipment intended to be used either wholly or in part for the arrival, departure and surface movement of aircraft is known as:',
+        options: [
+          'Runway',
+          'Apron',
+          'Aerodrome',
+          'Terminal',
+        ],
+        correctAnswer: 2,
+        explanation: 'This defines an Aerodrome.',
+      ),
+
+// Question 333
+      Question(
+        question: 'Aerodrome elevation is defined as:',
+        options: [
+          'The elevation of the lowest point of the aerodrome',
+          'The elevation of the highest point landing area',
+          'The mean elevation of the aerodrome',
+          'The estimated elevation of the aerodrome',
+        ],
+        correctAnswer: 1,
+        explanation: 'Aerodrome elevation is highest point of landing area.',
+      ),
+
+// Question 334
+      Question(
+        question: 'An anti-collision light is defined as being:',
+        options: [
+          'any of the lights displayed by an aircraft in flight by day or night.',
+          'a flashing red light in respect of both fixed wing and rotor craft.',
+          'a flashing red or white light in respect of fixed wing and a flashing red light in respect of rotor craft.',
+          'a flashing red or white light in respect of both fixed wing or rotor craft.',
+        ],
+        correctAnswer: 3,
+        explanation: 'Anti-collision light is flashing red or white for both fixed wing and rotor craft.',
+      ),
+
+// Question 335
+      Question(
+        question: 'Which of the following signals is not found in the signal area?',
+        options: [
+          'White dumb-bell',
+          'Red and yellow stripped arrow',
+          'A white letter H',
+          'A blue double cross',
+        ],
+        correctAnswer: 3,
+        explanation: 'Blue double cross is not found in signal area.',
+      ),
+
+// Question 336
+      Question(
+        question: 'Which of the following conditions would cause a serious difficulty resulting into a hazard to aircraft?',
+        options: [
+          'Faulty procedures',
+          'Non-compliance of procedures',
+          'Failure of ground facilities',
+          'All of the options',
+        ],
+        correctAnswer: 3,
+        explanation: 'All listed conditions can cause serious difficulty/hazard.',
+      ),
+
+// Question 337
+      Question(
+        question: 'Except in emergency, operation into licensed or registered aerodromes is:',
+        options: [
+          'open to any aircraft any time during notified hours of operation.',
+          'allowed only with prior permission from the Kenya Civil Aviation Authority.',
+          'allowed only with prior permission from Kenya Airports Authority.',
+          'allowed only with prior permission from the registered owner of the aerodrome.',
+        ],
+        correctAnswer: 1,
+        explanation: 'Prior KCAA permission required except in emergency.',
+      ),
+
+// Question 338
+      Question(
+        question: 'The minimum height (feet) above ground level over the national parks/game reserves that an aircraft may fly, except in emergency or when landing or taking off is:',
+        options: [
+          '500',
+          '1000',
+          '1500',
+          '2000',
+        ],
+        correctAnswer: 0,
+        explanation: 'Minimum height over national parks/game reserves is 500ft.',
+      ),
+
+// Question 339
+      Question(
+        question: 'What light should be directed to an aircraft on ground from an aerodrome to indicate "you may move clear of the maneuvering area"?',
+        options: [
+          'Continuous green light',
+          'Continuous white light',
+          'White flashes',
+          'Green flashes',
+        ],
+        correctAnswer: 1,
+        explanation: 'Continuous white light means you may move clear of maneuvering area.',
+      ),
+
+// Question 340
+      Question(
+        question: 'Cross country flight means any flight during the course of which the aircraft is more than:',
+        options: [
+          '10NM from the aerodromes of departure',
+          '20NM from the aerodromes of departure',
+          '30NM from the aerodromes of departure',
+          '40NM from alternate aerodrome',
+        ],
+        correctAnswer: 1,
+        explanation: 'Cross country flight is more than 20NM from departure aerodrome.',
+      ),
+
+// Question 341
+      Question(
+        question: 'If you are below 40 years of age, what is the validity of your ATPL licence?',
+        options: [
+          '2.5 years',
+          '2 years',
+          '1 year',
+          '6 months',
+        ],
+        correctAnswer: 1,
+        explanation: 'ATPL validity under 40 years is 2 years.',
+      ),
+
+// Question 342
+      Question(
+        question: 'A red square panel with a yellow strip along each diagonal displayed in the signal square area of an aerodrome, indicates:',
+        options: [
+          'Landing is prohibited',
+          'Exercise special care when landing',
+          'Normal safety services are not available',
+          'All of the responses',
+        ],
+        correctAnswer: 1,
+        explanation: 'Red square with yellow diagonal strips means exercise special care when landing.',
+      ),
+
+// Question 343
+      Question(
+        question: 'On flights in accordance with IFR, the change of the altimeter setting from QNH to Standard shall be made at the:',
+        options: [
+          'transition altitude',
+          'transition layer',
+          'transition level',
+          'level specified by ATC',
+        ],
+        correctAnswer: 0,
+        explanation: 'Change from QNH to Standard at transition altitude.',
+      ),
+
+// Question 344
+      Question(
+        question: 'The validity for Airline Transport Pilots Licence issued in Kenya is:',
+        options: [
+          '6 months irrespective of age',
+          '12 months if the holder is 40 years or more',
+          '24 months if the holder is less than 40 years',
+          '6 months if the holder is 40 years or more',
+        ],
+        correctAnswer: 1,
+        explanation: 'ATPL validity is 12 months if holder is 40+.',
+      ),
+
+// Question 345
+      Question(
+        question: 'A person acting as a member of the crew of an aeroplane shall not be permitted to do so, if:',
+        options: [
+          'he has consumed any alcohol within the past 8 hours.',
+          'the consumption of alcohol is a few litres.',
+          'he has alcohol smell.',
+          'None of the above',
+        ],
+        correctAnswer: 0,
+        explanation: 'Crew cannot act if alcohol consumed within past 8 hours.',
+      ),
+
+// Question 346
+      Question(
+        question: 'While on IFR flight, a pilot has an emergency which causes a deviation from an ATC clearance. What action must be taken?',
+        options: [
+          'The appropriate ATC unit shall be notified of the action taken as soon as circumstances permit',
+          'Request an amended clearance or cancel the IFR flight plan',
+          'Submit a detailed report to ATC within 24 hours',
+          'Squawk 7700',
+        ],
+        correctAnswer: 0,
+        explanation: 'Notify ATC of action taken as soon as circumstances permit.',
+      ),
+
+// Question 347
+      Question(
+        question: 'After a subsequent weighing, the weight schedule for an aircraft with a valid Certificate of Airworthiness must be kept:',
+        options: [
+          'until next subsequent weighing.',
+          'for at least thirteen months.',
+          'for at least three months.',
+          'for at least six months.',
+        ],
+        correctAnswer: 3,
+        explanation: 'Weight schedule kept for at least 6 months.',
+      ),
+
+// Question 348
+      Question(
+        question: 'If adequate QNH altimeter setting reports to enable the pilot to determine the lowest flight level which will ensure terrain clearance cannot be provided owing to the scarcity of reporting station. Then, if the highest terrain en route is 10,000 feet, the permanent safe IFR flight level is:',
+        options: [
+          'FL 110',
+          'FL 115',
+          'FL 120',
+          'FL 125',
+        ],
+        correctAnswer: 0,
+        explanation: 'Permanent safe IFR flight level is FL 110.',
+      ),
+
+// Question 349
+      Question(
+        question: 'Within how many days after deviation from rules of the air for the purpose of avoiding immediate danger should a pilot submit written particulars to the authority?',
+        options: [
+          '1 day',
+          '10 days',
+          '2 weeks',
+          'As soon as possible',
+        ],
+        correctAnswer: 1,
+        explanation: 'Submit written particulars within 10 days.',
+      ),
+
+// Question 350
+      Question(
+        question: 'A marshaller with arms extended, palms facing inwards, then swung from the extended position inwards indicates:',
+        options: [
+          'chocks are inserted.',
+          'Insert chocks.',
+          'Chocks away.',
+          'Cut engines(s).',
+        ],
+        correctAnswer: 1,
+        explanation: 'This signal means Insert chocks.',
+      ),
+
+// Question 351
+      Question(
+        question: 'A red square with a yellow diagonal inside the signal square indicates:',
+        options: [
+          'aircraft may only land on paved areas.',
+          'landing is prohibited.',
+          'state of the manoeuvring area is poor.',
+          'due to poor surface areas, only light aircraft may use the manoeuvring area.',
+        ],
+        correctAnswer: 2,
+        explanation: 'Indicates poor state of manoeuvring area.',
+      ),
+
+// Question 352
+      Question(
+        question: 'All details dealing with filing of flight plans are shown in the:',
+        options: [
+          'Aeronautical Information Circulars',
+          'Aeronautical Information Publication',
+          'Notams',
+          'CAP 394',
+        ],
+        correctAnswer: 1,
+        explanation: 'Flight plan filing details are in AIP.',
+      ),
+
+// Question 353
+      Question(
+        question: 'A red flare addressed to a flying aircraft means:',
+        options: [
+          'Notwithstanding any previous instructions, do not land for the time being.',
+          'Come back and land.',
+          'Give way to another aircraft and hold the circuit.',
+          'Dangerous airfield. Do not land.',
+        ],
+        correctAnswer: 0,
+        explanation: 'Red flare means do not land for the time being.',
+      ),
+
+// Question 354
+      Question(
+        question: 'In order to reduce the number of accidents as a result of propellers and tail rotor strikes of all aircraft appropriate painting is made. What color is painted to anti-icing boots or stripes?',
+        options: [
+          'Black and white',
+          'Black and red',
+          'Red and white',
+          'No painting',
+        ],
+        correctAnswer: 2,
+        explanation: 'Anti-icing boots/stripes are red and white.',
+      ),
+
+// Question 355
+      Question(
+        question: 'When flying at night and you see white navigation lights of an aircraft about 4NM ahead and whose range is decreasing, what is your flight risk with the seen aircraft?',
+        options: [
+          'A risk of collision with the aircraft ahead exists and you should turn right to overtake it',
+          'A risk of collision exists and you should turn left immediately',
+          'No risk of collision exists maintain track',
+          'Carry out a procedure turn',
+        ],
+        correctAnswer: 0,
+        explanation: 'Risk of collision exists - turn right to overtake.',
+      ),
+
+// Question 356
+      Question(
+        question: 'Flight Information Service, Alerting Services and Area Control Service within Nairobi FIR are provided by:',
+        options: [
+          'Various approach controls as appropriate',
+          'Nairobi Approach',
+          'Nairobi Area Control Centre',
+          'Mombasa Approach',
+        ],
+        correctAnswer: 2,
+        explanation: 'Provided by Nairobi Area Control Centre.',
+      ),
+
+// Question 357
+      Question(
+        question: 'A person acting as a member of the crew of an aeroplane shall not be permitted to do so, if:',
+        options: [
+          'he has consumed any alcohol within the past 8 hours.',
+          'the consumption of alcohol is a few litres.',
+          'he has alcohol smell.',
+          'None of the above',
+        ],
+        correctAnswer: 0,
+        explanation: 'Cannot act if alcohol consumed within past 8 hours.',
+      ),
+
+// Question 358
+      Question(
+        question: 'Which United Nations body is responsible for civil aviation matters?',
+        options: [
+          'ICAO',
+          'IATA',
+          'IFATCA',
+          'AFRASCO',
+        ],
+        correctAnswer: 0,
+        explanation: 'ICAO is the UN body for civil aviation.',
+      ),
+
+// Question 359
+      Question(
+        question: 'After a subsequent weighing, the weight schedule for an aircraft with a valid Certificate of Airworthiness must be kept:',
+        options: [
+          'until next subsequent weighing.',
+          'for at least thirteen months.',
+          'for at least three months.',
+          'for at least six months.',
+        ],
+        correctAnswer: 3,
+        explanation: 'Kept for at least 6 months.',
+      ),
+
+// Question 360
+      Question(
+        question: 'A white dumbbell with black stripes across each disc at right angles to the shaft indicates:',
+        options: [
+          'all movements are confined to paved surfaces.',
+          'take-offs may be made on grass areas, but landings are confined to paved surfaces.',
+          'take-off and landings only is confined to paved areas.',
+          'aircraft may take-off and land on the grass if they can.',
+        ],
+        correctAnswer: 0,
+        explanation: 'All movements confined to paved surfaces.',
+      ),
+
+// Question 361
+      Question(
+        question: 'An OCA is referenced to:',
+        options: [
+          'the mean sea level',
+          'the Aerodrome Reference Point',
+          'the relevant Runway Threshold',
+          'an Aerodrome Elevation',
+        ],
+        correctAnswer: 0,
+        explanation: 'OCA is referenced to mean sea level.',
+      ),
+
+// Question 362
+      Question(
+        question: 'Except in emergency, operation into a Kenya Wildlife Service licensed or registered aerodrome is:',
+        options: [
+          'open to any aircraft any time during notified hours of operation.',
+          'allowed only with prior permission from the Kenya Civil Aviation Authority.',
+          'allowed only with prior permission from Kenya Airports Authority.',
+          'allowed only with prior permission from Kenya Wildlife Service.',
+        ],
+        correctAnswer: 3,
+        explanation: 'Prior Kenya Wildlife Service permission required.',
+      ),
+
+// Question 363
+      Question(
+        question: 'Following a forced landing, you require medical assistance. To aid SAR, the visual signal to lay out will be in the shape of letter:',
+        options: [
+          'S',
+          'V',
+          'W',
+          'X',
+        ],
+        correctAnswer: 3,
+        explanation: 'X indicates medical assistance required.',
+      ),
+
+// Question 364
+      Question(
+        question: 'A marshaller with arms extended, palms facing inwards, then swung from the extended position inwards indicates:',
+        options: [
+          'chocks are inserted.',
+          'Insert chocks.',
+          'Chocks away.',
+          'Cut engines(s).',
+        ],
+        correctAnswer: 1,
+        explanation: 'Means Insert chocks.',
+      ),
+
+// Question 365
+      Question(
+        question: 'Unless otherwise authorized, all VFR flights within the Nairobi FIR must squawk on mode A/3 code:',
+        options: [
+          '2000',
+          '2077',
+          '7600',
+          '7700',
+        ],
+        correctAnswer: 0,
+        explanation: 'VFR flights squawk 2000.',
+      ),
+
+// Question 366
+      Question(
+        question: 'When overflying an aerodrome signal area and you see two red balls on a mast, what does this mean?',
+        options: [
+          'Balloon activities are in progress.',
+          'Gliding is taking place.',
+          'Take-off and landing directions do not necessarily coincide.',
+          'Aircraft may move on the manoeuvring area only with the permission of ATC.',
+        ],
+        correctAnswer: 1,
+        explanation: 'Two red balls indicate gliding is taking place.',
+      ),
+
+// Question 367
+      Question(
+        question: 'A red square with a yellow diagonal inside the signal square indicates:',
+        options: [
+          'aircraft may only land on paved areas.',
+          'landing is prohibited.',
+          'state of the manoeuvring area is poor.',
+          'due to poor surface areas, only light aircraft may use the manoeuvring area.',
+        ],
+        correctAnswer: 2,
+        explanation: 'Indicates poor state of manoeuvring area.',
+      ),
+
+// Question 368
+      Question(
+        question: 'Other than for a flight radio telephony operator\'s licence, the licence of any holder who suffers any illness involving incapacity to undertake the functions of that licence shall be rendered suspended:',
+        options: [
+          'immediately the holder starts to suffer the illness',
+          'if the illness persist for 20 days continuously',
+          'the illness persists for 28 days continuously',
+          'if the illness persists for a continuous period of six months',
+        ],
+        correctAnswer: 3,
+        explanation: 'Suspended if illness persists for 6 months.',
+      ),
+
+// Question 369
+      Question(
+        question: 'A manoeuvre in which a turn is made away from a designated track followed by a turn in the opposite direction to permit the aircraft to intercept and proceed along the reciprocal of the designated track:',
+        options: [
+          'Procedure turn',
+          'Base turn',
+          'Race track',
+          'Reversal procedure',
+        ],
+        correctAnswer: 0,
+        explanation: 'This describes a Procedure turn.',
+      ),
+
+// Question 370
+      Question(
+        question: 'An entry in a license specifying a privilege or limiting the effect of a privilege is referred to as:',
+        options: [
+          'an endorsement',
+          'a rating',
+          'a limitation',
+          'a notification',
+        ],
+        correctAnswer: 0,
+        explanation: 'Called an endorsement.',
+      ),
+
+// Question 371
+      Question(
+        question: 'One of the conditions to descent below the MDA on a circling approach is:',
+        options: [
+          'The required visual references have been established and can be maintained.',
+          'The landing runway and an alternative landing possibility (runway) are in sight.',
+          'The horizontal Visibility is at least 5NM and the Ceiling is 1500ft or higher.',
+          'The Ceiling is 1500ft or higher.',
+        ],
+        correctAnswer: 0,
+        explanation: 'Required visual references established and maintained.',
+      ),
+
+// Question 372
+      Question(
+        question: 'You have received instructions to hold over a radio fix. The published procedure is: All turns to the right, 1 minute outbound, inbound Magnetic Track 052°. You are approaching the fix on Magnetic Track 232°. Select the appropriate entry procedure:',
+        options: [
+          'either offset or parallel.',
+          'offset only.',
+          'parallel or direct.',
+          'direct',
+        ],
+        correctAnswer: 0,
+        explanation: 'Either offset or parallel entry.',
+      ),
+
+// Question 373
+      Question(
+        question: 'Requests for weather forecasts should be made at least?',
+        options: [
+          '2 hours before flight',
+          '3 hours before flight',
+          '6 hours before flight',
+          '12 hours before flight',
+        ],
+        correctAnswer: 1,
+        explanation: 'Requests at least 3 hours before flight.',
+      ),
+
+// Question 374
+      Question(
+        question: 'Cross country flight means any flight during the course of which the aircraft is more than:',
+        options: [
+          '10NM from the aerodromes of departure',
+          '20NM from the aerodromes of departure',
+          '30NM from the aerodromes of departure',
+          '40NM from alternate aerodrome',
+        ],
+        correctAnswer: 1,
+        explanation: 'More than 20NM from departure aerodrome.',
+      ),
+
+// Question 375
+      Question(
+        question: 'If you are below 40 years of age, what is the validity of your ATPL licence?',
+        options: [
+          '2.5 years',
+          '2 years',
+          '1 year',
+          '6 months',
+        ],
+        correctAnswer: 1,
+        explanation: 'ATPL validity under 40 is 2 years.',
+      ),
+
+// Question 376
+      Question(
+        question: 'A red square panel with a yellow strip along each diagonal displayed in the signal square area of an aerodrome, indicates:',
+        options: [
+          'Landing is prohibited',
+          'Exercise special care when landing',
+          'Normal safety services are not available',
+          'All of the responses',
+        ],
+        correctAnswer: 1,
+        explanation: 'Exercise special care when landing.',
+      ),
+
+// Question 377
+      Question(
+        question: 'On flights in accordance with IFR, the change of the altimeter setting from QNH to Standard shall be made at the:',
+        options: [
+          'transition altitude',
+          'transition layer',
+          'transition level',
+          'level specified by ATC',
+        ],
+        correctAnswer: 0,
+        explanation: 'At transition altitude.',
+      ),
+
+// Question 378
+      Question(
+        question: 'The outbound time in a holding pattern at 14000ft or below in still air conditions is:',
+        options: [
+          '1 minute',
+          '2 minutes',
+          '1.5 minutes',
+          '30 seconds',
+        ],
+        correctAnswer: 0,
+        explanation: '1 minute outbound time.',
+      ),
+
+// Question 379
+      Question(
+        question: 'Which part of the AIP contains a brief description of areas and/or routes for which meteorological service is provided?',
+        options: [
+          'GEN',
+          'ENR',
+          'MET',
+          'AD',
+        ],
+        correctAnswer: 1,
+        explanation: 'ENR contains meteorological service descriptions.',
+      ),
+
+// Question 380
+      Question(
+        question: 'A continuous red light directed at an aircraft on the ground means the aircraft:',
+        options: [
+          'must stop.',
+          'must return to the parking area.',
+          'must clear the manoeuvring area.',
+          'may continue to hold, but must not move.',
+        ],
+        correctAnswer: 0,
+        explanation: 'Must stop.',
+      ),
+
+// Question 381
+      Question(
+        question: 'An airship is classified as a:',
+        options: [
+          'Heavier than air aircraft',
+          'Mechanically driven aircraft',
+          'Lighter than air aircraft',
+          'Both mechanically driven aircraft and lighter than air aircraft',
+        ],
+        correctAnswer: 3,
+        explanation: 'Both mechanically driven and lighter than air.',
+      ),
+
+// Question 382
+      Question(
+        question: 'A pilot experiencing a two-way radio communication failure may continue the flight in accordance with the current flight plan, arrange to arrive over the holding point as close as possible to ETA, transmit blind, commence descent at or as close as possible to EAT and land within ______ of the time the descent should have started:',
+        options: [
+          '10 minutes',
+          '30 minutes',
+          '60 minutes',
+          '45 minutes',
+        ],
+        correctAnswer: 1,
+        explanation: 'Land within 30 minutes.',
+      ),
+
+// Question 383
+      Question(
+        question: 'Which part of the AIP gives detailed information about refuelling facilities and the fuel grades available?',
+        options: [
+          'AD',
+          'ENR',
+          'GEN',
+          'FAL',
+        ],
+        correctAnswer: 0,
+        explanation: 'AD (Aerodromes) contains refuelling info.',
+      ),
+
+// Question 384
+      Question(
+        question: 'Which of the following signals is not found in the signal area?',
+        options: [
+          'White dumb-bell',
+          'Red and yellow stripped arrow',
+          'A white letter H',
+          'Blue dumb-bell',
+        ],
+        correctAnswer: 3,
+        explanation: 'Blue dumb-bell not found in signal area.',
+      ),
+
+// Question 385
+      Question(
+        question: 'In the event of a missed approach: Land at the aerodrome of destination if this can be achieved within ________ of the time descent from the holding point should have started:',
+        options: [
+          '10 minutes',
+          '15 minutes',
+          '30 minutes',
+          '45 minutes',
+        ],
+        correctAnswer: 2,
+        explanation: 'Within 30 minutes.',
+      ),
+
+// Question 386
+      Question(
+        question: 'The anti-collision light is required to:',
+        options: [
+          'Indicate the relative path of the aircraft to the observer.',
+          'Indicate the extremities of the structure.',
+          'Indicate that the engine is running.',
+          'Indicate that the aircraft is ready to move.',
+        ],
+        correctAnswer: 0,
+        explanation: 'Indicates relative path to observer.',
+      ),
+
+// Question 387
+      Question(
+        question: 'Which part of the AIP contains information relating to existing prohibited, restricted and danger areas?',
+        options: [
+          'ENR',
+          'GEN',
+          'AD',
+          'The AIP does not contain this information',
+        ],
+        correctAnswer: 0,
+        explanation: 'ENR contains prohibited/restricted/danger areas.',
+      ),
+
+// Question 388
+      Question(
+        question: 'A person acting as a member of the crew of an aeroplane shall not be permitted to do so, if:',
+        options: [
+          'he/she has consumed any alcohol within the past 8 hours.',
+          'he/she has consumed any alcohol within the past 5 hours.',
+          'the consumption of alcohol has impaired his/her ability to so act.',
+          'she/he has any smell of alcohol on breath.',
+        ],
+        correctAnswer: 2,
+        explanation: 'If alcohol impairs ability to act.',
+      ),
+
+// Question 389
+      Question(
+        question: 'A controlled airspace extending upwards from a specified limit above the earth is referred to as:',
+        options: [
+          'Control zone',
+          'Traffic zone',
+          'Control area',
+          'All the above',
+        ],
+        correctAnswer: 2,
+        explanation: 'Control area.',
+      ),
+
+// Question 390
+      Question(
+        question: 'A notice containing information concerning flight safety, air navigation, technical, administration or legislative matters and originated at the AIS of a state is called:',
+        options: [
+          'Aeronautical Information Circular (AIC)',
+          'Aeronautical Information Publication',
+          'NOTAM',
+          'AIRAC',
+        ],
+        correctAnswer: 0,
+        explanation: 'Aeronautical Information Circular (AIC).',
+      ),
+
+// Question 391
+      Question(
+        question: 'An aerodrome traffic zone extends to 2,000ft above aerodrome level and within a distance of:',
+        options: [
+          '3 nautical miles of its boundaries',
+          '3 nautical miles from the centre of the aerodrome',
+          '3000 yards of its boundaries',
+          '4 nautical miles final to land',
+        ],
+        correctAnswer: 1,
+        explanation: '3 nautical miles from centre of aerodrome.',
+      ),
+
+// Question 392
+      Question(
+        question: 'What light should be directed to an aircraft on ground from an aerodrome to indicate "you may move clear of the maneuvering area"?',
+        options: [
+          'Continuous green light',
+          'Continuous white light',
+          'White flashes',
+          'Green flashes',
+        ],
+        correctAnswer: 1,
+        explanation: 'Continuous white light.',
+      ),
+
+// Question 393
+      Question(
+        question: 'The organization responsible for the licensing aerodromes in Kenya is:',
+        options: [
+          'Kenya Civil Aviation Authority',
+          'Kenya Airports Authority',
+          'Kenya Police',
+          'Kenya Wildlife Services',
+        ],
+        correctAnswer: 0,
+        explanation: 'Kenya Civil Aviation Authority.',
+      ),
+
+// Question 394
+      Question(
+        question: 'Each contracting state shall provide an Aeronautical Information Service (AIS) in its territory and for areas in which the state is responsible for the Air Traffic Services outside its territory, and this shall include the preparation and origination of:',
+        options: [
+          'Integrated Aeronautical Information Package',
+          'Only AIP and NOTAMs',
+          'AIP, NOTAMs, Circular and AIRAC',
+          'Only NOTAMs and AIP',
+        ],
+        correctAnswer: 0,
+        explanation: 'Integrated Aeronautical Information Package.',
+      ),
+
+// Question 395
+      Question(
+        question: 'After a subsequent weighing, the weight schedule for an aircraft with a valid Certificate of Airworthiness must be kept:',
+        options: [
+          'until next subsequent weighing.',
+          'for at least thirteen months.',
+          'for at least three months.',
+          'for at least six months.',
+        ],
+        correctAnswer: 3,
+        explanation: 'For at least six months.',
+      ),
+
+// Question 396
+      Question(
+        question: 'Except when no doubt exists as to the safety of the aircraft and its occupants, the ATC Rescue Coordination Center will be notified immediately any report which has been received that an aircraft is considered to be in a state of emergency if no communication has been received from an aircraft within a period of ________ after the time a communication should have been received or from the time unsuccessful attempt to establish communication with such aircraft was first made; or when an aircraft fails to arrive within _________ of the ETA last notified to, or estimated by ATS units, whichever is later:',
+        options: [
+          '15 minutes/30 minutes',
+          '30 minutes/30 minutes',
+          '30 minutes/45 minutes',
+          '45 minutes/60 minutes',
+        ],
+        correctAnswer: 1,
+        explanation: '30 minutes/30 minutes.',
+      ),
+
+// Question 397
+      Question(
+        question: '"Instrument runways" are the following runways intended for the operation of aircraft using instrument approach procedures:',
+        options: [
+          'Non precision approach runways, precision approach runways category I, II and III.',
+          'Precision approach runways category I, II and III.',
+          'Instrument approach runways, precision approach runways category I, II and III.',
+          'Precision approach runways in general.',
+        ],
+        correctAnswer: 0,
+        explanation: 'Non precision and precision approach runways Cat I, II, III.',
+      ),
+
+// Question 398
+      Question(
+        question: 'If an aircraft is maintaining FL 330, the minimum vertical separation of aircraft above it will be at:',
+        options: [
+          'FL 350',
+          'FL 340',
+          'FL 370',
+          'FL 360',
+        ],
+        correctAnswer: 0,
+        explanation: 'Minimum separation above FL 330 is FL 350 (2000ft).',
+      ),
+
+// Question 399
+      Question(
+        question: 'A notice providing information on Rules of the Air, Air Traffic Services and Air Navigation Procedures and distributed in advance of its effective date is:',
+        options: [
+          'An AIRAC',
+          'A NOTAM',
+          'RAC',
+          'An ATS NOTAM',
+        ],
+        correctAnswer: 0,
+        explanation: 'An AIRAC.',
+      ),
+
+// Question 400
+      Question(
+        question: 'An aircraft entering the Nairobi FIR from a neighboring FIR on an IFR flight and not yet assigned a squawk:',
+        options: [
+          'shall operate transponder on Mode A/3 code 2000.',
+          'shall set transponder on Mode A/3 code 2077.',
+          'shall set transponder on Mode A/3 code 7600.',
+          'endeavour as much as practically possible to obtain code assigned immediately upon entering.',
+        ],
+        correctAnswer: 0,
+        explanation: 'Shall squawk 2000.',
+      ),
     ];
   }
 }
