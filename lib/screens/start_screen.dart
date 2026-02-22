@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
-import 'airlaw_screen.dart';
-import 'principles_of_flight_screen.dart';
-import 'general_navigation_screen.dart';
-import 'agk_screen.dart';
-import 'instrumentation_screen.dart';
-import 'mass_balance_screen.dart';
-import 'performance_screen.dart';
-import 'flight_planning_screen.dart';
-import 'human_performance_screen.dart';
-import 'meteorology_screen.dart';
-import 'operational_procedures_screen.dart';
+import 'quiz_screen.dart';
+import '../data/questions/air_law_questions.dart';
+import '../data/questions/principles_of_flight_questions.dart';
+import '../data/questions/general_navigation_questions.dart';
+import '../data/questions/agk_questions.dart';
+import '../data/questions/instrumentation_questions.dart';
+import '../data/questions/mass_balance_questions.dart';
+import '../data/questions/performance_questions.dart';
+import '../data/questions/flight_planning_questions.dart';
+import '../data/questions/human_performance_questions.dart';
+import '../data/questions/meteorology_questions.dart';
+import '../data/questions/operational_procedures_questions.dart';
 
 class StartScreen extends StatelessWidget {
   const StartScreen({super.key});
@@ -427,34 +428,34 @@ class StartScreen extends StatelessWidget {
                   onPressed: () {
                     Navigator.pop(context);
 
-                    if (subject.startsWith('010')) {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const AirLawScreen()));
-                    } else if (subject.startsWith('021')) {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const AgkScreen()));
-                    } else if (subject.startsWith('022')) {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const InstrumentationScreen()));
-                    } else if (subject.startsWith('031')) {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const MassBalanceScreen()));
-                    } else if (subject.startsWith('032')) {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const PerformanceScreen()));
-                    } else if (subject.startsWith('033')) {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const FlightPlanningScreen()));
-                    } else if (subject.startsWith('040')) {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const HumanPerformanceScreen()));
-                    } else if (subject.startsWith('050')) {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const MeteorologyScreen()));
-                    } else if (subject.startsWith('061')) {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const GeneralNavigationScreen()));
-                    } else if (subject.startsWith('071')) {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const OperationalProceduresScreen()));
-                    } else if (subject.startsWith('081')) {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const PrinciplesOfFlightScreen()));
-                    } else {
-                      // Other subjects (to be implemented)
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text('$subjectTitle coming soon!'),
+                    final questionMap = {
+                      '010': AirLawQuestions.getQuestions(),
+                      '021': AgkQuestions.getQuestions(),
+                      '022': InstrumentationQuestions.getQuestions(),
+                      '031': MassBalanceQuestions.getQuestions(),
+                      '032': PerformanceQuestions.getQuestions(),
+                      '033': FlightPlanningQuestions.getQuestions(),
+                      '040': HumanPerformanceQuestions.getQuestions(),
+                      '050': MeteorologyQuestions.getQuestions(),
+                      '061': GeneralNavigationQuestions.getQuestions(),
+                      '071': OperationalProceduresQuestions.getQuestions(),
+                      '081': PrinciplesOfFlightQuestions.getQuestions(),
+                    };
+
+                    final questions = questionMap[subjectCode];
+                    if (questions != null) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => QuizScreen(
+                            title: subjectTitle,
+                            questions: questions,
+                          ),
                         ),
+                      );
+                    } else {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text('$subjectTitle coming soon!')),
                       );
                     }
                   },

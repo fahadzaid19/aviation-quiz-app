@@ -1,44 +1,48 @@
 import 'package:flutter/material.dart';
 import '../data/models/question_model.dart';
-import '../data/questions/air_law_questions.dart';
+import '../widgets/question_text_widget.dart';
 
-class AirLawScreen extends StatefulWidget {
-  const AirLawScreen({super.key});
+class QuizScreen extends StatefulWidget {
+  final String title;
+  final List<Question> questions;
+
+  const QuizScreen({
+    super.key,
+    required this.title,
+    required this.questions,
+  });
 
   @override
-  State<AirLawScreen> createState() => _AirLawScreenState();
+  State<QuizScreen> createState() => _QuizScreenState();
 }
 
-class _AirLawScreenState extends State<AirLawScreen> {
-  // Use the questions from the separate file
-  List<Question> questions = AirLawQuestions.getQuestions();
+class _QuizScreenState extends State<QuizScreen> {
+  late List<Question> questions;
 
   int currentQuestionIndex = 0;
   int? selectedAnswer;
   bool showResult = false;
 
-  // Shuffle questions AND their answers
-  void _shuffleQuestions() {
-    setState(() {
-      // Shuffle the question order
-      questions.shuffle();
+  @override
+  void initState() {
+    super.initState();
+    // Copy the list so we don't mutate the original
+    questions = List<Question>.from(widget.questions);
+    // Only shuffle the answer options, not the question order
+    for (var question in questions) {
+      question.shuffleOptions();
+    }
+  }
 
-      // Shuffle options for each question
+  void _resetQuiz() {
+    setState(() {
       for (var question in questions) {
         question.shuffleOptions();
       }
-
-      // Reset to first question
       currentQuestionIndex = 0;
       selectedAnswer = null;
       showResult = false;
     });
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    _shuffleQuestions(); // Shuffle questions when screen loads
   }
 
   void goToPreviousQuestion() {
@@ -52,59 +56,45 @@ class _AirLawScreenState extends State<AirLawScreen> {
   }
 
   void goToNextQuestion() {
-    setState(() {
-      if (currentQuestionIndex < questions.length - 1) {
+    if (currentQuestionIndex < questions.length - 1) {
+      setState(() {
         currentQuestionIndex++;
         selectedAnswer = null;
         showResult = false;
-      } else {
-        // Show completion dialog when on last question
-        showDialog(
-          context: context,
-          builder: (context) => AlertDialog(
-            backgroundColor: const Color(0xFF1A365D),
-            title: const Text(
-              'Study Complete!',
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            content: Text(
-              'You have completed all ${questions.length} Air Law questions.\n\nWould you like to review again?',
-              style: const TextStyle(
-                color: Colors.white70,
-              ),
-            ),
-            actions: [
-              TextButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                  Navigator.pop(context);
-                },
-                child: const Text(
-                  'Back to Subjects',
-                  style: TextStyle(color: Colors.blue),
-                ),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                  _shuffleQuestions(); // Shuffle again when reviewing
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF3B82F6),
-                ),
-                child: const Text(
-                  'Review Again',
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-            ],
+      });
+    } else {
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          backgroundColor: const Color(0xFF1A365D),
+          title: const Text(
+            'Study Complete!',
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
           ),
-        );
-      }
-    });
+          content: Text(
+            'You have completed all ${questions.length} ${widget.title} questions.\n\nWould you like to review again?',
+            style: const TextStyle(color: Colors.white70),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context);
+                Navigator.pop(context);
+              },
+              child: const Text('Back to Subjects', style: TextStyle(color: Colors.blue)),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context);
+                _resetQuiz();
+              },
+              style: ElevatedButton.styleFrom(backgroundColor: const Color(0xFF3B82F6)),
+              child: const Text('Review Again', style: TextStyle(color: Colors.white)),
+            ),
+          ],
+        ),
+      );
+    }
   }
 
   void checkAnswer(int selectedIndex) {
@@ -117,15 +107,15 @@ class _AirLawScreenState extends State<AirLawScreen> {
   @override
   Widget build(BuildContext context) {
     final currentQuestion = questions[currentQuestionIndex];
-    final isCorrect = selectedAnswer == currentQuestion.shuffledCorrectIndex; // CHANGED
+    final isCorrect = selectedAnswer == currentQuestion.shuffledCorrectIndex;
 
     return Scaffold(
       backgroundColor: const Color(0xFF0A1F44),
       appBar: AppBar(
         backgroundColor: const Color(0xFF001F3F),
-        title: const Text(
-          'Air Law - Study Mode',
-          style: TextStyle(
+        title: Text(
+          '${widget.title} - Study Mode',
+          style: const TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.w600,
             color: Colors.white,
@@ -136,15 +126,6 @@ class _AirLawScreenState extends State<AirLawScreen> {
           onPressed: () => Navigator.pop(context),
         ),
         actions: [
-          // Optional: Add a visible shuffle button if you want
-          /*
-          IconButton(
-            icon: const Icon(Icons.shuffle, color: Colors.white),
-            onPressed: _shuffleQuestions,
-            tooltip: 'Shuffle Questions',
-          ),
-          const SizedBox(width: 8),
-          */
           Padding(
             padding: const EdgeInsets.only(right: 16),
             child: Text(
@@ -164,7 +145,7 @@ class _AirLawScreenState extends State<AirLawScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              // Question Card with Result Indicator
+              // Question Card
               Container(
                 padding: const EdgeInsets.all(20),
                 decoration: BoxDecoration(
@@ -172,9 +153,7 @@ class _AirLawScreenState extends State<AirLawScreen> {
                   borderRadius: BorderRadius.circular(12),
                   border: Border.all(
                     color: showResult
-                        ? (isCorrect
-                        ? const Color(0xFF10B981)
-                        : const Color(0xFFEF4444))
+                        ? (isCorrect ? const Color(0xFF10B981) : const Color(0xFFEF4444))
                         : Colors.white.withOpacity(0.1),
                     width: showResult ? 2 : 1,
                   ),
@@ -202,20 +181,14 @@ class _AirLawScreenState extends State<AirLawScreen> {
                         ),
                         if (showResult)
                           Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 12,
-                              vertical: 6,
-                            ),
+                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                             decoration: BoxDecoration(
                               color: isCorrect
                                   ? const Color(0xFF10B981).withOpacity(0.2)
                                   : const Color(0xFFEF4444).withOpacity(0.2),
                               borderRadius: BorderRadius.circular(20),
                               border: Border.all(
-                                color: isCorrect
-                                    ? const Color(0xFF10B981)
-                                    : const Color(0xFFEF4444),
-                                width: 1,
+                                color: isCorrect ? const Color(0xFF10B981) : const Color(0xFFEF4444),
                               ),
                             ),
                             child: Row(
@@ -223,9 +196,7 @@ class _AirLawScreenState extends State<AirLawScreen> {
                                 Icon(
                                   isCorrect ? Icons.check : Icons.close,
                                   size: 16,
-                                  color: isCorrect
-                                      ? const Color(0xFF10B981)
-                                      : const Color(0xFFEF4444),
+                                  color: isCorrect ? const Color(0xFF10B981) : const Color(0xFFEF4444),
                                 ),
                                 const SizedBox(width: 6),
                                 Text(
@@ -233,9 +204,7 @@ class _AirLawScreenState extends State<AirLawScreen> {
                                   style: TextStyle(
                                     fontSize: 12,
                                     fontWeight: FontWeight.bold,
-                                    color: isCorrect
-                                        ? const Color(0xFF10B981)
-                                        : const Color(0xFFEF4444),
+                                    color: isCorrect ? const Color(0xFF10B981) : const Color(0xFFEF4444),
                                   ),
                                 ),
                               ],
@@ -244,35 +213,27 @@ class _AirLawScreenState extends State<AirLawScreen> {
                       ],
                     ),
                     const SizedBox(height: 12),
-                    Text(
-                      currentQuestion.question,
-                      style: const TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.white,
-                        height: 1.4,
-                      ),
-                    ),
+                    QuestionTextWidget(questionText: currentQuestion.question),
                   ],
                 ),
               ),
 
               const SizedBox(height: 24),
 
-              // Options - USING SHUFFLED OPTIONS
+              // Answer Options
               Expanded(
                 child: ListView.separated(
                   physics: const BouncingScrollPhysics(),
-                  itemCount: currentQuestion.shuffledOptions.length, // CHANGED
+                  itemCount: currentQuestion.shuffledOptions.length,
                   separatorBuilder: (context, index) => const SizedBox(height: 12),
                   itemBuilder: (context, index) {
-                    final option = currentQuestion.shuffledOptions[index]; // CHANGED
+                    final option = currentQuestion.shuffledOptions[index];
                     final isSelected = selectedAnswer == index;
-                    final isCorrectOption = index == currentQuestion.shuffledCorrectIndex; // CHANGED
+                    final isCorrectOption = index == currentQuestion.shuffledCorrectIndex;
 
                     Color backgroundColor = const Color(0xFF1A365D);
                     Color borderColor = Colors.white.withOpacity(0.1);
-                    Color textColor = Colors.white;
+                    const Color textColor = Colors.white;
 
                     if (isSelected && !isCorrect) {
                       backgroundColor = const Color(0xFFEF4444).withOpacity(0.2);
@@ -286,16 +247,13 @@ class _AirLawScreenState extends State<AirLawScreen> {
                     }
 
                     return GestureDetector(
-                      onTap: () => checkAnswer(index),
+                      onTap: showResult ? null : () => checkAnswer(index),
                       child: Container(
                         padding: const EdgeInsets.all(16),
                         decoration: BoxDecoration(
                           color: backgroundColor,
                           borderRadius: BorderRadius.circular(12),
-                          border: Border.all(
-                            color: borderColor,
-                            width: 1.5,
-                          ),
+                          border: Border.all(color: borderColor, width: 1.5),
                         ),
                         child: Row(
                           children: [
@@ -325,7 +283,7 @@ class _AirLawScreenState extends State<AirLawScreen> {
                             Expanded(
                               child: Text(
                                 option,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 16,
                                   color: textColor,
                                   fontWeight: FontWeight.w500,
@@ -346,10 +304,9 @@ class _AirLawScreenState extends State<AirLawScreen> {
 
               const SizedBox(height: 20),
 
-              // Navigation Buttons (Previous & Next)
+              // Navigation Buttons
               Row(
                 children: [
-                  // Previous Button
                   Expanded(
                     child: ElevatedButton(
                       onPressed: currentQuestionIndex > 0 ? goToPreviousQuestion : null,
@@ -357,9 +314,7 @@ class _AirLawScreenState extends State<AirLawScreen> {
                         backgroundColor: const Color(0xFF4B5563),
                         foregroundColor: Colors.white,
                         padding: const EdgeInsets.symmetric(vertical: 18),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12),
-                        ),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                         elevation: 4,
                       ),
                       child: const Row(
@@ -367,21 +322,12 @@ class _AirLawScreenState extends State<AirLawScreen> {
                         children: [
                           Icon(Icons.arrow_back, size: 20),
                           SizedBox(width: 8),
-                          Text(
-                            'Previous',
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
+                          Text('Previous', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
                         ],
                       ),
                     ),
                   ),
-
                   const SizedBox(width: 12),
-
-                  // Next Button
                   Expanded(
                     child: ElevatedButton(
                       onPressed: goToNextQuestion,
@@ -389,22 +335,15 @@ class _AirLawScreenState extends State<AirLawScreen> {
                         backgroundColor: const Color(0xFF3B82F6),
                         foregroundColor: Colors.white,
                         padding: const EdgeInsets.symmetric(vertical: 18),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12),
-                        ),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                         elevation: 4,
                       ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            currentQuestionIndex < questions.length - 1
-                                ? 'Next'
-                                : 'Finish',
-                            style: const TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w600,
-                            ),
+                            currentQuestionIndex < questions.length - 1 ? 'Next' : 'Finish',
+                            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
                           ),
                           const SizedBox(width: 8),
                           const Icon(Icons.arrow_forward, size: 20),
