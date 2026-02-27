@@ -3,6 +3,7 @@ import 'package:aviation_quiz/screens/splash_screen.dart';
 import 'package:aviation_quiz/screens/start_screen.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 

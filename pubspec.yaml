@@ -18,6 +18,14 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^5.0.0
   change_app_package_name: ^1.5.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.JPG"
+  adaptive_icon_background: "#0A1F44"
+  adaptive_icon_foreground: "assets/images/logo.JPG"
 
 flutter:
   uses-material-design: true
