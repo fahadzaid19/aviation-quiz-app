@@ -3,6 +3,7 @@ import '../models/question_model.dart';
 class AgkQuestions {
   static List<Question> getQuestions() {
     return [
+      // Question 1
       Question(
         question: 'The error in altimeter readings caused by the variation of the static pressure near the source is known as:',
         options: [
@@ -13,6 +14,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 2
       Question(
         question: 'The following figures appear on an aeroplane deviation card: FOR MAGNETIC STEER COMPASS',
         options: [
@@ -23,16 +25,18 @@ class AgkQuestions {
         ],
         correctAnswer: 1,
       ),
+      // Question 3
       Question(
-        question: 'An aeroplane heading 030? (C) in the Southern Hemisphere, turns left onto 170? (C) using a direct reading magnetic compass. The roll out of the turn should be initiated on a compass heading off:',
+        question: 'An aeroplane heading 030° (C) in the Southern Hemisphere, turns left onto 170° (C) using a direct reading magnetic compass. The roll out of the turn should be initiated on a compass heading off:',
         options: [
-          '145?',
-          '170?',
-          '195?',
-          '215?',
+          '145°',
+          '170°',
+          '195°',
+          '215°',
         ],
         correctAnswer: 2,
       ),
+      // Question 4
       Question(
         question: 'If the static source of an altimeter becomes blocked during a descent the instrument will:',
         options: [
@@ -43,8 +47,9 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 5
       Question(
-        question: 'A compass is swing using the Relative bearing method. The magnetic Bearing of a distant object is 210?(M) COMPASS HEADING RELATIVE BEARING Co-eff A, B and C are:',
+        question: 'A compass is swing using the Relative bearing method. The magnetic Bearing of a distant object is 210°(M) COMPASS HEADING RELATIVE BEARING Co-eff A, B and C are:',
         options: [
           'A = - 0.5 B = + 2 C = + 2',
           'A = + 0.5 B = + 1 C = - 2',
@@ -53,6 +58,7 @@ class AgkQuestions {
         ],
         correctAnswer: 2,
       ),
+      // Question 6
       Question(
         question: 'If the static source to an altimeter becomes blocked during a climb, the instrument will:',
         options: [
@@ -63,8 +69,9 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 7
       Question(
-        question: 'An aircraft at FL230, temperature -41?C, QNH 983 HPA, is at a true altitude of:',
+        question: 'An aircraft at FL230, temperature -41°C, QNH 983 HPA, is at a true altitude of:',
         options: [
           '21 050 feet',
           '22 200 feet',
@@ -73,16 +80,18 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 8
       Question(
         question: 'A direct reading magnetic compass shows: Co-eff A= -2, Co-eff. B = + 2 and Co-eff C = +3. The heading on which zero deviation occurs are:',
         options: [
-          '303.7? and 123.7?',
-          '056.3? and 236.3?',
-          '090.0? and 337.3?',
-          '180? and 273.3?',
+          '303.7° and 123.7°',
+          '056.3° and 236.3°',
+          '090.0° and 337.3°',
+          '180° and 273.3°',
         ],
         correctAnswer: 2,
       ),
+      // Question 9
       Question(
         question: 'While climbing to FL250, the altimeter is set correctly. On descent it is Not set to QNH 1037.8 hPa. If the aerodrome elevation is 650 FT and the altimeter is functioning properly, after landing the altimeter will indicate:',
         options: [
@@ -93,6 +102,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 10
       Question(
         question: 'The QFE at aerodrome (elevation) 1790 feet is 962 hPa and the QNH 1022 hPa. If the transition level is FL040 the physical level of the transition level above the aerodrome is approximately:',
         options: [
@@ -103,6 +113,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 11
       Question(
         question: 'The elevation of aerodrome A is 390 feet and aerodrome B 450 feet. The pilot of an aeroplane at A, sets the altimeter to read aerodrome elevation and then flies to B without resetting the altimeter. Aerodrome pressure at A on a departure was 1004 hPa. On landing at B the altimeter reads 630 feet, and assuming 1 hPa is 30 feet, the QNH is approximately:',
         options: [
@@ -113,6 +124,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 12
       Question(
         question: 'With QFE 1014 set at A (elevation 480 feet), an aircraft flies to B (QNH 1020) a distance of 780 NM. In order to have minimum clearance of 1500 ft over a hill 490 meters above sea level, 234 NM from A, the altimeter must read:',
         options: [
@@ -123,8 +135,9 @@ class AgkQuestions {
         ],
         correctAnswer: 2,
       ),
+      // Question 13
       Question(
-        question: 'A direct reading magnetic compass has coefficients A, B and C only. Deviations on 000?(C) is 0?. Deviation on 090?(C) is +3. Co-efficient C is +2. The deviation on 180?(C) is:',
+        question: 'A direct reading magnetic compass has coefficients A, B and C only. Deviations on 000°(C) is 0°. Deviation on 090°(C) is +3. Co-efficient C is +2. The deviation on 180°(C) is:',
         options: [
           '-2',
           '-4',
@@ -133,6 +146,7 @@ class AgkQuestions {
         ],
         correctAnswer: 1,
       ),
+      // Question 14
       Question(
         question: 'If an altimeter indicates 3500 FT with the actual QNH of 1004, 7 hPa set, the approximate pressure altitude is:',
         options: [
@@ -143,6 +157,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 15
       Question(
         question: 'When ambient temperature is warmer than standard at a particular aerodrome, the altimeter will indicate:',
         options: [
@@ -153,8 +168,9 @@ class AgkQuestions {
         ],
         correctAnswer: 1,
       ),
+      // Question 16
       Question(
-        question: 'A direct reading magnetic compass is affected by coefficients B and C only, which together cause a maximum deviation of 7 degrees West on heading 247?(C). The respective values of coefficients B and C are:',
+        question: 'A direct reading magnetic compass is affected by coefficients B and C only, which together cause a maximum deviation of 7 degrees West on heading 247°(C). The respective values of coefficients B and C are:',
         options: [
           'B 6.44 and C 2.73',
           'B 2.73 and C 6.44',
@@ -163,6 +179,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 17
       Question(
         question: 'If the static source to an airspeed indicator (ASI) becomes blocked during a descent the instrument will:',
         options: [
@@ -173,6 +190,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 18
       Question(
         question: 'When climbing at a constant Mach number:',
         options: [
@@ -183,8 +201,9 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 19
       Question(
-        question: 'The following figures appear on an aeroplane deviation card: FOR MAGNETIC STEER COMPASS The compass heading to steer to maintain a heading of 095?(M) is:',
+        question: 'The following figures appear on an aeroplane deviation card: FOR MAGNETIC STEER COMPASS The compass heading to steer to maintain a heading of 095°(M) is:',
         options: [
           '092',
           '094',
@@ -193,6 +212,7 @@ class AgkQuestions {
         ],
         correctAnswer: 1,
       ),
+      // Question 20
       Question(
         question: 'The reported QNH of a given station is the:',
         options: [
@@ -203,6 +223,7 @@ class AgkQuestions {
         ],
         correctAnswer: 2,
       ),
+      // Question 21
       Question(
         question: 'At a constant pressure altitude of 1 250 feet, a temperature drop from 29 C to 18 C will cause the density altitude to:',
         options: [
@@ -213,6 +234,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 22
       Question(
         question: 'The deviations of a direct reading magnetic compass effected only by coefficient B and C are, 3 E on 230 (C) and 4 W on 130 (C), therefore the deviation on heading 315 (C) is:',
         options: [
@@ -223,6 +245,7 @@ class AgkQuestions {
         ],
         correctAnswer: 1,
       ),
+      // Question 23
       Question(
         question: 'The QNH is by definition the value of the:',
         options: [
@@ -233,6 +256,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 24
       Question(
         question: 'The velocity of sound at the sea level in a standard atmosphere is:',
         options: [
@@ -243,6 +267,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 25
       Question(
         question: 'Given: Pt: total pressure Ps: static pressure Pd: dynamic pressure The altimeter is fed by:',
         options: [
@@ -253,6 +278,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 26
       Question(
         question: 'Co-eff B is negative and one third the value of Co-eff. C which is positive. The heading on which zero deviation occur are:',
         options: [
@@ -263,6 +289,7 @@ class AgkQuestions {
         ],
         correctAnswer: 2,
       ),
+      // Question 27
       Question(
         question: 'Maintaining CAS and flight level constant, a fall in ambient temperature results in:',
         options: [
@@ -273,6 +300,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 28
       Question(
         question: 'In standard atmosphere, when descending at constant CAS:',
         options: [
@@ -283,6 +311,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 29
       Question(
         question: 'A direct reading magnetic compass is affected by coefficient B and C only, which together cause a maximum deviation of 5 degrees West on heading 307 (C). The respective values of coefficients B and C are',
         options: [
@@ -293,6 +322,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 30
       Question(
         question: 'The magnetic system of a compass is suspended pendulously to counteract the effect of component:',
         options: [
@@ -303,6 +333,7 @@ class AgkQuestions {
         ],
         correctAnswer: 1,
       ),
+      // Question 31
       Question(
         question: 'A leak in the pitot total pressure line of a non-pressurized aircraft to an airspeed indicator would cause it to:',
         options: [
@@ -313,6 +344,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 32
       Question(
         question: 'Machmeter readings are subject to:',
         options: [
@@ -323,6 +355,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 33
       Question(
         question: 'In flight, a cantilever wing of an airplane containing fuel undergoes vertical loads which produce a bending moment:',
         options: [
@@ -333,6 +366,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 34
       Question(
         question: 'The trim tab:',
         options: [
@@ -343,6 +377,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 35
       Question(
         question: 'During a turn the remote indicator of a CL2 compass remains synchronised with the actual heading because:',
         options: [
@@ -353,6 +388,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 36
       Question(
         question: 'The purpose of a trim tab (device) is to:',
         options: [
@@ -363,6 +399,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 37
       Question(
         question: 'The indications on a directional gyroscope are subject to errors. The most significant are: 1- apparent wander due to earth rotation. 2- apparent wander due to change of aircraft position. 3- gimballing errors. 4- north change. 5- mechanical defects. The combination regrouping the correct statement is:',
         options: [
@@ -373,6 +410,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 38
       Question(
         question: 'The diagram shows three gyro assemblies: A, B and C. Among these gyros, -one is a roll gyro (noted 1) -one is a pitch gyro (noted 2) -one is a yaw gyro (noted 3) The correct matching of gyros and assemblies is:',
         options: [
@@ -383,6 +421,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 39
       Question(
         question: 'During a pre-flight check the following details were noted:',
         options: [
@@ -393,6 +432,7 @@ class AgkQuestions {
         ],
         correctAnswer: 2,
       ),
+      // Question 40
       Question(
         question: 'A torsion link assembly is installed on the landing gear to:',
         options: [
@@ -403,6 +443,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 41
       Question(
         question: 'In a commercial transport aircraft the landing gear operating system is usually:',
         options: [
@@ -413,6 +454,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 42
       Question(
         question: 'The value of the compressibility error of an Airspeed Indicator (ASI) will:',
         options: [
@@ -423,6 +465,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 43
       Question(
         question: 'Generally, on modern jet transport aircraft, how can the landing gear be extended if there is a complete hydraulic system failure.',
         options: [
@@ -433,8 +476,9 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 44
       Question(
-        question: 'Flying at FL 430 the OAT is -59?C. The deviation from Jet Standard Atmosphere is:',
+        question: 'Flying at FL 430 the OAT is -59°C. The deviation from Jet Standard Atmosphere is:',
         options: [
           '+12',
           '-2.5',
@@ -443,6 +487,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 45
       Question(
         question: 'If the static vent becomes blocked during a climb the machmeter will:',
         options: [
@@ -453,6 +498,7 @@ class AgkQuestions {
         ],
         correctAnswer: 2,
       ),
+      // Question 46
       Question(
         question: 'While inertial platform system is operating on board an aircraft, it is necessary to use a device with the following characteristics, in order to keep the vertical line with a pendulous system:',
         options: [
@@ -463,6 +509,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 47
       Question(
         question: 'Ambient static pressure is fed to the ASI in flight to:',
         options: [
@@ -473,6 +520,7 @@ class AgkQuestions {
         ],
         correctAnswer: 2,
       ),
+      // Question 48
       Question(
         question: 'In order to align an inertial reference system (IRS), it is required to insert the local geographical coordinates. This enables the IRS to:',
         options: [
@@ -483,6 +531,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 49
       Question(
         question: 'The Principal and Operation of the Machmeter precludes the following errors:',
         options: [
@@ -493,16 +542,18 @@ class AgkQuestions {
         ],
         correctAnswer: 2,
       ),
+      // Question 50
       Question(
-        question: 'At FL410 the temperature deviation from the Jet Standard Atmosphere is +5?C. The outside air temperature is:',
+        question: 'At FL410 the temperature deviation from the Jet Standard Atmosphere is +5°C. The outside air temperature is:',
         options: [
-          '-51.5?C',
-          '-62?C',
-          '-67?C',
-          '-77?C',
+          '-51.5°C',
+          '-62°C',
+          '-67°C',
+          '-77°C',
         ],
         correctAnswer: 1,
       ),
+      // Question 51
       Question(
         question: 'Mach No. is equal to:',
         options: [
@@ -513,6 +564,7 @@ class AgkQuestions {
         ],
         correctAnswer: 1,
       ),
+      // Question 52
       Question(
         question: 'In hydraulic systems of large modern transport category aircraft the fluids used are:',
         options: [
@@ -523,6 +575,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 53
       Question(
         question: 'The type of hydraulic oil used in modern hydraulic systems is:',
         options: [
@@ -533,6 +586,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 54
       Question(
         question: 'Cabin pressurization is controlled by the:',
         options: [
@@ -543,6 +597,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 55
       Question(
         question: 'Cabin differential pressure means the pressure difference between:',
         options: [
@@ -553,6 +608,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 56
       Question(
         question: 'Pneumatic mechanical ice protection system are mainly used for:',
         options: [
@@ -563,6 +619,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 57
       Question(
         question: 'The type of brake unit found on most transport aeroplanes is a:',
         options: [
@@ -573,6 +630,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 58
       Question(
         question: 'On modern transport aircraft, cockpit windows are protected against icing by:',
         options: [
@@ -583,6 +641,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 59
       Question(
         question: 'In flight, the most commonly used anti-icing method for the wings of modern commercial aircraft fitted with turbo-jet units is:',
         options: [
@@ -593,6 +652,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 60
       Question(
         question: 'The reason for fitting thermal plugs to aircraft wheels is that they:',
         options: [
@@ -603,6 +663,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 61
       Question(
         question: 'With regard to pneumatic mechanical devices that afford ice protection the only correct statement is:',
         options: [
@@ -613,6 +674,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 62
       Question(
         question: 'The heating facility for the windshield of an aircraft is:',
         options: [
@@ -623,6 +685,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 63
       Question(
         question: 'On a jet aircraft fuel heaters are:',
         options: [
@@ -633,6 +696,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 64
       Question(
         question: 'Thermal plugs are installed in:',
         options: [
@@ -643,6 +707,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 65
       Question(
         question: 'As altitude increases, the mixture ratio of a piston engine should be adjusted to :',
         options: [
@@ -653,6 +718,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 66
       Question(
         question: 'The radio altimeter is required to indicate zero height AGL as the main wheels touch down on the runway. For this reason, it is necessary to:',
         options: [
@@ -663,6 +729,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 67
       Question(
         question: 'When applying carburettor heating:',
         options: [
@@ -673,6 +740,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 68
       Question(
         question: 'The low-altitude radio altimeters used in precision approaches: 1 operate in the 1540-1660 MHz range. 2 are of the pulsed type. 3 are of the frequency modulation type. 4 have an operating range of 0 to 5000 ft. 5 have a precision of +/- 2 feet between 0 and 500 ft and +/- 1.5% whichever is the greatest. The combination regrouping all the correct statements is:',
         options: [
@@ -683,6 +751,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 69
       Question(
         question: 'When the pilot moves the mixture lever of a piston engine towards a lean position the:',
         options: [
@@ -693,6 +762,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 70
       Question(
         question: 'The advantages of fly-by-wire control are: The combination regrouping all the correct statements is: 1. reduction of the electric and hydraulic power required to operate the control surfaces 2. lesser sensitivity to lightning strike 3. direct and indirect weight saving through simplification of systems 4. immunity to different interfering signals 5. improvement of piloting quality throughout the flight envelope',
         options: [
@@ -703,6 +773,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 71
       Question(
         question: 'When altitude increases without adjustment of the mixture ratio, the piston engine performance is affected because of:',
         options: [
@@ -713,6 +784,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 72
       Question(
         question: 'The data supplied by a radio altimeter:',
         options: [
@@ -723,6 +795,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 73
       Question(
         question: 'If the outside temperature at 35 000 feet is -40°C, the local speed of sound is:',
         options: [
@@ -733,6 +806,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 74
       Question(
         question: 'An artificial feel unit is necessary in the pitch channel when:',
         options: [
@@ -743,6 +817,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 75
       Question(
         question: 'If one of the 12 cells of a lead-acid battery is dead, the battery:',
         options: [
@@ -753,6 +828,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 76
       Question(
         question: 'The most common extinguishing agent used in gas turbine engine fire protection system is:',
         options: [
@@ -763,6 +839,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 77
       Question(
         question: 'In order to produce an alternating voltage of 400 Hz, the number of pairs of poles required in an AC generator running at 6000 rpm is:',
         options: [
@@ -773,6 +850,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 78
       Question(
         question: 'Hydraulic fluids must have the following characteristics: The combination regrouping all the correct statements is: 1. thermal stability 2. low emulsifying characteristics 3. corrosion resistant 4. good resistance to combustion 5. high compressibility 6. high volatility 7. high viscosity',
         options: [
@@ -783,6 +861,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 79
       Question(
         question: 'An inverter is a:',
         options: [
@@ -793,6 +872,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 80
       Question(
         question: 'The main purpose of a Constant Speed Drive unit is to:',
         options: [
@@ -803,6 +883,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 81
       Question(
         question: 'Cabin pressure is controlled by:',
         options: [
@@ -813,6 +894,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 82
       Question(
         question: 'In a hydraulic braking system, an accumulator is pre-charged to 1200 psi. An electrically driven hydraulic pump is started and provides a system pressure of 3000 psi. The hydraulic pressure gauge which is connected to the gas section of the accumulator, reads:',
         options: [
@@ -823,6 +905,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 83
       Question(
         question: 'When a part of a continuous loop fire detection system is heated: The combination regrouping all the correct statements is: 1. its resistance decreases. 2. its resistance increases. 3. the leakage current increases. 4. the leakage current decreases.',
         options: [
@@ -833,6 +916,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 84
       Question(
         question: 'In a hydraulic system overheat detectors are mostly installed:',
         options: [
@@ -843,6 +927,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 85
       Question(
         question: 'When changing power on engines equipped with constant-speed propeller, engine overload is avoided by:',
         options: [
@@ -853,6 +938,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 86
       Question(
         question: 'The blade angle of a constant-speed propeller',
         options: [
@@ -863,6 +949,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 87
       Question(
         question: 'Hydraulic fluids:',
         options: [
@@ -873,6 +960,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 88
       Question(
         question: 'A propeller blade is twisted, so as to',
         options: [
@@ -883,6 +971,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 89
       Question(
         question: 'On most modern airliners the cabin pressure is controlled by regulating the:',
         options: [
@@ -893,6 +982,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 90
       Question(
         question: 'Hydraulic fluids used in systems of large modern airliners are:',
         options: [
@@ -903,6 +993,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 91
       Question(
         question: 'When increasing true airspeed with a constant engine RPM, the angle of attack of a fixed pitch propeller:',
         options: [
@@ -913,6 +1004,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 92
       Question(
         question: 'Hydraulic power is a function of:',
         options: [
@@ -923,6 +1015,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 93
       Question(
         question: 'When TAS increases, the blade angle of a constant speed propeller will (RPM and throttle levers are not moved):',
         options: [
@@ -933,6 +1026,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 94
       Question(
         question: 'Large transport aeroplane hydraulic systems usually operate with a system pressure of approximately:',
         options: [
@@ -943,6 +1037,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 95
       Question(
         question: 'The main advantage of a constant speed propeller as compared to a fixed pitch propeller is a:',
         options: [
@@ -953,6 +1048,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 96
       Question(
         question: 'In case of engine failure during flight the blades of a constant speed propeller in a single engine aeroplane, not fitted with feathering system',
         options: [
@@ -963,6 +1059,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 97
       Question(
         question: 'In a modern hydraulic system, "hydraulic fuses" can be found. Their function is:',
         options: [
@@ -973,6 +1070,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 98
       Question(
         question: 'In a hydraulic system, the reservoir is pressurized in order to:',
         options: [
@@ -983,6 +1081,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 99
       Question(
         question: 'Shuttle valves will automatically:',
         options: [
@@ -993,6 +1092,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 100
       Question(
         question: 'One of the functions of an accumulator in a hydraulic system is:',
         options: [
@@ -1003,6 +1103,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 101
       Question(
         question: 'For a given type of oil, the oil viscosity depends on the:',
         options: [
@@ -1013,6 +1114,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 102
       Question(
         question: 'If the cabin altitude rises (aircraft in level flight), the differential pressure:',
         options: [
@@ -1023,6 +1125,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 103
       Question(
         question: 'Regarding fire detection, Ion detectors are used to detect:',
         options: [
@@ -1033,6 +1136,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 104
       Question(
         question: 'The fuel supply system on a jet engine includes a fuel heating device, upstream of the main fuel filter so as to:',
         options: [
@@ -1043,6 +1147,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 105
       Question(
         question: 'The purpose of the cabin pressure controller, in the automatic mode, is to perform the following functions: The combination regrouping all the correct statements is: 1. control of cabin altitude, 2. control of cabin altitude rate-of-change, 3. limitation of differential pressure 4. balancing aircraft altitude with cabin altitude 5. cabin ventilation 6. keeping a constant differential pressure throughout all the flight phases.',
         options: [
@@ -1053,6 +1158,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 106
       Question(
         question: 'On the ground, the Auxiliary Power Unit (APU) can provide: The combination which regroups all of the correct statements is: 1. electricity 2. air for starting system 3. hydraulic pressure 4. air for air conditioning',
         options: [
@@ -1063,6 +1169,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 107
       Question(
         question: 'During a normal pressurised climb after take-off:',
         options: [
@@ -1073,6 +1180,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 108
       Question(
         question: '020-002.jpg In a pressurized aircraft whose cabin altitude is 8000 ft, a crack in a cabin window makes it necessary to reduce the differential pressure to 5 psi. The flight level to be maintained in order to keep the same cabin altitude is:',
         options: [
@@ -1083,6 +1191,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 109
       Question(
         question: 'When a landing gear wheel is hydroplaning, its friction factor is equal to:',
         options: [
@@ -1093,6 +1202,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 110
       Question(
         question: 'Main cabin temperature is:',
         options: [
@@ -1103,6 +1213,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 111
       Question(
         question: 'A thermal circuit breaker:',
         options: [
@@ -1113,6 +1224,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 112
       Question(
         question: 'The Auxiliary Power Unit (APU) has its own AC generator that:',
         options: [
@@ -1123,6 +1235,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 113
       Question(
         question: 'The purpose of cabin air flow control valves in a pressurization system is to:',
         options: [
@@ -1133,6 +1246,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 114
       Question(
         question: 'Assuming cabin differential pressure has reached the required value in normal flight conditions, if flight altitude and air conditioning system setting are maintained:',
         options: [
@@ -1143,6 +1257,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 115
       Question(
         question: 'The colour of a fresh synthetic hydraulic fluids is:',
         options: [
@@ -1153,6 +1268,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 116
       Question(
         question: 'A magnetic circuit-breaker is:',
         options: [
@@ -1163,6 +1279,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 117
       Question(
         question: 'The gyroscope of a turn indicator has: (NB: the degree(s) of freedom of a gyro does not take into account its rotor spin axis.)',
         options: [
@@ -1173,6 +1290,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 118
       Question(
         question: 'During level flight at a constant cabin pressure altitude (which could be decreased, even at this flight level), the cabin outflow valves are:',
         options: [
@@ -1183,6 +1301,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 119
       Question(
         question: 'Cabin air for a large airplane, during flight:',
         options: [
@@ -1193,6 +1312,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 120
       Question(
         question: 'The cabin pressure is regulated by the:',
         options: [
@@ -1203,6 +1323,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 121
       Question(
         question: 'The fields affecting a magnetic compass originate from: The combination regrouping all the correct statements is: 1. magnetic masses 2. ferrous metal masses 3. non ferrous metal masses 4. electrical currents',
         options: [
@@ -1213,6 +1334,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 122
       Question(
         question: 'Modern low altitude radio altimeters emit waves in the following frequency band:',
         options: [
@@ -1223,6 +1345,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 123
       Question(
         question: 'The Primary Flight Display (PFD) displays information dedicated to:',
         options: [
@@ -1233,6 +1356,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 124
       Question(
         question: 'Under normal conditions the cabin pressure altitude is not allowed to exceed:',
         options: [
@@ -1243,6 +1367,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 125
       Question(
         question: 'In jet transport aircraft, breathing oxygen for the cockpit is stored in the following state:',
         options: [
@@ -1253,6 +1378,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 126
       Question(
         question: 'On board present aircraft, the batteries used are mainly Cadmium-Nickel. Their advantages are: The combination of correct statement is: 1. low risk of thermal runaway 2. high internal resistance, hence higher power 3. good charging and discharging capability at high rating 4. wider permissible temperature range 5. good storage capability 6. sturdiness owing to its metal casing 7. the electrolyte density remains unchanged during charging.',
         options: [
@@ -1263,6 +1389,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 127
       Question(
         question: 'Cabin altitude means the:',
         options: [
@@ -1273,6 +1400,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 128
       Question(
         question: 'On a modern large pressurized transport aircraft, the maximum cabin differential pressure is approximately:',
         options: [
@@ -1283,6 +1411,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 129
       Question(
         question: 'The operating frequency range of a radio altimeter is:',
         options: [
@@ -1293,6 +1422,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 130
       Question(
         question: 'Shimmy occurs on the nose wheel landing gear during taxiing when: The combination of correct statements is: 1. the wheels tend to describe a sinusoidal motion on the ground 2. the wheels no longer respond to the pilot\'s actions This effect is overcome by means of: 3. the torque link 4. a damper associated with the steering cylinder',
         options: [
@@ -1303,6 +1433,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 131
       Question(
         question: 'If the maximum operating altitude of an airplane is limited by the pressurized cabin, this limitation is due to the maximum:',
         options: [
@@ -1313,6 +1444,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 132
       Question(
         question: 'When flying in cold air (colder than standard atmosphere), the altimeter will:',
         options: [
@@ -1323,6 +1455,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 133
       Question(
         question: 'During descent, the total pressure probe of the airspeed indicator becomes blocked. In this case: 1 - IAS becomes greater than CAS 2 - IAS becomes lower than CAS 3 - maintaining IAS constant, VMO may be exceeded 4 - maintaining IAS constant, aircraft may stall The combination regrouping all the correct statements is:',
         options: [
@@ -1333,6 +1466,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 134
       Question(
         question: 'The "cabin differential pressure" is:',
         options: [
@@ -1343,6 +1477,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 135
       Question(
         question: 'The cabin rate of descent:',
         options: [
@@ -1353,6 +1488,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 136
       Question(
         question: 'The output of a generator is controlled by:',
         options: [
@@ -1363,6 +1499,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 137
       Question(
         question: 'The rating of electrical fuses is expressed in:',
         options: [
@@ -1373,6 +1510,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 138
       Question(
         question: 'The maximum cabin differential pressure of a pressurised aeroplane operating at FL370 is approximately:',
         options: [
@@ -1383,6 +1521,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 139
       Question(
         question: 'The capacity of a battery is given in:',
         options: [
@@ -1393,6 +1532,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 140
       Question(
         question: 'In standard atmosphere, when climbing at constant CAS:',
         options: [
@@ -1403,6 +1543,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 141
       Question(
         question: 'The purpose of the pack cooling fans in the air conditioning system is to:',
         options: [
@@ -1413,6 +1554,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 142
       Question(
         question: 'The limits of the yellow scale of an airspeed indicator are:',
         options: [
@@ -1423,6 +1565,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 143
       Question(
         question: 'In flight, the cabin air for modern airplanes with jet engines is usually supplied by:',
         options: [
@@ -1433,6 +1576,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 144
       Question(
         question: 'The limits of the green scale of an airspeed indicator are:',
         options: [
@@ -1443,6 +1587,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 145
       Question(
         question: 'Cabin air for modern aircraft is usually taken from:',
         options: [
@@ -1453,6 +1598,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 146
       Question(
         question: 'In an aircraft air conditioning system the air cannot be treated for:',
         options: [
@@ -1463,6 +1609,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 147
       Question(
         question: 'The limits of the white scale of an airspeed indicator are:',
         options: [
@@ -1473,6 +1620,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 148
       Question(
         question: 'The \'slipstream effect\' of a propeller is most prominent at:',
         options: [
@@ -1483,6 +1631,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 149
       Question(
         question: 'The limit speed maximum operating (VMO) is a speed expressed as:',
         options: [
@@ -1493,6 +1642,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 150
       Question(
         question: 'Generally, for large aeroplanes, electrical heating for ice protection is used on:',
         options: [
@@ -1503,6 +1653,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 151
       Question(
         question: 'An asymmetric loading (p-factor) on the propeller exists ..',
         options: [
@@ -1513,6 +1664,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 152
       Question(
         question: 'In respect of a constant speed propeller of a twin engine aeroplane controlled by a single-acting pitch control unit:',
         options: [
@@ -1523,6 +1675,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 153
       Question(
         question: 'After an aircraft has passed through a volcanic cloud which has blocked the total pressure probe inlet of the airspeed indicator, the pilot begins a stabilized descent and finds that the indicated airspeed:',
         options: [
@@ -1533,6 +1686,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 154
       Question(
         question: 'The principle of the Mach indicator is based on the computation of the ratio:',
         options: [
@@ -1543,6 +1697,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 155
       Question(
         question: 'On most transport aircraft, the low pressure pumps of the fuel system are:',
         options: [
@@ -1553,6 +1708,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 156
       Question(
         question: 'The mach number is the:',
         options: [
@@ -1563,6 +1719,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 157
       Question(
         question: 'On most transport jet aircraft, the low pressure pumps of the fuel system are supplied with electric power of the following type:',
         options: [
@@ -1573,6 +1730,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 158
       Question(
         question: 'During a climb, the total pressure probe of the airspeed indicator becomes blocked; if the pilot maintains a constant indicated airspeed, the true airspeed:',
         options: [
@@ -1583,6 +1741,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 159
       Question(
         question: 'With constant weight and configuration, an aircraft always takes off at the same:',
         options: [
@@ -1593,6 +1752,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 160
       Question(
         question: 'The pressure usually produced by the Boost Pumps (BP) of the fuel supply system of a large jet transport airplane is within the following range:',
         options: [
@@ -1603,6 +1763,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 161
       Question(
         question: 'The indication of the directional gyro is valid only for a limited period of time. The causes of this inaccuracy are: 1 - rotation of the earth 2 - longitudinal accelerations 3 - aircraft\'s moving over the surface of the earth 4 - mechanical imperfections 5 - vertical components of the earth\'s magnetic field 6 - geometry of the gimbal system The combination regrouping all the correct statements is:',
         options: [
@@ -1613,6 +1774,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 162
       Question(
         question: 'In a gas turbine engine lubrication system, the oil to fuel heat exchanger provides:',
         options: [
@@ -1623,6 +1785,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 163
       Question(
         question: 'The artificial horizon uses a gyroscope with: (note: the degree(s) of freedom of a gyro does not take into account its rotor spin axis.)',
         options: [
@@ -1633,6 +1796,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 164
       Question(
         question: 'The fuel cross-feed system:',
         options: [
@@ -1643,6 +1807,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 165
       Question(
         question: 'The characteristics of the directional gyro used in a gyro stabilised compass system are: NB: the degree(s) of freedom of a gyro does not take into account its rotor spin axis.',
         options: [
@@ -1653,6 +1818,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 166
       Question(
         question: 'The purpose of baffles in an aeroplane\'s integral fuel tank is to:',
         options: [
@@ -1663,6 +1829,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 167
       Question(
         question: 'Calibrated Air Speed (CAS) is obtained from Indicated Air Speed (IAS) by correcting for the:',
         options: [
@@ -1673,6 +1840,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 168
       Question(
         question: 'On a transport type aircraft the fuel tank system is vented through:',
         options: [
@@ -1683,6 +1851,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 169
       Question(
         question: 'VNO is the maximum speed:',
         options: [
@@ -1693,6 +1862,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 170
       Question(
         question: 'The types of fuel tanks used on most modern transport aircraft are:',
         options: [
@@ -1703,6 +1873,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 171
       Question(
         question: 'VNE is the maximum speed:',
         options: [
@@ -1713,6 +1884,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 172
       Question(
         question: 'The purpose of baffle check valves fitted in aircraft fuel tanks is to:',
         options: [
@@ -1723,6 +1895,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 173
       Question(
         question: 'On most transport aircraft, the low pressure pumps of the fuel system are:',
         options: [
@@ -1733,6 +1906,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 174
       Question(
         question: 'VLO is the maximum:',
         options: [
@@ -1743,6 +1917,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 175
       Question(
         question: 'For take-off, the correct combination of propeller pitch (1), and propeller lever position (2) at brake release is:',
         options: [
@@ -1753,6 +1928,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 176
       Question(
         question: 'The pressurization of fuel tanks is maintained by:',
         options: [
@@ -1763,6 +1939,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 177
       Question(
         question: 'For piston engines, mixture ratio is the ratio between the:',
         options: [
@@ -1773,6 +1950,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 178
       Question(
         question: 'VLE is the maximum:',
         options: [
@@ -1783,6 +1961,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 179
       Question(
         question: 'Variations in mixture ratios for carburettors are achieved by the adjustment of:',
         options: [
@@ -1793,6 +1972,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 180
       Question(
         question: 'In a turbo compressor air conditioning system (bootstrap system), the purpose of the heat exchangers is to:',
         options: [
@@ -1803,6 +1983,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 181
       Question(
         question: 'The position error of the static vent on which the altimeter is connected varies substantially with the:',
         options: [
@@ -1813,6 +1994,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 182
       Question(
         question: 'When flying in cold air (colder than standard atmosphere), indicated altitude is:',
         options: [
@@ -1823,6 +2005,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 183
       Question(
         question: 'In a turbo compressor air conditioning system (bootstrap system), the main water separation unit is:',
         options: [
@@ -1833,6 +2016,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 184
       Question(
         question: 'When flying in warm air (warmer than standard atmosphere), indicated altitude is:',
         options: [
@@ -1843,6 +2027,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 185
       Question(
         question: 'A turbo compressor air conditioning system (bootstrap system) includes two heat exchangers; the primary exchanger (P) and the secondary exchanger (S). The functions of these heat exchangers are as follows:',
         options: [
@@ -1853,6 +2038,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 186
       Question(
         question: 'A mixture setting richer than best power has to be used during climb segments. This results in a',
         options: [
@@ -1863,6 +2049,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 187
       Question(
         question: 'Due to its conception, the altimeter measures a:',
         options: [
@@ -1873,6 +2060,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 188
       Question(
         question: 'When air is compressed for pressurization purposes, the percentage oxygen content is:',
         options: [
@@ -1883,6 +2071,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 189
       Question(
         question: 'The density altitude is:',
         options: [
@@ -1893,6 +2082,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 190
       Question(
         question: 'The pressure altitude is the altitude corresponding:',
         options: [
@@ -1903,6 +2093,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 191
       Question(
         question: 'The term "bootstrap", when used to identify a cabin air conditioning and pressurisation system, refers to the:',
         options: [
@@ -1913,6 +2104,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 192
       Question(
         question: 'In a turbo compressor air conditioning system (bootstrap system) the supply of air behind the primary heat exchanger is:',
         options: [
@@ -1923,6 +2115,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 193
       Question(
         question: 'During a deceleration phase at constant attitude, the control system of the artificial horizon results in the horizon bar indicating a',
         options: [
@@ -1933,6 +2126,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 194
       Question(
         question: 'In a cabin air conditioning system, equipped with a bootstrap, the mass air flow is routed via the:',
         options: [
@@ -1943,6 +2137,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 195
       Question(
         question: 'When an aircraft has turned 360 degrees with a constant attitude and bank, the pilot observes the following on a classic artificial horizon:',
         options: [
@@ -1953,6 +2148,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 196
       Question(
         question: 'When an aircraft has turned 90 degrees with a constant attitude and bank, the pilot observes the following on a classic artificial horizon:',
         options: [
@@ -1963,6 +2159,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 197
       Question(
         question: 'Engine bleed air used for air conditioning and pressurization in turbo-jet aeroplanes is usually taken from the:',
         options: [
@@ -1973,6 +2170,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 198
       Question(
         question: 'A gravity type erector is used in a vertical gyro device to correct errors on:',
         options: [
@@ -1983,6 +2181,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 199
       Question(
         question: 'In an air cycle machine:',
         options: [
@@ -1993,6 +2192,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 200
       Question(
         question: 'The latitude at which the apparent wander of a directional gyro is equal to 0 is:',
         options: [
@@ -2003,6 +2203,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 201
       Question(
         question: 'A piston engine compression ratio is the ratio of the:',
         options: [
@@ -2013,6 +2214,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 202
       Question(
         question: 'In large modern aircraft, in the air conditioning system, reduction of air temperature and pressure is achieved by:',
         options: [
@@ -2023,6 +2225,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 203
       Question(
         question: 'The apparent wander of a directional gyro is 15°/h:',
         options: [
@@ -2033,6 +2236,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 204
       Question(
         question: 'In a "bootstrap" cooling system, the charge air is first compressed in the cold air unit to:',
         options: [
@@ -2043,6 +2247,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 205
       Question(
         question: 'A turbo compressor air conditioning system (bootstrap system) will:',
         options: [
@@ -2053,6 +2258,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 206
       Question(
         question: 'For a directional gyro, the system which detects the local vertical supplies:',
         options: [
@@ -2063,6 +2269,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 207
       Question(
         question: 'In a directional gyro, gimballing errors are due to:',
         options: [
@@ -2073,6 +2280,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 208
       Question(
         question: 'The cabin heating supply in a heavy jet transport aircraft is obtained from:',
         options: [
@@ -2083,6 +2291,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 209
       Question(
         question: 'Under normal operating conditions, when an aircraft is in a banked turn, the rate-of-turn indicator indicates: The combination regrouping all the correct statements is: 1. the angular velocity of the aircraft about the yaw axis 2. the bank of the aircraft 3. the direction of the aircraft turn 4. the angular velocity of the aircraft about the real vertical',
         options: [
@@ -2093,6 +2302,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 210
       Question(
         question: 'The pack cooling fan provides:',
         options: [
@@ -2103,6 +2313,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 211
       Question(
         question: 'The aircraft radio equipment which emits on a frequency of 4400 MHz is the:',
         options: [
@@ -2113,6 +2324,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 212
       Question(
         question: 'The octane rating of a fuel characterises the:',
         options: [
@@ -2123,6 +2335,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 213
       Question(
         question: 'The fuel temperature, at which, under standard conditions, the vapour ignites in contact with a flame and extinguishes immediately, is the:',
         options: [
@@ -2133,6 +2346,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 214
       Question(
         question: 'Concerning electrically powered ice protection devices, the only true statement is:',
         options: [
@@ -2143,6 +2357,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 215
       Question(
         question: 'Given: - Ts the static temperature (SAT) - Tt the total temperature (TAT) - Kr the recovery coefficient - M the Mach number The total temperature can be expressed approximately by the formula:',
         options: [
@@ -2153,6 +2368,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 216
       Question(
         question: 'The elements specifically protected against icing on transport aircraft are: 1) engine air intake and pod. 2) front glass shield. 3) radome. 4) pitot tubes and waste water exhaust masts. 5) leading edge of wing. 6) cabin windows. 7) trailing edge of wings. 8) electronic equipment compartment. The combination regrouping all the correct statements is:',
         options: [
@@ -2163,6 +2379,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 217
       Question(
         question: 'The Yaw Damper system: 1 - counters any wrong pilot action on the rudder pedals; 2 - counters dutch roll; 3 - is active only when autopilot is engaged. The combination regrouping all the correct statements are:',
         options: [
@@ -2173,6 +2390,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 218
       Question(
         question: 'The damping element in a landing gear shock absorber used on large aircrafts is:',
         options: [
@@ -2183,6 +2401,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 219
       Question(
         question: 'The automatic fuelling shut off valve:',
         options: [
@@ -2193,6 +2412,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 220
       Question(
         question: 'A relay is:',
         options: [
@@ -2203,6 +2423,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 221
       Question(
         question: 'The reason for using inverters in an electrical system is ..',
         options: [
@@ -2213,6 +2434,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 222
       Question(
         question: 'During re-fuelling the automatic shut-off valves will switch off the fuel supply system when:',
         options: [
@@ -2223,6 +2445,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 223
       Question(
         question: 'The essential difference between aircraft AC alternators and DC generators (dynamos) is that the:',
         options: [
@@ -2233,6 +2456,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 224
       Question(
         question: '020-003.jpg The diagram shown in annex represents a jet fuel system. The fuel-flow measurement is carried out:',
         options: [
@@ -2243,6 +2467,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 225
       Question(
         question: 'The purpose of the barometric correction in a fuel controller is to:',
         options: [
@@ -2253,6 +2478,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 226
       Question(
         question: 'A blocked pitot head with a clear static source causes the airspeed indicator to:',
         options: [
@@ -2263,6 +2489,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 227
       Question(
         question: 'A pitot tube covered by ice which blocks the ram air inlet will affect the following instrument (s):',
         options: [
@@ -2273,6 +2500,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 228
       Question(
         question: 'The ice protection system currently used for the most modern jet aeroplanes is the',
         options: [
@@ -2283,6 +2511,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 229
       Question(
         question: 'During flight, the wing anti-ice system has to protect',
         options: [
@@ -2293,6 +2522,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 230
       Question(
         question: 'In jet aeroplanes the \'thermal anti-ice system\' is primarily supplied by',
         options: [
@@ -2303,6 +2533,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 231
       Question(
         question: 'Flight Director Information supplied by an FD computer is presented in the form of command bars on the following instrument:',
         options: [
@@ -2313,6 +2544,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 232
       Question(
         question: 'The de-icing system which is mostly used for the wings of modern turboprop aeroplanes is:',
         options: [
@@ -2323,6 +2555,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 233
       Question(
         question: 'The ice protection for propellers of modern turboprop aeroplanes works',
         options: [
@@ -2333,6 +2566,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 234
       Question(
         question: 'When the AC generators are connected in parallel, the reactive loads are balanced by means of the:',
         options: [
@@ -2343,6 +2577,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 235
       Question(
         question: 'The conditions under which you obtain the highest engine power are:',
         options: [
@@ -2353,6 +2588,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 236
       Question(
         question: 'In an AC power generation system, the Constant Speed Drive (CSD): 1 - can be disconnected from the drive shaft. 2 - can be disconnected from the generator. 3 - is a hydro-mechanical system. 4 - is an electronic system. 5 - can not be disconnected during flight. 6 - can be disconnected during flight. The combination regrouping all the correct statements is:',
         options: [
@@ -2363,6 +2599,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 237
       Question(
         question: 'The crank assembly consists of',
         options: [
@@ -2373,6 +2610,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 238
       Question(
         question: 'The ventilation system in a fuel tank:',
         options: [
@@ -2383,6 +2621,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 239
       Question(
         question: 'The fuel tanks of aircrafts must be checked for water',
         options: [
@@ -2393,6 +2632,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 240
       Question(
         question: 'The task of the primer pump is to',
         options: [
@@ -2403,6 +2643,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 241
       Question(
         question: 'When the AC generators are connected in parallel, the reactive loads are balanced by means of the:',
         options: [
@@ -2413,6 +2654,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 242
       Question(
         question: 'The power required for field excitation of the main rotor in modern constant-frequency alternators is directly controlled by:',
         options: [
@@ -2423,6 +2665,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 243
       Question(
         question: 'Viscosity is',
         options: [
@@ -2433,6 +2676,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 244
       Question(
         question: 'The alternators, when connected, are usually connected:',
         options: [
@@ -2443,6 +2687,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 245
       Question(
         question: 'Skip distance is the:',
         options: [
@@ -2453,6 +2698,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 246
       Question(
         question: 'In a four-stroke piston engine, the only "driving" stroke is:',
         options: [
@@ -2463,6 +2709,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 247
       Question(
         question: 'Alternating current can be derived from direct current by:',
         options: [
@@ -2473,6 +2720,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 248
       Question(
         question: 'On an aircraft, the Krueger flap is a:',
         options: [
@@ -2483,6 +2731,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 249
       Question(
         question: 'In a pressurized transport aircraft, the protective breathing equipment:',
         options: [
@@ -2493,6 +2742,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 250
       Question(
         question: 'When quick donning masks are in use, the pilot is:',
         options: [
@@ -2503,6 +2753,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 251
       Question(
         question: 'VFE is the maximum speed:',
         options: [
@@ -2513,6 +2764,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 252
       Question(
         question: 'A fault protection circuit in a fire detection system will:',
         options: [
@@ -2523,6 +2775,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 253
       Question(
         question: 'During deceleration following a landing in an easterly direction, a magnetic compass made for the northern hemisphere indicates:',
         options: [
@@ -2533,6 +2786,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 254
       Question(
         question: 'In a fire detection system with single-loop continuous components (with no fault protection), if the line is accidentally grounded:',
         options: [
@@ -2543,6 +2797,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 255
       Question(
         question: 'During deceleration following a landing in a northerly direction, a magnetic compass made for the southern hemisphere indicates:',
         options: [
@@ -2553,6 +2808,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 256
       Question(
         question: 'During deceleration following a landing in a southerly direction, a magnetic compass made for the northern hemisphere indicates:',
         options: [
@@ -2563,6 +2819,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 257
       Question(
         question: 'When a continuous loop wire type fire detection system is tested:',
         options: [
@@ -2573,6 +2830,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 258
       Question(
         question: 'What is breathed in when using a passenger oxygen mask?',
         options: [
@@ -2583,6 +2841,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 259
       Question(
         question: 'During deceleration following a landing in a westerly direction, a magnetic compass made for the southern hemisphere indicates:',
         options: [
@@ -2593,6 +2852,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 260
       Question(
         question: 'The correct formula to calculate the total displacement of a multi-cylinder piston engine is:',
         options: [
@@ -2603,6 +2863,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 261
       Question(
         question: 'During deceleration following a landing in a westerly direction, a magnetic compass made for the northern hemisphere indicates:',
         options: [
@@ -2613,6 +2874,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 262
       Question(
         question: 'During deceleration following a landing in an easterly direction, a magnetic compass made for the southern hemisphere indicates:',
         options: [
@@ -2623,6 +2885,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 263
       Question(
         question: 'A pilot wishes to turn right on to a southerly heading with 20° bank at a latitude of 20° North. Using a direct reading compass, in order to achieve this he must stop the turn on an approximate heading of:',
         options: [
@@ -2633,6 +2896,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 264
       Question(
         question: 'A pilot wishes to turn left on to a southerly heading with 20° bank at a latitude of 20° North. Using a direct reading compass, in order to achieve this he must stop the turn on an approximate heading of:',
         options: [
@@ -2643,6 +2907,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 265
       Question(
         question: 'A pilot wishes to turn left on to a northerly heading with 10° bank at a latitude of 50° North. Using a direct reading compass, in order to achieve this he must stop the turn on an approximate heading of:',
         options: [
@@ -2653,6 +2918,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 266
       Question(
         question: 'A pilot wishes to turn right through 90° on to North at rate 2 at latitude of 40 North using a direct reading compass. In order to achieve this the turn should be stopped on an indicated heading of approximately:',
         options: [
@@ -2663,6 +2929,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 267
       Question(
         question: 'The compass heading can be derived from the magnetic heading by reference to a:',
         options: [
@@ -2673,6 +2940,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 268
       Question(
         question: 'The magnetic heading can be derived from the true heading by means of a:',
         options: [
@@ -2683,6 +2951,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 269
       Question(
         question: 'If the ground wire between the magnetos and the ignition switch becomes disconnected the most noticeable result will be that:',
         options: [
@@ -2693,6 +2962,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 270
       Question(
         question: 'The main purpose of the mixture control is to:',
         options: [
@@ -2703,6 +2973,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 271
       Question(
         question: 'In which sections of the carburettor would icing most likely occur?',
         options: [
@@ -2713,6 +2984,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 272
       Question(
         question: 'The operating principle of float-type carburettors is based on the:',
         options: [
@@ -2723,6 +2995,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 273
       Question(
         question: 'In an engine equipped with a float-type carburettor, the low temperature that causes carburettor ice is normally the result of:',
         options: [
@@ -2733,6 +3006,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 274
       Question(
         question: 'Fuel/air ratio is the ratio between the:',
         options: [
@@ -2743,6 +3017,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 275
       Question(
         question: 'Which statement is correct concerning the effect of the application of carburettor heat?',
         options: [
@@ -2753,6 +3028,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 276
       Question(
         question: 'Vapour lock is:',
         options: [
@@ -2763,6 +3039,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 277
       Question(
         question: 'Max. Exhaust Gas Temperature is theoretically associated with:',
         options: [
@@ -2773,6 +3050,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 278
       Question(
         question: 'The primary purpose of a supercharger is to:',
         options: [
@@ -2783,6 +3061,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 279
       Question(
         question: 'An excessively rich mixture can be detected by:',
         options: [
@@ -2793,6 +3072,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 280
       Question(
         question: 'The wing of an aircraft in flight, powered by engines located under the wing, is subjected to a bending moment due to thrust and drag. The loading on the front spar of the torsion box from the wing root to the wing tip is:',
         options: [
@@ -2803,6 +3083,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 281
       Question(
         question: 'The operation of the radio altimeter of a modern aircraft is based on:',
         options: [
@@ -2813,6 +3094,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 282
       Question(
         question: 'When a persistent underexcitation fault is detected on an AC generator connected to the aircraft mains with another AC generator, the protection device opens:',
         options: [
@@ -2823,6 +3105,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 283
       Question(
         question: 'An airborne instrument, equipped with a gyro with 2 degrees of freedom and a horizontal spin axis is: NB: the degree(s) of freedom of a gyro does not take into account its rotor spin axis.',
         options: [
@@ -2833,6 +3116,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 284
       Question(
         question: 'On detection of a persistent phase unbalance on an AC generator connected to the aircraft mains, with another AC generator, the protection device opens:',
         options: [
@@ -2843,6 +3127,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 285
       Question(
         question: 'An airborne instrument, equipped with a gyro with 1 degree of freedom and a horizontal spin axis is a: NB: the degree(s) of freedom of a gyro does not take into account its rotor spin axis.',
         options: [
@@ -2853,6 +3138,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 286
       Question(
         question: 'A static converter is powered by:',
         options: [
@@ -2863,6 +3149,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 287
       Question(
         question: 'In a turn at a constant angle of bank, the turn indicator reading is:',
         options: [
@@ -2873,6 +3160,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 288
       Question(
         question: 'In an aircraft electrical system where AC generators are not paralleled mounted, the changeover relay allows:',
         options: [
@@ -2883,6 +3171,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 289
       Question(
         question: 'At a low bank angle, the measurement of rate-of-turn actually consists in measuring the:',
         options: [
@@ -2893,6 +3182,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 290
       Question(
         question: 'Pulling the fire shutoff handle causes a number of devices to disconnect. In respect of the AC generator it can be said that the:',
         options: [
@@ -2903,6 +3193,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 291
       Question(
         question: 'The rate-of-turn is the:',
         options: [
@@ -2913,6 +3204,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 292
       Question(
         question: 'On the ground, during a right turn, the turn indicator indicates:',
         options: [
@@ -2923,6 +3215,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 293
       Question(
         question: 'In the axial flow compressor of a turbo-jet engine, the flow duct is tapered. Its shape is calculated so as to:',
         options: [
@@ -2933,6 +3226,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 294
       Question(
         question: 'On the ground, during a left turn, the turn indicator indicates:',
         options: [
@@ -2943,6 +3237,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 295
       Question(
         question: 'Electrical bonding of an aircraft is used to: The combination regrouping all the correct statements is: 1. protect the aircraft against lightning effects. 2. reset the electrostatic potential of the aircraft to a value approximating 0 volt 3. reduce radio interference on radio communication systems 4. set the aircraft to a single potential',
         options: [
@@ -2953,6 +3248,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 296
       Question(
         question: 'When, in flight, the needle and ball of a needle-and-ball indicator are on the left, the aircraft is:',
         options: [
@@ -2963,6 +3259,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 297
       Question(
         question: 'The Engine Pressure Ratio (EPR) is the ratio of:',
         options: [
@@ -2973,6 +3270,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 298
       Question(
         question: 'When, in flight, the needle and ball of a needle-and-ball indicator are on the right, the aircraft is:',
         options: [
@@ -2983,6 +3281,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 299
       Question(
         question: 'When, in flight, the needle of a needle-and-ball indicator is on the right and the ball on the left, the aircraft is:',
         options: [
@@ -2993,6 +3292,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 300
       Question(
         question: 'A thermocouple type thermometer consists of:',
         options: [
@@ -3003,6 +3303,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 301
       Question(
         question: 'When, in flight, the needle of a needle-and-ball indicator is on the left and the ball on the right, the aircraft is:',
         options: [
@@ -3013,6 +3314,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 302
       Question(
         question: 'The disadvantage of an electronic rpm indicator is the:',
         options: [
@@ -3023,6 +3325,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 303
       Question(
         question: 'The principle of capacity gauges is based on the:',
         options: [
@@ -3033,6 +3336,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 304
       Question(
         question: 'Pre-ignition refers to the condition that may arise when:',
         options: [
@@ -3043,6 +3347,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 305
       Question(
         question: 'Overheating of a piston engine is likely to result from an excessively:',
         options: [
@@ -3053,6 +3358,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 306
       Question(
         question: 'The working cycle of a four-stroke engine is:',
         options: [
@@ -3063,6 +3369,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 307
       Question(
         question: 'Specific fuel consumption is defined as the:',
         options: [
@@ -3073,6 +3380,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 308
       Question(
         question: 'The purpose of an ignition switch is to:',
         options: [
@@ -3083,6 +3391,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 309
       Question(
         question: 'The reason for having a low pressure fuel-cooled oil cooler in a recirculatory type oil system is to:',
         options: [
@@ -3093,6 +3402,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 310
       Question(
         question: 'The purpose of stringers, used in fuselage construction, is to:',
         options: [
@@ -3103,6 +3413,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 311
       Question(
         question: 'The compression ratio of a piston engine is the ratio of the:',
         options: [
@@ -3113,6 +3424,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 312
       Question(
         question: 'Prolonged running at low rpm can have an adverse effect on the functioning of the:',
         options: [
@@ -3123,6 +3435,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 313
       Question(
         question: 'The purpose of the venturi in a carburettor is to:',
         options: [
@@ -3133,6 +3446,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 314
       Question(
         question: 'The capacitance type fuel gauging system indicates the fuel quantity by measuring the:',
         options: [
@@ -3143,6 +3457,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 315
       Question(
         question: 'The reading on the oil pressure gauge is the:',
         options: [
@@ -3153,6 +3468,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 316
       Question(
         question: 'In an aircraft equipped with a DC main power system, AC for instrument operation may be obtained from:',
         options: [
@@ -3163,6 +3479,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 317
       Question(
         question: 'The conditions to be met to activate a shunt generator are: The combination of correct statements is: 1. presence of a permanent field 2. closed electrical circuit 3. generator terminals short-circuited 4. minimum rotation speed',
         options: [
@@ -3173,6 +3490,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 318
       Question(
         question: 'If a current is passed through a conductor which is positioned in a magnetic field:',
         options: [
@@ -3183,6 +3501,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 319
       Question(
         question: 'The compressor surge effect during acceleration is prevented by the:',
         options: [
@@ -3193,6 +3512,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 320
       Question(
         question: 'A bus-bar is:',
         options: [
@@ -3203,6 +3523,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 321
       Question(
         question: 'Consider the flight deck oxygen supply system. The purpose of the oxygen regulator (as a function of demand and altitude) is to: The combination regrouping all the correct statements is: 1. decrease oxygen pressure from 1800 PSI (in the bottles) down to about 50-75 PSI (low pressure system) 2. supply pure oxygen 3. supply diluted oxygen 4. supply oxygen at normal pressure 5. supply oxygen at emergency/positive pressure 6. trigger the continuous cabin altitude warning at 10000 ft cabin altitude',
         options: [
@@ -3213,6 +3534,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 322
       Question(
         question: 'When carrying out battery condition check using the aircraft\'s voltmeter:',
         options: [
@@ -3223,6 +3545,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 323
       Question(
         question: 'Connecting two 12 volt 40 ampere-hour capacity batteries in series will result in a total voltage and capacity respectively of:',
         options: [
@@ -3233,6 +3556,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 324
       Question(
         question: 'A diluter demand oxygen regulator:',
         options: [
@@ -3243,6 +3567,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 325
       Question(
         question: 'By-pass turbine engines are mainly used in commercial aviation, because:',
         options: [
@@ -3253,6 +3578,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 326
       Question(
         question: 'The purpose of a voltage regulator is to control the output voltage of the:',
         options: [
@@ -3263,6 +3589,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 327
       Question(
         question: 'The purpose of bonding the metallic parts of an aircraft is to:',
         options: [
@@ -3273,6 +3600,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 328
       Question(
         question: 'To reverse the direction of rotation of shunt-type (parallel field) DC electric motor, it is necessary to:',
         options: [
@@ -3283,6 +3611,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 329
       Question(
         question: 'When AC generators are operated in parallel, they must be of the same:',
         options: [
@@ -3293,6 +3622,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 330
       Question(
         question: 'Below its design speed, an axial compressor:',
         options: [
@@ -3303,6 +3633,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 331
       Question(
         question: 'Regarding Ohm\'s law:',
         options: [
@@ -3313,6 +3644,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 332
       Question(
         question: 'Circuit breakers protecting circuits may be:',
         options: [
@@ -3323,6 +3655,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 333
       Question(
         question: 'The advantages of alternating current on board an aircraft are: The combination of correct statements is: 1. simple connection 2. high starting torque 3. flexibility in use 4. lighter weight of equipment 5. easy to convert into direct current 6. easy maintenance of machines',
         options: [
@@ -3333,6 +3666,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 334
       Question(
         question: 'Direct current generators are connected:',
         options: [
@@ -3343,6 +3677,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 335
       Question(
         question: 'A closed loop control system in which a small power input controls a much larger power output in a strictly proportionate manner is known as:',
         options: [
@@ -3353,6 +3688,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 336
       Question(
         question: 'A piston engine may use a fuel of a different grade than the recommended:',
         options: [
@@ -3363,6 +3699,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 337
       Question(
         question: 'Fire precautions to be observed before refuelling are:',
         options: [
@@ -3373,6 +3710,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 338
       Question(
         question: 'On detection of a persistent overvoltage fault on an AC generator connected to the aircraft AC busbars, the on-board protection device opens:',
         options: [
@@ -3383,6 +3721,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 339
       Question(
         question: '"Nose wheel shimmy" may be described as:',
         options: [
@@ -3393,6 +3732,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 340
       Question(
         question: 'A feeder fault on a direct current circuit results from a flux unbalance between the:',
         options: [
@@ -3403,6 +3743,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 341
       Question(
         question: 'The useful work area in an ideal Otto engine indicator diagram is enclosed by the following gas state change lines',
         options: [
@@ -3413,6 +3754,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 342
       Question(
         question: 'A modern Auxiliary Power Unit (APU) is designed to provide power for ground starting of an engine. It also supplies both in the air (subject to certification limitations) and on the ground:',
         options: [
@@ -3423,6 +3765,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 343
       Question(
         question: 'Ignition occurs in each cylinder of a four stroke engine (TDC = Top Dead Centre):',
         options: [
@@ -3433,6 +3776,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 344
       Question(
         question: 'When a persistent top excitation limit fault on an AC generator connected to the mains with another AC generator, the overexcitation protection device opens:',
         options: [
@@ -3443,6 +3787,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 345
       Question(
         question: 'The power output of a piston engine can be calculated by:',
         options: [
@@ -3453,6 +3798,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 346
       Question(
         question: 'The power of a piston engine which will be measured by using a friction brake is:',
         options: [
@@ -3463,6 +3809,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 347
       Question(
         question: 'With respect to a piston engine aircraft, ice in the carburettor:',
         options: [
@@ -3473,6 +3820,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 348
       Question(
         question: 'When an underspeed fault is detected on an AC generator connected to the aircraft AC busbar, the protection device opens the:',
         options: [
@@ -3483,6 +3831,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 349
       Question(
         question: 'The power of a piston engine decreases during a climb with a constant power lever setting because of the decreasing:',
         options: [
@@ -3493,6 +3842,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 350
       Question(
         question: 'The part of a piston engine that transforms reciprocating movement into rotary motion is termed the:',
         options: [
@@ -3503,6 +3853,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 351
       Question(
         question: 'The voltage regulator of a DC generator is connected in:',
         options: [
@@ -3513,6 +3864,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 352
       Question(
         question: 'Which one of the following factors would be most likely to increase the possibility of detonation occurring within a piston engine?',
         options: [
@@ -3523,6 +3875,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 353
       Question(
         question: 'In a piston engine if the ratio of air to fuel, by weight, is approximately 9:1, the mixture is said to be:',
         options: [
@@ -3533,6 +3886,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 354
       Question(
         question: 'On starting, in a brushless AC generator with no commutator rings, the generator is activated by:',
         options: [
@@ -3543,6 +3897,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 355
       Question(
         question: 'To ensure that the fuel flow is kept directly proportional to the mass of air flowing through the choke, thus preventing the main jet supplying excessive fuel as engine speed is increased, a carburettor is fitted with:',
         options: [
@@ -3553,6 +3908,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 356
       Question(
         question: 'The capacity of an accumulator is:',
         options: [
@@ -3563,6 +3919,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 357
       Question(
         question: 'The oil system for a piston engine incorporates an oil cooler that is fitted:',
         options: [
@@ -3573,6 +3930,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 358
       Question(
         question: 'The purpose of a compressor bleed valve is to prevent surging:',
         options: [
@@ -3583,6 +3941,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 359
       Question(
         question: 'In order to measure temperature, the cylinder head temperature (CHT) gauge utilises a:',
         options: [
@@ -3593,6 +3952,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 360
       Question(
         question: 'Landing gear torque links are used to:',
         options: [
@@ -3603,6 +3963,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 361
       Question(
         question: 'When leaning the mixture for the most economic cruise fuel flow, excessive leaning will cause:',
         options: [
@@ -3613,6 +3974,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 362
       Question(
         question: 'The first indication of carburettor icing in airplanes equipped with constant speed propellers would most likely be a:',
         options: [
@@ -3623,6 +3985,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 363
       Question(
         question: 'The illumination of the green landing gear light indicates that the landing gear is:',
         options: [
@@ -3633,6 +3996,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 364
       Question(
         question: 'What will happen to the geometrical pitch angle of a "constant speed propeller" if the manifold pressure is increased ?',
         options: [
@@ -3643,6 +4007,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 365
       Question(
         question: 'What will eventually happen during a continuous climb with a mixture setting full rich?',
         options: [
@@ -3653,6 +4018,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 366
       Question(
         question: 'With an aircraft fitted with a fixed pitch propeller, during flight at normal cruising speed, one magneto fails completely. This will first cause:',
         options: [
@@ -3663,6 +4029,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 367
       Question(
         question: 'In flight, with centre tank empty and APU operating, a fuel unbalance is detected (quantity in tank 1 < quantity in tank 2). Rebalancing of the two tanks is:',
         options: [
@@ -3673,6 +4040,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 368
       Question(
         question: 'A pilot can actuate the feathering system by:',
         options: [
@@ -3683,6 +4051,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 369
       Question(
         question: 'The function of an accumulator in a hydraulic brake system is:',
         options: [
@@ -3693,6 +4062,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 370
       Question(
         question: 'The use of too low an octane fuel may cause:',
         options: [
@@ -3703,6 +4073,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 371
       Question(
         question: 'Consider a jet engine whose control is based on the Engine Pressure Ratio (EPR): The combination regrouping all the correct statements is: 1. with a constant EPR, the thrust decreases when the altitude increases 2. with a constant EPR, the thrust is independent of the Mach number 3. At same environmental conditions, a given EPR setting maintains the thrust irrespective of engine wear due to ageing. 4. the EPR is determined by the impact pressure difference between the turbine outlet and the compressor inlet 5. on take-off, in the event of icing not detected by the crew, the indicated EPR is lower than the real EPR',
         options: [
@@ -3713,6 +4084,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 372
       Question(
         question: 'Once the engine has started, ignition systems of piston engines are:',
         options: [
@@ -3723,6 +4095,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 373
       Question(
         question: 'The cylinder head and oil temperature gauges are to exceed the normal operating ranges if a pilot',
         options: [
@@ -3733,6 +4106,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 374
       Question(
         question: 'Consider the variable-pitch propeller of a turbo-prop. During deceleration:',
         options: [
@@ -3743,6 +4117,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 375
       Question(
         question: 'As the flight altitude increases, if no leaning is made with the mixture control:',
         options: [
@@ -3753,6 +4128,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 376
       Question(
         question: 'Among the different types of aircraft structures, the shell structures efficiently transmit the: The combination regrouping all the correct statements is: 1. normal bending stresses 2. tangent bending stresses 3. torsional moment 4. shear stresses',
         options: [
@@ -3763,6 +4139,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 377
       Question(
         question: 'When starting an engine or when the engine runs at an idle rpm on ground, the mixture is:',
         options: [
@@ -3773,6 +4150,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 378
       Question(
         question: 'The application of carburettor heat reduces',
         options: [
@@ -3783,6 +4161,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 379
       Question(
         question: 'On a non-stressed skin type wing, the wing structure elements which take up the vertical bending moments Mx are:',
         options: [
@@ -3793,6 +4172,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 380
       Question(
         question: 'On four-stroke piston engines, the theoretical valve and ignition settings are readjusted in order to increase the:',
         options: [
@@ -3803,6 +4183,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 381
       Question(
         question: 'An impulse coupling does not function at such speeds above those encountered in starting. Its engaging pawls are prevented from operating at higher speeds by',
         options: [
@@ -3813,6 +4194,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 382
       Question(
         question: 'The modern anti-skid processes are based on the use of a computer whose input data is: The combination regrouping all the correct statements is: 1. idle wheel speed (measured) 2. braked wheel speed (measured) 3. brake temperature (measured) 4. desired idle wheel train slipping rate 5. tire pressure',
         options: [
@@ -3823,6 +4205,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 383
       Question(
         question: 'The Engine Pressure Ratio (EPR) is computed by:',
         options: [
@@ -3833,6 +4216,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 384
       Question(
         question: 'A condenser in parallel with breaker points will',
         options: [
@@ -3843,6 +4227,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 385
       Question(
         question: 'An impulse magneto coupling',
         options: [
@@ -3853,6 +4238,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 386
       Question(
         question: 'The purpose of static wick dischargers is to:',
         options: [
@@ -3863,6 +4249,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 387
       Question(
         question: 'If an engine fails to stop with the magneto switch in OFF position, the cause may be:',
         options: [
@@ -3873,6 +4260,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 388
       Question(
         question: 'If the ground wire between the magneto and the ignition switch becomes disconnected, the most noticeable result will be that the engine',
         options: [
@@ -3883,6 +4271,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 389
       Question(
         question: 'A slaved directional gyro derives it\'s directional signal from:',
         options: [
@@ -3893,6 +4282,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 390
       Question(
         question: 'An impulse coupling is installed on a magneto of a piston engine to:',
         options: [
@@ -3903,6 +4293,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 391
       Question(
         question: 'Aircraft magneto`s receive electrical energy from',
         options: [
@@ -3913,6 +4304,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 392
       Question(
         question: 'The type of windings commonly used in DC starter motors are:',
         options: [
@@ -3923,6 +4315,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 393
       Question(
         question: 'Cooling air for a reciprocating engine can be obtained by means of:',
         options: [
@@ -3933,6 +4326,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 394
       Question(
         question: 'A chip detector in the oil system of an engine/gearbox is to indicate that',
         options: [
@@ -3943,6 +4337,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 395
       Question(
         question: 'The lubricating system of an aircraft engine is used to',
         options: [
@@ -3953,6 +4348,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 396
       Question(
         question: 'A relay is:',
         options: [
@@ -3963,6 +4359,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 397
       Question(
         question: 'A pressure relief valve that does not fit on its seat properly would result in',
         options: [
@@ -3973,6 +4370,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 398
       Question(
         question: 'It may be determined that an aircraft is not properly bonded if:',
         options: [
@@ -3983,6 +4381,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 399
       Question(
         question: 'A magnetic plug can be used to',
         options: [
@@ -3993,6 +4392,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 400
       Question(
         question: 'A unit that converts electrical DC into AC is:',
         options: [
@@ -4003,6 +4403,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 401
       Question(
         question: 'The purposes of the oil and the nitrogen in an oleo-pneumatic strut are:',
         options: [
@@ -4013,6 +4414,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 402
       Question(
         question: 'A substance which may never be used in the vicinity or on parts of an oxygen installation is:',
         options: [
@@ -4023,6 +4425,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 403
       Question(
         question: 'Fixed-pitch propellers are usually designed for maximum efficiency at:',
         options: [
@@ -4033,6 +4436,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 404
       Question(
         question: 'The function of a feed box in the fuel tank is to',
         options: [
@@ -4043,6 +4447,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 405
       Question(
         question: 'The crash/fire axe is part of the safety equipment fitted to passenger aircraft. Its function is to:',
         options: [
@@ -4053,6 +4458,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 406
       Question(
         question: 'A VMO-MMO warning device consists of an alarm connected to:',
         options: [
@@ -4063,6 +4469,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 407
       Question(
         question: 'In order to get the optimum efficiency of a piston engine, the positions of the intake and exhaust valve at the end of the power stroke are:',
         options: [
@@ -4073,6 +4480,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 408
       Question(
         question: 'The yaw damper system controls:',
         options: [
@@ -4083,6 +4491,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 409
       Question(
         question: 'The reading of a Mach indicator is independent of:',
         options: [
@@ -4093,6 +4502,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 410
       Question(
         question: 'Regarding the chemical oxygen generator, to enable the oxygen to flow, the passenger must:',
         options: [
@@ -4103,6 +4513,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 411
       Question(
         question: 'Hydraulic fluid, entering the hydraulic pump, is slightly pressurised to:',
         options: [
@@ -4113,6 +4524,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 412
       Question(
         question: 'Regarding (1) a fuse and (2) a circuit breaker:',
         options: [
@@ -4123,6 +4535,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 413
       Question(
         question: 'Regarding a thermal wing anti-icing system, the correct statement is:',
         options: [
@@ -4133,6 +4546,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 414
       Question(
         question: 'On design purpose, the relationship between the fuel octane rating and the maximum compression ratio of a piston engine is:',
         options: [
@@ -4143,6 +4557,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 415
       Question(
         question: 'On-board electrical systems are protected against faults of the following type: The combination of correct statements is: 1. AC generator over-voltage 2. AC generator under-voltage 3. over-current 4. over-speed 5. under-frequency 6. undue vibration of AC generators',
         options: [
@@ -4153,6 +4568,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 416
       Question(
         question: 'The airspeed indicator of a twin-engine aircraft comprises different sectors and colour marks. The blue line corresponds to the:',
         options: [
@@ -4163,6 +4579,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 417
       Question(
         question: 'When available, the yaw damper indicator supplies the pilot with information regarding the:',
         options: [
@@ -4173,6 +4590,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 418
       Question(
         question: 'In An Air Data Computer (ADC), aeroplane altitude is calculated from:',
         options: [
@@ -4183,6 +4601,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 419
       Question(
         question: 'An aircraft is equipped with one altimeter that is compensated for position error and another one altimeter that is not. Assuming all other factors are equal, during a straight symmetrical flight :',
         options: [
@@ -4193,6 +4612,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 420
       Question(
         question: 'A Stand-by-horizon or emergency attitude indicator:',
         options: [
@@ -4203,6 +4623,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 421
       Question(
         question: 'The altimeter consists of one or several aneroid capsules located in a sealed casing. The pressures in the aneroid capsule (i) and casing (ii) are respectively:',
         options: [
@@ -4213,6 +4634,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 422
       Question(
         question: 'The most significant advantages of an air data computer (ADC) are: The combination regrouping all the correct statements is: 1. Position error correction 2. Hysteresis error correction 3. Remote data transmission capability 4. Gimballing errors correction',
         options: [
@@ -4223,6 +4645,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 423
       Question(
         question: 'The principle of the TCAS (Traffic Collision Avoidance Systems) is based on the use of:',
         options: [
@@ -4233,6 +4656,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 424
       Question(
         question: 'In the absence of position and instrumental errors, IAS is equal to:',
         options: [
@@ -4243,6 +4667,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 425
       Question(
         question: 'A gyromagnetic compass is a system which always consists of: 1 - a horizontal axis gyro 2 - a vertical axis gyro 3 - an earth\'s magnetic field detector 4 - an erection mechanism to maintain the gyro axis horizontal 5 - a torque motor to make the gyro precess in azimuth The combination regrouping all the correct statements is:',
         options: [
@@ -4253,6 +4678,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 426
       Question(
         question: 'A radio altimeter can be defined as a:',
         options: [
@@ -4263,6 +4689,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 427
       Question(
         question: 'At a given altitude, the hysteresis error of an altimeter varies substantially with the:',
         options: [
@@ -4273,6 +4700,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 428
       Question(
         question: 'The essential components of a flight director are: 1- a computer 2- an automatic pilot 3- an auto-throttle 4- command bars The combination regrouping all the correct statements is:',
         options: [
@@ -4283,6 +4711,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 429
       Question(
         question: 'The purpose of the vibrating device of an altimeter is to:',
         options: [
@@ -4293,6 +4722,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 430
       Question(
         question: 'During the approach, a crew reads on the radio altimeter the value of 650 ft. This is an indication of the true:',
         options: [
@@ -4303,6 +4733,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 431
       Question(
         question: 'The rate of turn indicator uses a gyroscope: 1 - the spinning wheel axis of which is parallel to the yawing axis. 2 - the spinning wheel axis of which is parallel to the pitch axis. 3 - the spinning wheel axis of which is parallel to the roll axis. 4 - with one degree of freedom. 5 - with two degrees of freedom The combination regrouping all the correct statements is: NB: the degree(s) of freedom of a gyro does not take into account its rotor spin axis.',
         options: [
@@ -4313,6 +4744,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 432
       Question(
         question: 'In case of accidental closing of an aircraft\'s left static pressure port (rain, birds), the altimeter:',
         options: [
@@ -4323,6 +4755,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 433
       Question(
         question: 'In the building principle of a gyroscope, the best efficiency is obtained through the concentration of the mass:',
         options: [
@@ -4333,6 +4766,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 434
       Question(
         question: 'On a modern aircraft, the flight director modes are displayed on the:',
         options: [
@@ -4343,6 +4777,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 435
       Question(
         question: 'The flight director provides information for the pilot:',
         options: [
@@ -4353,6 +4788,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 436
       Question(
         question: 'The atmospheric pressure at FL 70 in a "standard + 10" atmosphere is:',
         options: [
@@ -4363,6 +4799,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 437
       Question(
         question: 'The response time of a vertical speed detector may be decreased by adding a:',
         options: [
@@ -4373,6 +4810,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 438
       Question(
         question: 'Sound propagates through the air at a speed which only depends on:',
         options: [
@@ -4383,6 +4821,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 439
       Question(
         question: 'In a standard atmosphere and at the sea level, the calibrated airspeed (CAS) is:',
         options: [
@@ -4393,6 +4832,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 440
       Question(
         question: 'The total pressure probe (pitot tube) is mounted at a distance from the aeroplane skin such that:',
         options: [
@@ -4403,6 +4843,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 441
       Question(
         question: 'The main input data to the Stall Warning Annunciator System are: 1- Mach Meter indication 2- Angle of Attack 3- Indicate Airspeed (IAS) 4- Aircraft configuration (Flaps/Slats) The combination regrouping all the correct statements is:',
         options: [
@@ -4413,6 +4854,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 442
       Question(
         question: 'When selected to normal, the oxygen/air ratio of the mixture supplied by the cockpit oxygen system regulator:',
         options: [
@@ -4423,6 +4865,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 443
       Question(
         question: 'On a normally aspirated aero-engine fitted with a fixed pitch propeller:',
         options: [
@@ -4433,6 +4876,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 444
       Question(
         question: 'In the cabin, when the oxygen mask is pulled downwards, the passenger breathes:',
         options: [
@@ -4443,6 +4887,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 445
       Question(
         question: 'The stall warning system receives information about the: 1- airplane angle of attack 2- airplane speed 3- airplane bank angle 4- airplane configuration 5- load factor on the airplane The combination regrouping all the correct statements is:',
         options: [
@@ -4453,6 +4898,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 446
       Question(
         question: 'The equipment of an oxygen supply installation must be kept absolutely free of oil or grease traces as:',
         options: [
@@ -4463,6 +4909,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 447
       Question(
         question: 'The sensors used to measure the exhaust gas temperature on an aircraft equipped with turbojets are:',
         options: [
@@ -4473,6 +4920,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 448
       Question(
         question: 'A smoke mask is a:',
         options: [
@@ -4483,6 +4931,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 449
       Question(
         question: 'The flight director indicates the:',
         options: [
@@ -4493,6 +4942,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 450
       Question(
         question: 'Static dischargers: The combination regrouping all the correct statements is: 1. are used to set all the parts of the airframe to the same electrical potential 2. are placed on wing and tail tips to facilitate electrical discharge 3. are used to reset the electrostatic potential of the aircraft to a value approximating 0 volts 4. are located on wing and tail tips to reduce interference with the on-board radio communication systems to a minimum 5. limit the risks of transfer of electrical charges between the aircraft and the electrified clouds',
         options: [
@@ -4503,6 +4953,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 451
       Question(
         question: 'The range of a radio altimeter is:',
         options: [
@@ -4513,6 +4964,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 452
       Question(
         question: 'The airplane outside air temperature "probe" measures the:',
         options: [
@@ -4523,6 +4975,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 453
       Question(
         question: 'In a transport airplane, an autopilot comprises, in addition to the mode display devices, the following fundamental elements: 1- Airflow valve 2- Sensors 3- Comparators 4- Computers 5- Amplifiers 6- Servo-actuators The combination regrouping all the correct statements is:',
         options: [
@@ -4533,6 +4986,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 454
       Question(
         question: 'Flutter results from two deformation modes which are:',
         options: [
@@ -4543,6 +4997,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 455
       Question(
         question: 'The basic principle of a capacitance fuel gauge system is that the:',
         options: [
@@ -4553,6 +5008,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 456
       Question(
         question: 'A pilot engages the control wheel steering (CWS) of a conventional autopilot and carries out a manoeuvre in roll. When the control wheel is released, the autopilot will:',
         options: [
@@ -4563,6 +5019,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 457
       Question(
         question: 'Automatic temperature control of the system as shown, would be accomplished by:',
         options: [
@@ -4573,6 +5030,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 458
       Question(
         question: 'The functions of an autopilot (basic modes) consist of:',
         options: [
@@ -4583,6 +5041,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 459
       Question(
         question: 'The "guidance" functions of a autopilot consist in:',
         options: [
@@ -4593,6 +5052,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 460
       Question(
         question: 'The command bars of a flight director are generally represented on an:',
         options: [
@@ -4603,6 +5063,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 461
       Question(
         question: 'After having programmed your flight director, you see that the indications of your ADI (Attitude Director Indicator) are as represented in diagram N°1 of the appended annex. On this instrument, the command bars indicate that you must bank your airplane to the left and:',
         options: [
@@ -4613,6 +5074,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 462
       Question(
         question: 'In some aircraft, there is a protection device to avoid the landing gear being inadvertently retracted on the ground. It consists of:',
         options: [
@@ -4623,6 +5085,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 463
       Question(
         question: 'Among the following functions of an autopilot, those related to the airplane stabilization are: 1- pitch attitude holding 2- horizontal wing holding 3- displayed heading or inertial track holding 4- indicated airspeed or Mach number holding 5- yaw damping 6- VOR axis holding The combination regrouping all the correct statements is:',
         options: [
@@ -4633,6 +5096,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 464
       Question(
         question: 'The component that converts hydraulic pressure into linear motion is called:',
         options: [
@@ -4643,6 +5107,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 465
       Question(
         question: 'The aircraft hydraulic system is designed to produce:',
         options: [
@@ -4653,6 +5118,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 466
       Question(
         question: 'The probe used to measure the air intake pressure of a gas turbine engine powerplant is:',
         options: [
@@ -4663,6 +5129,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 467
       Question(
         question: 'The gauge indicating the quantity of fuel measured by a capacity gauging system can be graduated directly in weight units because the dielectric constant of fuel is:',
         options: [
@@ -4673,6 +5140,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 468
       Question(
         question: 'When compared with the volumetric fuel flowmeter, the mass fuel flowmeter takes into account the fuel:',
         options: [
@@ -4683,6 +5151,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 469
       Question(
         question: 'Assume a constant speed DC generator providing a constant output voltage. If the electrical load increases, the voltage regulator will:',
         options: [
@@ -4693,6 +5162,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 470
       Question(
         question: 'The angle of attack transmitter placed laterally on the forward part of the fuselage supplies an electrical signal which can indicate the angular position of: 1 - a specific slaved pitot probe ; 2 - a vane detector ; 3 - a conical slotted probe . The combination regrouping all the correct statements is',
         options: [
@@ -4703,6 +5173,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 471
       Question(
         question: 'In flight, if the constant speed drive (CSD) temperature indicator is in the red arc the:',
         options: [
@@ -4713,6 +5184,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 472
       Question(
         question: 'The purpose of the altitude alert system is to generate a visual and aural warning to the pilot when the:',
         options: [
@@ -4723,6 +5195,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 473
       Question(
         question: 'The advantages of a D.C. generator tachometer are: 1- easy transmission of the information. 2- independence of the information relative to the airborne electrical power supply. 3- freedom from any spurious current due to the commutator. The combination regrouping all the correct statements is:',
         options: [
@@ -4733,6 +5206,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 474
       Question(
         question: 'The hydraulic device similar to an electronic diode is a:',
         options: [
@@ -4743,6 +5217,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 475
       Question(
         question: 'The advantages of single-phase A.C. generator tachometer are: 1- the suppression of spurious signals due to a D.C. generator commutator 2- the importance of line resistance on the information value 3- the independence of the information in relation to the airborne electrical power supply 4- the ease of transmission of the information The combination regrouping all the correct statements is:',
         options: [
@@ -4753,6 +5228,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 476
       Question(
         question: 'The disadvantages of a single-phase A.C. generator tachometer are: 1- the presence of spurious signals due to a D.C. generator commutator 2- the importance of line resistance on the information value 3- the influence of temperature on the tachometer information The combination regrouping all the correct statements is:',
         options: [
@@ -4763,6 +5239,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 477
       Question(
         question: 'The cross-feed fuel system is used to:',
         options: [
@@ -4773,6 +5250,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 478
       Question(
         question: 'After having programmed your flight director, you see that the indications of your ADI (Attitude Director indicator) are as represented in diagram N°1 of the appended annex. On this instrument, the command bars indicate that you must:',
         options: [
@@ -4783,6 +5261,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 479
       Question(
         question: 'One of the purpose of the fuel system booster pumps to be submerged in the fuel is:',
         options: [
@@ -4793,6 +5272,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 480
       Question(
         question: 'The correct statement about rain protection for cockpit windshields is that:',
         options: [
@@ -4803,6 +5283,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 481
       Question(
         question: 'The purpose of a battery control unit is generally to isolate the battery: 1 - from the bus when the battery charge has been completed 2 - when there is a battery overheat condition 3 - in case of an internal short circuit 4 - in case of a fault on the ground power unit The combination which regroups all of the correct statements is:',
         options: [
@@ -4813,6 +5294,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 482
       Question(
         question: 'The vapour lock is:',
         options: [
@@ -4823,6 +5305,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 483
       Question(
         question: 'The fuel system boost pumps are used to:',
         options: [
@@ -4833,6 +5316,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 484
       Question(
         question: 'For an aeroplane, spoilers are:',
         options: [
@@ -4843,6 +5327,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 485
       Question(
         question: 'On an airplane, the Krueger flaps are:',
         options: [
@@ -4853,6 +5338,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 486
       Question(
         question: 'The purpose of an accumulator in a hydraulic system is:',
         options: [
@@ -4863,6 +5349,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 487
       Question(
         question: 'When a bimetallic strip is used as a switch in a fire detection loop, a fire alarm is triggered after a delay. The purpose of this delay is to:',
         options: [
@@ -4873,6 +5360,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 488
       Question(
         question: 'On a modern aeroplane, to avoid the risk of tyre burst from overheating, due for example to prolonged braking during an aborted take-off, there is:',
         options: [
@@ -4883,6 +5371,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 489
       Question(
         question: 'A stage in an axial compressor:',
         options: [
@@ -4893,6 +5382,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 490
       Question(
         question: 'Torsion in a wing can be caused by',
         options: [
@@ -4903,6 +5393,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 491
       Question(
         question: 'For a fan jet engine, the by-pass ratio is the:',
         options: [
@@ -4913,6 +5404,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 492
       Question(
         question: '\'Fail safe construction\' is:',
         options: [
@@ -4923,6 +5415,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 493
       Question(
         question: 'Maximum power output and low mass of aeroplane hydraulic systems can be achieved with',
         options: [
@@ -4933,6 +5426,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 494
       Question(
         question: 'The low pressure switch of a hydraulic circuit sets off an alarm if:',
         options: [
@@ -4943,6 +5437,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 495
       Question(
         question: 'Concerning the sequential pneumatic impulses used in certain leading edge de-icing devices, one can affirm that: 1 - They prevent ice formation. 2 - They are triggered from the flight deck after icing has become visible. 3 - A cycle lasts more than ten seconds. 4 - There are more than ten cycles per second. The combination which regroups all the correct statements is:',
         options: [
@@ -4953,6 +5448,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 496
       Question(
         question: 'The hydraulic systems which works correctly is shown in the figure:',
         options: [
@@ -4963,6 +5459,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 497
       Question(
         question: 'In an aeroplane fitted with a constant frequency AC power supply, DC power is obtained from a:',
         options: [
@@ -4973,6 +5470,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 498
       Question(
         question: 'On an aircraft landing gear, an under-inflated tyre:',
         options: [
@@ -4983,6 +5481,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 499
       Question(
         question: 'The accumulator in a hydraulic system works as',
         options: [
@@ -4993,6 +5492,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 500
       Question(
         question: 'The type of hydraulic fluid which has the greatest resistance to cavitation is:',
         options: [
@@ -5003,6 +5503,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 501
       Question(
         question: 'In a turbo-jet, the purpose of the turbine is to ...',
         options: [
@@ -5013,6 +5514,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 502
       Question(
         question: 'Parameters to monitor a hydraulic system in the cockpit can be:',
         options: [
@@ -5023,6 +5525,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 503
       Question(
         question: 'The blade angle of a propeller is the angle between the:',
         options: [
@@ -5033,6 +5536,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 504
       Question(
         question: 'The working principle of the anti-skid system is:',
         options: [
@@ -5043,6 +5547,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 505
       Question(
         question: 'During a power change on an engine equipped with a constant speed propeller, a wrong combination of manifold pressure and RPM values results in excessive pressures in the cylinders. This is the case when one simultaneously selects a ...',
         options: [
@@ -5053,6 +5558,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 506
       Question(
         question: 'If, when the magneto selector switch is set to the OFF position, a piston engine continues to run normally, the most probable cause is that:',
         options: [
@@ -5063,6 +5569,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 507
       Question(
         question: 'On a normally aspirated engine (non turbo-charged), the manifold pressure gauge always indicates…',
         options: [
@@ -5073,6 +5580,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 508
       Question(
         question: 'The richness of a fuel/air mixture ratio is the:',
         options: [
@@ -5083,6 +5591,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 509
       Question(
         question: 'The frequency of the current provided by an alternator depends on...',
         options: [
@@ -5093,6 +5602,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 510
       Question(
         question: 'The resistors R1 and R2 are connected in parallel. The value of the equivalent resistance (Req) so obtained is given by the formula:',
         options: [
@@ -5103,6 +5613,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 511
       Question(
         question: 'A gaseous sensor/responder tube fire sensor is tested by',
         options: [
@@ -5113,6 +5624,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 512
       Question(
         question: 'The function of the Generator Breaker is to close when the voltage of the:',
         options: [
@@ -5123,6 +5635,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 513
       Question(
         question: 'Using compressor bleed air to power systems:',
         options: [
@@ -5133,6 +5646,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 514
       Question(
         question: 'The indication of the fire detection systems is performed by a:',
         options: [
@@ -5143,6 +5657,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 515
       Question(
         question: 'If the maximum operating pressure of the oxygen system is exceeded the:',
         options: [
@@ -5153,6 +5668,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 516
       Question(
         question: 'The purpose of a diluter demand regulator in an oxygen system is to:',
         options: [
@@ -5163,6 +5679,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 517
       Question(
         question: 'With a piston engine, when detonation is recognised, you:',
         options: [
@@ -5173,6 +5690,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 518
       Question(
         question: 'The built-in passenger oxygen system be activated by:',
         options: [
@@ -5183,6 +5701,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 519
       Question(
         question: 'The main feature of BCF fire extinguishers is that they:',
         options: [
@@ -5193,6 +5712,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 520
       Question(
         question: 'In case of smoke in the cockpit, the crew oxygen regulator must be set to:',
         options: [
@@ -5203,6 +5723,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 521
       Question(
         question: 'Spark plug fouling is more likely to happen if:',
         options: [
@@ -5213,6 +5734,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 522
       Question(
         question: '"Vapour lock" is the phenomenon by which:',
         options: [
@@ -5223,6 +5745,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 523
       Question(
         question: 'Associate the correct legend to each of the numbered diagrams:',
         options: [
@@ -5233,6 +5756,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 524
       Question(
         question: 'The torque of an aeroplane engine can be measured at the:',
         options: [
@@ -5243,6 +5767,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 525
       Question(
         question: 'The vertical speed indicator (VSI) is fed by:',
         options: [
@@ -5253,6 +5778,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 526
       Question(
         question: 'The altimeter is supplied with:',
         options: [
@@ -5263,6 +5789,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 527
       Question(
         question: 'For a piston engine, the chemically correct fuel/air ratio of the mixture is:',
         options: [
@@ -5273,6 +5800,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 528
       Question(
         question: 'The power output of a piston engine without supercharging increases with increasing altitude in standard atmosphere at constant Manifold Air Pressure (MAP) and RPM because of the:',
         options: [
@@ -5283,6 +5811,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 529
       Question(
         question: 'The thermal efficiency of a piston engine is about:',
         options: [
@@ -5293,6 +5822,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 530
       Question(
         question: 'During a climb in a standard atmosphere with constant Manifold Absolute Pressure (MAP) and RPM indications and at a constant mixture setting, the power output of a piston engine:',
         options: [
@@ -5303,6 +5833,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 531
       Question(
         question: 'The connection in parallel of two 12 volt/ 40 amp hours batteries, will create a unit with the following characteristics;',
         options: [
@@ -5313,6 +5844,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 532
       Question(
         question: 'The kind of compressor normally used as a supercharger is:',
         options: [
@@ -5323,6 +5855,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 533
       Question(
         question: 'On the attached diagram showing the power output of a piston engine as a function of mixture richness, best economy is at the point marked:',
         options: [
@@ -5333,6 +5866,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 534
       Question(
         question: 'When being engaged, and without selecting a particular mode, an automatic pilot enables:',
         options: [
@@ -5343,6 +5877,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 535
       Question(
         question: 'Assume an initial condition at a high cruise altitude with a constant speed propeller. What will happen if the altitude is decreased while the throttle remains fully open and the waste gate is seized in the cruise position:',
         options: [
@@ -5353,6 +5888,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 536
       Question(
         question: 'An aircraft flies steadily on a heading 270°. The flight director is engaged in the heading select mode (HDG SEL), heading 270° selected. If a new heading 360° is selected, the vertical trend bar:',
         options: [
@@ -5363,6 +5899,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 537
       Question(
         question: 'One of the advantages of a turbocharger is:',
         options: [
@@ -5373,6 +5910,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 538
       Question(
         question: 'Alarms are standardised and follow a code of colours. Those requiring action but not immediately, are signalled by the colour:',
         options: [
@@ -5383,6 +5921,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 539
       Question(
         question: 'With which instrument(s) do you monitor the power output of an aeroplane fitted with a fixed pitch propeller?',
         options: [
@@ -5393,6 +5932,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 540
       Question(
         question: 'An EGT (Exhaust Gas Temperature) indicator for a piston engine is used to:',
         options: [
@@ -5403,6 +5943,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 541
       Question(
         question: 'About a magnetic compass:',
         options: [
@@ -5413,6 +5954,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 542
       Question(
         question: 'A stall warning system is based on a measure of:',
         options: [
@@ -5423,6 +5965,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 543
       Question(
         question: 'During climb with constant throttle and RPM lever setting (mixture being constant) the:',
         options: [
@@ -5433,6 +5976,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 544
       Question(
         question: 'The engine instrument utilising an aneroid pressure diaphragm is the:',
         options: [
@@ -5443,6 +5987,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 545
       Question(
         question: 'The conditions which can cause knocking are:',
         options: [
@@ -5453,6 +5998,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 546
       Question(
         question: 'During take-off, the angle of attack of the blades of a fixed pitch propeller, optimised for cruise condition is:',
         options: [
@@ -5463,6 +6009,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 547
       Question(
         question: 'The position of a Flight Director command bars:',
         options: [
@@ -5473,6 +6020,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 548
       Question(
         question: 'The mechanism to change the propeller blade pitch of modern small piston engine aeroplanes is operated',
         options: [
@@ -5483,6 +6031,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 549
       Question(
         question: 'In a steep turn, the northerly turning error on a magnetic compass on the northern hemisphere is:',
         options: [
@@ -5493,6 +6042,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 550
       Question(
         question: 'The diagram representing a left turn with insufficient rudder is:',
         options: [
@@ -5503,6 +6053,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 551
       Question(
         question: 'A directional gyro is: 1- a gyroscope free around two axis 2- a gyroscope free around one axis 3- capable of self-orientation around an earth-tied direction 4- incapable of self-orientation around an earth-tied direction The combination which regroups all of the correct statements is: NB: the degree(s) of freedom of a gyro does not take into account its rotor spin axis.',
         options: [
@@ -5513,6 +6064,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 552
       Question(
         question: 'Heading information given by a gyro platform, is given by a gyro with: NB: the degree(s) of freedom of a gyro does not take into account its rotor spin axis.',
         options: [
@@ -5523,6 +6075,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 553
       Question(
         question: 'A thermocouple can be made of:',
         options: [
@@ -5533,6 +6086,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 554
       Question(
         question: 'During an acceleration phase at constant attitude, the control system of the artificial horizon results in the horizon bar indicating a:',
         options: [
@@ -5543,6 +6097,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 555
       Question(
         question: 'A turn indicator is an instrument which indicates rate of turn. Rate of turn depends upon: 1: bank angle 2: aeroplane speed 3: aeroplane weight The combination regrouping the correct statements is:',
         options: [
@@ -5553,6 +6108,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 556
       Question(
         question: 'The operating principle of the vertical speed indicator (VSI) is based on the measurement of the rate of change of:',
         options: [
@@ -5563,6 +6119,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 557
       Question(
         question: 'The ignition system generally used for small aircrafts is a:',
         options: [
@@ -5573,6 +6130,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 558
       Question(
         question: 'The diagram which shows a 40° left bank and 15° nose down attitude is n°',
         options: [
@@ -5583,6 +6141,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 559
       Question(
         question: 'The heading read on the dial of a directional gyro is subject to errors, one of which is due to the movement of the aircraft. This error...',
         options: [
@@ -5593,6 +6152,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 560
       Question(
         question: 'A gravity erector system is used to correct the errors on:',
         options: [
@@ -5603,8 +6163,9 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 561
       Question(
-        question: 'Which of the following statements are correct for an aeroplane cruising at FL 60 with a true airspeed (TAS) of 100 kt in standard atmospheric conditions? 1 - The TAS is approximately 10% higher than the IAS. 2 - The difference between the equivalent airspeed (EAS) and the calibrated airspeed (CAS) is negligible. 3 - The speed displayed on the airspeed indicator is a calibrated airspeed (CAS) if the position error and instrument error are zero.',
+        question: 'Which of the following statements are correct for an aeroplane cruising at FL 60 with a true airspeed (TAS) of 100 kt in standard atmospheric conditions° 1 - The TAS is approximately 10% higher than the IAS. 2 - The difference between the equivalent airspeed (EAS) and the calibrated airspeed (CAS) is negligible. 3 - The speed displayed on the airspeed indicator is a calibrated airspeed (CAS) if the position error and instrument error are zero.',
         options: [
           '1, 2 and 3 are all correct.',
           '2 and 3 are correct.',
@@ -5613,6 +6174,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 562
       Question(
         question: 'The main reason for opening the cowl flaps is to control the:',
         options: [
@@ -5623,6 +6185,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 563
       Question(
         question: 'The contents of an oxygen bottle can be ensure by the: 1 - weight. 2 - pressure. 3 - level. 4 - volume. The combination containing all of the correct statements is:',
         options: [
@@ -5633,6 +6196,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 564
       Question(
         question: 'The purpose of the blow-in-doors at the air inlets is to:',
         options: [
@@ -5643,6 +6207,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 565
       Question(
         question: 'Command bars of the flight director may be present on the: 1 - HSI 2 - EICAS 3 - CDU 4 - ADI The combination containing all of the correct statements is:',
         options: [
@@ -5653,6 +6218,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 566
       Question(
         question: 'The most common system used to monitor turbine gas exhaust temperature is the:',
         options: [
@@ -5663,6 +6229,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 567
       Question(
         question: 'Gas turbine engine rotational speed (RPM) is usually sensed using either',
         options: [
@@ -5673,6 +6240,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 568
       Question(
         question: 'Parallax error is:',
         options: [
@@ -5683,6 +6251,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 569
       Question(
         question: 'An airspeed indicator displays:',
         options: [
@@ -5693,6 +6262,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 570
       Question(
         question: 'The gyromagnetic compass torque motor:',
         options: [
@@ -5703,6 +6273,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 571
       Question(
         question: 'Given: Pt = total pressure Ps = static pressure Dynamic pressure is:',
         options: [
@@ -5713,6 +6284,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 572
       Question(
         question: 'Given: Pt = total pressure Ps = static pressure Pso = static pressure at sea level Dynamic pressure is :',
         options: [
@@ -5723,6 +6295,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 573
       Question(
         question: 'In the absence of position and instrument errors, IAS is equal to:',
         options: [
@@ -5733,6 +6306,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 574
       Question(
         question: 'Given: Pt = total pressure Ps = static pressure Pso = static pressure at sea level Calibrated airspeed (CAS) is a function of:',
         options: [
@@ -5743,6 +6317,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 575
       Question(
         question: 'Equivalent Air Speed (EAS) is obtained from Calibrated Air Speed (CAS) by correcting for:',
         options: [
@@ -5753,6 +6328,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 576
       Question(
         question: 'Equivalent Air Speed (EAS) is obtained from Indicated Air Speed (IAS) by correcting for the following errors: 1 - instrument 2 - position 3 - density 4 - compressibility The combination regrouping all the correct statements is:',
         options: [
@@ -5763,6 +6339,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 577
       Question(
         question: 'True Air Speed (TAS) is obtained from Calibrated Air Speed (CAS) by correcting for the following errors: 1 - instrument 2 - compressibility 3 - position 4 - density The combination regrouping all the correct statements is:',
         options: [
@@ -5773,6 +6350,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 578
       Question(
         question: 'The quadrantal deviation of the magnetic compass is due to the action of:',
         options: [
@@ -5783,6 +6361,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 579
       Question(
         question: 'True Air Speed (TAS) is obtained from Indicated Air Speed (IAS) by correcting for the following errors: 1 - instrument 2 - position 3 - compressibility 4 - density The combination regrouping all the correct statements is:',
         options: [
@@ -5793,6 +6372,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 580
       Question(
         question: 'Calibrated Air Speed (CAS) is:',
         options: [
@@ -5803,6 +6383,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 581
       Question(
         question: 'Equivalent Air Speed (EAS) is:',
         options: [
@@ -5813,6 +6394,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 582
       Question(
         question: 'True Air Speed (TAS) is:',
         options: [
@@ -5823,6 +6405,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 583
       Question(
         question: 'True Air Speed (TAS) is:',
         options: [
@@ -5833,6 +6416,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 584
       Question(
         question: 'True Air Speed (TAS) is:',
         options: [
@@ -5843,6 +6427,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 585
       Question(
         question: 'True Air Speed (TAS) is equal to Equivalent Air Speed (EAS) only if:',
         options: [
@@ -5853,6 +6438,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 586
       Question(
         question: 'The parameter that determines the relationship between EAS and TAS is:',
         options: [
@@ -5863,6 +6449,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 587
       Question(
         question: 'Total Air Temperature (TAT) is:',
         options: [
@@ -5873,6 +6460,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 588
       Question(
         question: 'Concerning the airspeed indicator, IAS is:',
         options: [
@@ -5883,6 +6471,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 589
       Question(
         question: 'Compared with a conventional gyro, a laser gyro:',
         options: [
@@ -5893,6 +6482,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 590
       Question(
         question: 'Equivalent Air Speed (EAS) is:',
         options: [
@@ -5903,6 +6493,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 591
       Question(
         question: 'The principle of a laser gyro is based on:',
         options: [
@@ -5913,6 +6504,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 592
       Question(
         question: 'True Air Speed (TAS) is obtained from Equivalent Air Speed (EAS) by correcting for:',
         options: [
@@ -5923,6 +6515,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 593
       Question(
         question: 'Calibrated Air Speed (CAS) is obtained from Indicated Air Speed (IAS) by correcting for the following errors: 1 - position 2 - compressibility 3 - instrument 4 - density The combination regrouping all the correct statements is :',
         options: [
@@ -5933,6 +6526,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 594
       Question(
         question: 'For internal cooling, reciprocating engines are especially dependent on:',
         options: [
@@ -5943,6 +6537,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 595
       Question(
         question: 'Equivalent Air Speed (EAS) is obtained from Calibrated Air Speed (CAS) by correcting for the following errors: 1 - position 2 - compressibility 3 - instrument 4 - density The combination regrouping all the correct statements is:',
         options: [
@@ -5953,6 +6548,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 596
       Question(
         question: 'Below the tropopause, with no temperature inversion, when descending at constant Mach number:',
         options: [
@@ -5963,6 +6559,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 597
       Question(
         question: 'When descending at a constant Mach number:',
         options: [
@@ -5973,6 +6570,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 598
       Question(
         question: 'When climbing at a constant CAS in a standard atmosphere:',
         options: [
@@ -5983,6 +6581,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 599
       Question(
         question: 'Below the tropopause with no temperature inversion, when climbing at constant Mach number:',
         options: [
@@ -5993,6 +6592,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 600
       Question(
         question: 'Given: Zp = pressure altitude Zd = density altitude TAS can be obtained from whic of the following data?',
         options: [
@@ -6003,6 +6603,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 601
       Question(
         question: 'With EAS and density altitude (Zd), we can deduce:',
         options: [
@@ -6013,6 +6614,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 602
       Question(
         question: 'With EAS and pressure altitude (Zp), we can deduce:',
         options: [
@@ -6023,6 +6625,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 603
       Question(
         question: 'When climbing at a constant RAS in a standard atmosphere: 1 - TAS decreases 2 - TAS increases 3 - Mach number increases 4 - Mach number decreases The combination regrouping all the correct statements is:',
         options: [
@@ -6033,6 +6636,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 604
       Question(
         question: 'When descending at a constant RAS in a standard atmosphere: 1 - TAS increases 2 - TAS decreases 3 - Mach number increases 4 - Mach number decreases The combination regrouping all the correct statements is:',
         options: [
@@ -6043,6 +6647,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 605
       Question(
         question: 'In addition to the fire hazard introduced, excessive priming should be avoided because:',
         options: [
@@ -6053,6 +6658,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 606
       Question(
         question: 'If an aircraft maintaining a constant RAS and flight level is flying from a cold air mass into warmer air:',
         options: [
@@ -6063,6 +6669,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 607
       Question(
         question: 'If an aircraft maintaining a constant RAS and flight level is flying from a warm air mass into colder air:',
         options: [
@@ -6073,6 +6680,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 608
       Question(
         question: 'In the absence of position and instrument errors, RAS is equal to:',
         options: [
@@ -6083,6 +6691,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 609
       Question(
         question: 'If a manifold pressure gauge consistently registers atmospheric pressure, the cause is probably;',
         options: [
@@ -6093,6 +6702,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 610
       Question(
         question: 'In the absence of position and instrument errors:',
         options: [
@@ -6103,6 +6713,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 611
       Question(
         question: 'A manifold pressure gauge of a piston engine measures:',
         options: [
@@ -6113,6 +6724,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 612
       Question(
         question: 'The vertical command bar of a flight director: 1 - repeats the position information given by the EHSI 2 - repeats the position information given by the VOR 3 - gives information about the direction and the amplitude of the corrections to be applied on the bank of the aircraft The combination regrouping all the correct statements is:',
         options: [
@@ -6123,6 +6735,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 613
       Question(
         question: 'The vertical command bar of a flight director:',
         options: [
@@ -6133,6 +6746,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 614
       Question(
         question: 'The vertical command bar of a flight director: 1 - repeats the position information given by the ILS in the horizontal plane 2 - repeats the position information given by the ILS in the vertical plane 3 - gives information about the direction and the amplitude of the corrections to be applied on the bank of the aircraft The combination regrouping all the correct statements is:',
         options: [
@@ -6143,6 +6757,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 615
       Question(
         question: 'The vertical command bar of a flight director:',
         options: [
@@ -6153,6 +6768,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 616
       Question(
         question: 'The horizontal command bar of a flight director: 1 - repeats the position information given by the ILS in the horizontal plane 2 - repeats the position information given by the ILS in the vertical plane 3 - gives information about the direction and the amplitude of the corrections to be applied on the pitch of the aircraft. The combination regrouping all the correct statements is:',
         options: [
@@ -6163,6 +6779,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 617
       Question(
         question: 'The horizontal command bar of a flight director:',
         options: [
@@ -6173,6 +6790,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 618
       Question(
         question: 'The command bars of a flight director:',
         options: [
@@ -6183,6 +6801,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 619
       Question(
         question: 'The command bars of a flight director:',
         options: [
@@ -6193,6 +6812,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 620
       Question(
         question: 'Considering a flight director of the "command bars" type: 1 - the vertical bar is always associated with the roll channel 2 - the vertical bar may be associated with the pitch channel 3 - the horizontal bar may be associated with the roll channel 4 - the horizontal bar is always associated with the pitch channel The combination regrouping all the correct statements is:',
         options: [
@@ -6203,6 +6823,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 621
       Question(
         question: 'Considering a flight director of the "command bars" type:',
         options: [
@@ -6213,6 +6834,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 622
       Question(
         question: 'Considering a flight director of the "command bars" type:',
         options: [
@@ -6223,6 +6845,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 623
       Question(
         question: 'A fuel strainer when fitted to a carburettor will be positioned:',
         options: [
@@ -6233,6 +6856,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 624
       Question(
         question: 'In a piston engine, the purpose of an altitude mixture control is to:',
         options: [
@@ -6243,6 +6867,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 625
       Question(
         question: 'Under normal running conditions a magneto draws primary current:',
         options: [
@@ -6253,6 +6878,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 626
       Question(
         question: 'The air in a piston engine supercharger enters the centrifugal compressor at:',
         options: [
@@ -6263,6 +6889,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 627
       Question(
         question: 'In a piston engine, turbocharger boost pressure may be monitored by:',
         options: [
@@ -6273,6 +6900,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 628
       Question(
         question: 'An engine pressure ratio (EPR) gauge reading normally shows the ratio of:',
         options: [
@@ -6283,6 +6911,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 629
       Question(
         question: 'In a gas turbine engine, the maximum gas temperature is attained:',
         options: [
@@ -6293,6 +6922,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 630
       Question(
         question: 'The diffuser in a centrifugal compressor is a device in which the:',
         options: [
@@ -6303,6 +6933,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 631
       Question(
         question: 'A "fan" stage of a ducted-fan turbine engine is driven by:',
         options: [
@@ -6313,6 +6944,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 632
       Question(
         question: 'In a free turbine engine:',
         options: [
@@ -6323,6 +6955,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 633
       Question(
         question: 'The fan in a high by-pass ratio turbo-jet engine produces:',
         options: [
@@ -6333,6 +6966,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 634
       Question(
         question: 'At constant fuel flow, if engine compressor air is bled off for engine anti-icing or a similar system, the turbine temperature:',
         options: [
@@ -6343,6 +6977,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 635
       Question(
         question: 'A "hung start" is the failure of an engine to accelerate to its normal idle speed. It may be caused by:',
         options: [
@@ -6353,6 +6988,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 636
       Question(
         question: 'In an engine vibration monitoring system for a turbojet any vibration produced by the engine is:',
         options: [
@@ -6363,6 +6999,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 637
       Question(
         question: 'A reverse thrust door warning light on the flight deck instrument panel illuminates when:',
         options: [
@@ -6373,6 +7010,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 638
       Question(
         question: 'The mixture control for a carburettor achieves its control by:',
         options: [
@@ -6383,6 +7021,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 639
       Question(
         question: 'The purpose of a distributor in an ignition system is to distribute:',
         options: [
@@ -6393,6 +7032,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 640
       Question(
         question: 'The very rapid magnetic field changes (flux) around the primary coil in a magneto are accomplished by the:',
         options: [
@@ -6403,6 +7043,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 641
       Question(
         question: 'A turbocharger system is normally driven by:',
         options: [
@@ -6413,6 +7054,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 642
       Question(
         question: 'A turbocharger consists of a:',
         options: [
@@ -6423,6 +7065,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 643
       Question(
         question: 'In a single spool gas turbine engine, the compressor rpm is:',
         options: [
@@ -6433,6 +7076,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 644
       Question(
         question: 'When the combustion gases pass through a turbine the:',
         options: [
@@ -6443,6 +7087,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 645
       Question(
         question: 'For a turbine engine, the term self-sustaining speed relates to the speed at which the engine:',
         options: [
@@ -6453,6 +7098,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 646
       Question(
         question: 'In a gas turbine engine, compressor blades, which are not rigidly fixed in position when the engine is stationary, take up a rigid position when the engine is running due to:',
         options: [
@@ -6463,6 +7109,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 647
       Question(
         question: 'Turbine blade stages may be classed as either "impulse" or "reaction". In an impulse turbine stage:',
         options: [
@@ -6473,6 +7120,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 648
       Question(
         question: 'A test to assess the state of charge of a lead-acid battery would involve:',
         options: [
@@ -6483,6 +7131,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 649
       Question(
         question: 'When an "open circuit" occurs in an electrical supply system, the:',
         options: [
@@ -6493,6 +7142,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 650
       Question(
         question: 'When two DC generators are operating in parallel, control of load sharing is achieved by:',
         options: [
@@ -6503,6 +7153,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 651
       Question(
         question: 'Because of the connection in parallel of electrical equipments on an AC bus bar, isolation of individual equipments:',
         options: [
@@ -6513,6 +7164,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 652
       Question(
         question: 'The function of a constant speed drive (CSD) in an AC generating system is to:',
         options: [
@@ -6523,6 +7175,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 653
       Question(
         question: 'If two constant frequency AC generators are operating independently, then the phase relation between both generators:',
         options: [
@@ -6533,6 +7186,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 654
       Question(
         question: 'To ensure correct load sharing between AC generators operating in parallel:',
         options: [
@@ -6543,6 +7197,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 655
       Question(
         question: 'A CSD of an AC generator may be disconnected in flight. The primary reason(s) for disconnection are:',
         options: [
@@ -6553,6 +7208,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 656
       Question(
         question: 'A CSD unit which has been disconnected in flight:',
         options: [
@@ -6563,6 +7219,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 657
       Question(
         question: 'Which one of the following statements is true with regard to the operation of a Mach trim system:',
         options: [
@@ -6573,6 +7230,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 658
       Question(
         question: 'When a conductor cuts the flux of a magnetic field:',
         options: [
@@ -6583,6 +7241,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 659
       Question(
         question: 'In order that DC generators will achieve equal load sharing when operating in parallel, it is necessary to ensure that:',
         options: [
@@ -6593,6 +7252,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 660
       Question(
         question: 'A current limiter fuse in a DC generation system is used to:',
         options: [
@@ -6603,6 +7263,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 661
       Question(
         question: 'An AC generator driven by a CSD unit:',
         options: [
@@ -6613,6 +7274,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 662
       Question(
         question: 'Assuming a CSD fault is indicated, the CSD should be disconnected:',
         options: [
@@ -6623,6 +7285,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 663
       Question(
         question: '"Frequency wild" in relation to a AC generation system means the generator:',
         options: [
@@ -6633,6 +7296,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 664
       Question(
         question: 'When the supply frequency in a circuit with a capacitor is increased, the current in this circuit will:',
         options: [
@@ -6643,6 +7307,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 665
       Question(
         question: 'On an aeroplane using AC as primary power supply, the batteries are charged in flight from:',
         options: [
@@ -6653,6 +7318,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 666
       Question(
         question: 'When a battery is almost fully discharged there is a tendency for the:',
         options: [
@@ -6663,6 +7329,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 667
       Question(
         question: 'Immediately after starting engine(s) with no other electrical services switched on, an ammeter showing a high charge rate to the battery:',
         options: [
@@ -6673,6 +7340,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 668
       Question(
         question: 'A "trip-free" type circuit breaker is a circuit protection device which:',
         options: [
@@ -6683,6 +7351,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 669
       Question(
         question: 'The function of a CSD in an AC generating system is to:',
         options: [
@@ -6693,6 +7362,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 670
       Question(
         question: 'The frequency of an AC generator is dependent on the:',
         options: [
@@ -6703,6 +7373,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 671
       Question(
         question: '"Conditioned" air is air that has:',
         options: [
@@ -6713,6 +7384,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 672
       Question(
         question: 'A cabin pressure controller maintains a pre-set cabin altitude by regulating the:',
         options: [
@@ -6723,8 +7395,9 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 673
       Question(
-        question: 'In the hydraulic press schematically shown, what balancing Force would be acting on the right hand side ? (The diagram is not to scale)',
+        question: 'In the hydraulic press schematically shown, what balancing Force would be acting on the right hand side ° (The diagram is not to scale)',
         options: [
           '100 N.',
           '1000 N.',
@@ -6733,6 +7406,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 674
       Question(
         question: 'Assuming an accumulator is pre-charged with air to 1000 psi and the hydraulic system is pressurised to 1500 psi, the accumulator gauge will read:',
         options: [
@@ -6743,6 +7417,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 675
       Question(
         question: 'Internal leakage in a hydraulic system will cause:',
         options: [
@@ -6753,6 +7428,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 676
       Question(
         question: 'On large aeroplanes equipped with power brakes, the main source of power is derived from:',
         options: [
@@ -6763,6 +7439,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 677
       Question(
         question: 'The term "Bootstrap", when used to identify a cabin air conditioning and pressurisation system, refers to the:',
         options: [
@@ -6773,6 +7450,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 678
       Question(
         question: 'In a bootstrap cooling system the supply air is first:',
         options: [
@@ -6783,6 +7461,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 679
       Question(
         question: 'The term "pressure cabin" applies when an aeroplane:',
         options: [
@@ -6793,6 +7472,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 680
       Question(
         question: 'Under normal flight conditions, cabin pressure is controlled by:',
         options: [
@@ -6803,6 +7483,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 681
       Question(
         question: 'Assuming cabin differential pressure has attained the required value in normal flight conditions, if flight altitude is maintained:',
         options: [
@@ -6813,6 +7494,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 682
       Question(
         question: 'Assuming cabin pressure decreases, the cabin rate of climb indicator should indicate:',
         options: [
@@ -6823,6 +7505,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 683
       Question(
         question: 'The level in a hydraulic reservoir will:',
         options: [
@@ -6833,6 +7516,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 684
       Question(
         question: 'An accumulator in a hydraulic system will:',
         options: [
@@ -6843,6 +7527,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 685
       Question(
         question: 'Assuming a hydraulic accumulator is pre-charged with air to 1000 psi. If the hydraulic system is then pressurised to its operating pressure of 3000 psi, the indicated pressure on the air side of the accumulator should be:',
         options: [
@@ -6853,6 +7538,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 686
       Question(
         question: 'The schematic diagram annexed illustrates an actuator and a selector valve in a typical hydraulic system. Assuming hydraulic pressure throughout and no internal leakage:',
         options: [
@@ -6863,6 +7549,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 687
       Question(
         question: 'In hydraulic system, a shuttle valve:',
         options: [
@@ -6873,6 +7560,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 688
       Question(
         question: 'To allow for failure of the normal method of system pressure limiting control, a hydraulic system often incorporates',
         options: [
@@ -6883,6 +7571,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 689
       Question(
         question: 'The Ram Air Turbine (RAT) provides emergency hydraulic power for:',
         options: [
@@ -6893,6 +7582,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 690
       Question(
         question: 'In a compensated capacitance type quantity indicating system, the contents gauge of a half-full fuel tank indicates a fuel mass of 8000 kg. If a temperature rise increased the volume of fuel by 5%, the indicated fuel mass would:',
         options: [
@@ -6903,6 +7593,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 691
       Question(
         question: 'Tyre "creep" may be described as the:',
         options: [
@@ -6913,6 +7604,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 692
       Question(
         question: 'Continuous loop fire detector systems operate on the principle that an increase in temperature produces:',
         options: [
@@ -6923,6 +7615,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 693
       Question(
         question: 'If the engine, with a fixed pitch propeller, is detonating during climb-out after takeoff, the normal corrective action would be to:',
         options: [
@@ -6933,6 +7626,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 694
       Question(
         question: 'Dual ignition provides a factor of safety and',
         options: [
@@ -6943,6 +7637,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 695
       Question(
         question: 'An aircraft magneto is switched off by',
         options: [
@@ -6953,6 +7648,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 696
       Question(
         question: 'Spark timing is related to engine speed in the way that the:',
         options: [
@@ -6963,6 +7659,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 697
       Question(
         question: 'Vents in oil tanks are primarily to',
         options: [
@@ -6973,6 +7670,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 698
       Question(
         question: 'A Constant Speed Drive aims at ensuring',
         options: [
@@ -6983,6 +7681,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 699
       Question(
         question: 'The reason for the fact that an aeroplane designed for long distances cannot simply be used for short haul flights at higher frequencies is that',
         options: [
@@ -6993,6 +7692,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 700
       Question(
         question: 'The ABS (Auto Brake System) is being disconnected after landing ..',
         options: [
@@ -7003,6 +7703,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 701
       Question(
         question: 'A pressurized aeroplane is operated at FL 300. It undergoes a rapid decompression so that the pressure in the cabin goes quickly down to the outside pressure value. What happens concerning the oxygen system ?',
         options: [
@@ -7013,6 +7714,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 702
       Question(
         question: 'The part of the flight that will cause the highest loads on the torsion link in a bogie gear is',
         options: [
@@ -7023,6 +7725,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 703
       Question(
         question: 'The reason for the trim switch on a control column to consist of two separate switches is',
         options: [
@@ -7033,6 +7736,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 704
       Question(
         question: 'Assume that during cruise flight with air-conditioning packs ON, the outflow valve(s) would close. The result would be that:',
         options: [
@@ -7043,6 +7747,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 705
       Question(
         question: 'The function of an air cycle machine is to:',
         options: [
@@ -7053,6 +7758,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 706
       Question(
         question: 'A manual inflation handle:',
         options: [
@@ -7063,6 +7769,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 707
       Question(
         question: 'The function of a fusible plug is to',
         options: [
@@ -7073,6 +7780,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 708
       Question(
         question: 'If the pressure in the cabin tends to become lower than the outside ambient air pressure the:',
         options: [
@@ -7083,6 +7791,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 709
       Question(
         question: 'Considering an airspeed indicator, a second stripped needle, if installed, indicates:',
         options: [
@@ -7093,6 +7802,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 710
       Question(
         question: 'The flight director is engaged in the heading select mode (HDG SEL) , heading 180° selected. When heading is 160°, the vertical bar of the FD:',
         options: [
@@ -7103,6 +7813,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 711
       Question(
         question: 'The RPM indicator (or tachometer) of a piston engine can include a small red arc within the arc normally used (green arc) In the RPM range corresponding to this small red arc the:',
         options: [
@@ -7113,6 +7824,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 712
       Question(
         question: 'Different pressure sensors are used according to the intensity of the pressure measured (low, medium or high) Classify the following sensors by order of increasing pressure for which they are suitable: 1- bellows type 2- Bourdon tube type 3- aneroid capsule type',
         options: [
@@ -7123,6 +7835,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 713
       Question(
         question: 'TCAS 2 (Traffic Collision Avoidance System) uses for its operation:',
         options: [
@@ -7133,6 +7846,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 714
       Question(
         question: 'The Mach number is:',
         options: [
@@ -7143,6 +7857,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 715
       Question(
         question: 'Mach Trim is a device to compensate for:',
         options: [
@@ -7153,6 +7868,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 716
       Question(
         question: 'The type of a aircraft oxygen system intended for use by passengers, is mostly:',
         options: [
@@ -7163,6 +7879,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 717
       Question(
         question: 'A continuous loop detector system is a:',
         options: [
@@ -7173,6 +7890,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 718
       Question(
         question: 'The demand valve of a diluter-demand type oxygen regulator in normal mode, operates when the:',
         options: [
@@ -7183,6 +7901,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 719
       Question(
         question: 'The purpose of the "Pressure Relief Valve" in a high pressure oxygen system is to:',
         options: [
@@ -7193,6 +7912,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 720
       Question(
         question: 'Indication of Mach number is obtained from:',
         options: [
@@ -7203,6 +7923,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 721
       Question(
         question: 'The purpose of Auto Throttle is:',
         options: [
@@ -7213,6 +7934,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 722
       Question(
         question: 'The purpose of Auto Trim function in autopilot is to:',
         options: [
@@ -7223,6 +7945,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 723
       Question(
         question: 'The altitude alerting system:',
         options: [
@@ -7233,6 +7956,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 724
       Question(
         question: 'The signal supplied by a transmitter fitted with a 3-phase AC generator, connected to RPM indicator, is:',
         options: [
@@ -7243,6 +7967,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 725
       Question(
         question: 'The signal supplied by a transmitter fitted with a magnetic sensor, connected to an RPM indicator is:',
         options: [
@@ -7253,6 +7978,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 726
       Question(
         question: 'A vibration indicator receives a signal from different sensors (accelerometers). It indicates the:',
         options: [
@@ -7263,6 +7989,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 727
       Question(
         question: 'The transmitter of RPM indicator may consist of: 1- a magnetic sensor supplying an induced AC voltage 2- a DC generator supplying a DC voltage 3- a single-phase AC generator supplying an AC voltage 4- a three-phase AC generator supplying a three-phase voltage The combination regrouping all the correct statements is:',
         options: [
@@ -7273,6 +8000,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 728
       Question(
         question: 'The indication of a fuel float gauge varies with: 1- aircraft attitude 2- accelerations 3- atmospheric pressure 4- temperature The combination regrouping all the correct statements is:',
         options: [
@@ -7283,6 +8011,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 729
       Question(
         question: 'Concerning the TCAS (Traffic Collision Avoidance System):',
         options: [
@@ -7293,6 +8022,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 730
       Question(
         question: 'The TCAS 2 (Traffic Collision Avoidance System) gives avoidance resolutions:',
         options: [
@@ -7303,6 +8033,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 731
       Question(
         question: 'In the event of a conflict, the TCAS 2 (Traffic Collision alert and Avoidance System) presents warnings to the crew such as:',
         options: [
@@ -7313,6 +8044,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 732
       Question(
         question: 'An aircraft is flying at flight level FL180 and Mach number 0.36. Its onboard thermometer reads TAT = - 5°C. Considering that the probe recovery coefficient is 0.84, the present weather conditions compared with the standard atmosphere are:',
         options: [
@@ -7323,6 +8055,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 733
       Question(
         question: 'One of the errors inherent in a ring laser gyroscope occurs at low input rotation rates tending towards zero when a phenomenon known as \'lock-in\' is experienced. What is the name of the technique, effected by means of a piezo-electric motor, that is used',
         options: [
@@ -7333,6 +8066,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 734
       Question(
         question: 'Smoke detectors fitted on transport aircraft are of the following type:',
         options: [
@@ -7343,6 +8077,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 735
       Question(
         question: 'An aircraft is descending from FL 390 to ground level at maximum speed. The limits in speed will be:',
         options: [
@@ -7353,6 +8088,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 736
       Question(
         question: 'The functions of the altitude alerting system is to alert the flight crew: 1 - upon approaching a pre-selected altitude 2 - upon approaching a pre-selected altitude, during climb only 3 - of a loss of altitude during take-off or missed approach 4 - of a wrong landing configuration 5 - when deviating from the selected altitude The combination regrouping all the correct statements is:',
         options: [
@@ -7363,6 +8099,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 737
       Question(
         question: 'In order to know in which mode the auto-throttles are engaged, the crew will check the:',
         options: [
@@ -7373,6 +8110,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 738
       Question(
         question: 'Below the tropopause, when descending at constant CAS:',
         options: [
@@ -7383,6 +8121,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 739
       Question(
         question: 'In the cockpit of a transport airplane, at least one manual fire-extinguisher must be conveniently located containing:',
         options: [
@@ -7393,6 +8132,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 740
       Question(
         question: 'Oxygen systems on pressurized airplanes are used to provide oxygen: The combination regrouping all the correct statements is: 1. In an emergency in the case of depressurization. 2. In an emergency in the case of the indisposition of a passenger. 3. During a normal flight. 4. In an emergency in case of smoke or toxic gases in the cockpit.',
         options: [
@@ -7403,6 +8143,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 741
       Question(
         question: 'Modern pressurized transport airplanes are equipped with:',
         options: [
@@ -7413,6 +8154,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 742
       Question(
         question: 'Chemical oxygen generators are used to furnish oxygen to the:',
         options: [
@@ -7423,6 +8165,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 743
       Question(
         question: 'The chemical oxygen generator supplies oxygen for about:',
         options: [
@@ -7433,6 +8176,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 744
       Question(
         question: 'The advantages of a chemical oxygen source for the passenger cabin are: The combination regrouping all the correct statements is: 1. reduced weight and volume, 2. easy storage and maintenance, 3. greater autonomy, 4. no risk of explosion, 5. reversible functioning, 6. no maintenance.',
         options: [
@@ -7443,6 +8187,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 745
       Question(
         question: 'The disadvantages of a chemical oxygen source for the passenger cabin are: The combination regrouping all the correct statements is: 1. a flow which cannot be modulated, 2. a heavy and bulky system, 3. non reversible functioning, 4. risks of explosion, 5. poor autonomy.',
         options: [
@@ -7453,6 +8198,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 746
       Question(
         question: 'The advantages of a gaseous oxygen source for the passenger cabin are: The combination regrouping all the correct statements is: 1. a greater autonomy, 2. no risk of explosion, 3. reversible functioning, 4. easy storage and maintenance, 5. possibility to regulate flow.',
         options: [
@@ -7463,6 +8209,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 747
       Question(
         question: 'When the door operation of a transport airplane equipped with evacuation slides in the armed position is opened from the outside, the slide:',
         options: [
@@ -7473,6 +8220,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 748
       Question(
         question: 'The purpose of the proximity of the emergency evacuation path marking system is to:',
         options: [
@@ -7483,6 +8231,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 749
       Question(
         question: 'The TCAS 2 (Traffic Collision Avoidance System) provides: 1- traffic information (TA: Traffic Advisory) 2- horizontal resolution (RA: Resolution Advisory) 3- vertical resolution (RA: Resolution Advisory) 4- ground proximity warning The combination regrouping all the correct statements is:',
         options: [
@@ -7493,6 +8242,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 750
       Question(
         question: 'The TCAS (Traffic Collision Avoidance System) computer receives information: 1 - about the aircraft true airspeed 2 - about the airplane configuration 3 - about the pressure altitude through the mode C transponder 4 - from the radio altimeter The combination regrouping all the correct statements is:',
         options: [
@@ -7503,6 +8253,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 751
       Question(
         question: 'When the intruding aircraft is equipped with a transponder without altitude reporting capability, the TCAS (Traffic Collision Avoidance System) issues a:',
         options: [
@@ -7513,6 +8264,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 752
       Question(
         question: 'When the intruding aircraft is equipped with a serviceable mode C transponder, the TCAS 2 (Traffic Collision Avoidance System) generates a:',
         options: [
@@ -7523,6 +8275,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 753
       Question(
         question: 'On a TCAS2 (Traffic Collision Avoidance System), a corrective "resolution advisory" (RA) is a "resolution advisory":',
         options: [
@@ -7533,6 +8286,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 754
       Question(
         question: 'On a TCAS 2 (Traffic Collision Avoidance System) the preventive "resolution advisory" (RA) is a "resolution advisory":',
         options: [
@@ -7543,6 +8297,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 755
       Question(
         question: 'On the display of a TCAS 2 (Traffic alert and Collision Avoidance System), a traffic advisory (TA) is represented by:',
         options: [
@@ -7553,6 +8308,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 756
       Question(
         question: 'On the display of a TCAS 2 (Traffic alert and Collision Avoidance System), a resolution advisory (RA) is represented by:',
         options: [
@@ -7563,6 +8319,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 757
       Question(
         question: 'On the display of a TCAS II (Traffic alert and Collision Avoidance System), a proximate traffic is represented by:',
         options: [
@@ -7573,6 +8330,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 758
       Question(
         question: 'The float type fuel gauges provide information on:',
         options: [
@@ -7583,6 +8341,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 759
       Question(
         question: 'The opening of the doors giving access to the oxygen masks for the passengers is: The combination regrouping all the correct statements is: 1. pneumatic for the gaseous oxygen system, 2. electrical for the chemical oxygen system, 3. pneumatic for the chemical oxygen system, 4. electrical for the gaseous oxygen system.',
         options: [
@@ -7593,6 +8352,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 760
       Question(
         question: 'The measurement of the turbine temperature or of the EGT (Exhaust Gas Temperature) is carried out at the:',
         options: [
@@ -7603,6 +8363,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 761
       Question(
         question: 'A passenger oxygen mask is:',
         options: [
@@ -7613,6 +8374,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 762
       Question(
         question: 'During an automatic landing, between 50 FT AGL and touch down, the autopilot maintains:',
         options: [
@@ -7623,6 +8385,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 763
       Question(
         question: 'The automatic trim is a component of the autopilot pitch channel. Its function is to:',
         options: [
@@ -7633,6 +8396,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 764
       Question(
         question: 'The elements which take part in the local vertical alignment of an inertial strap-down unit are:',
         options: [
@@ -7643,6 +8407,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 765
       Question(
         question: 'In an inertial reference system (IRS), the alignment sequence consists in: 1 - search and alignment on the local vertical 2 - search for the true North 3 - definition of the latitude 4 - definition of the longitude The combination regrouping all the correct statements is:',
         options: [
@@ -7653,6 +8418,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 766
       Question(
         question: 'The auto-throttle: 1- enable to catch and to maintain the N1 RPM 2- enable to catch and to maintain the N2 RPM 3- enable to catch and to maintain an airplane indicated airspeed (IAS) 4- is always engaged automatically at the same time as the autopilot The combination regrouping all the correct statements is:',
         options: [
@@ -7663,6 +8429,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 767
       Question(
         question: 'An aircraft is equipped with an autopilot and an auto-throttle. When the altitude hold mode (ALT HOLD) is active:',
         options: [
@@ -7673,6 +8440,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 768
       Question(
         question: 'An air data computer The combination regrouping all the correct statements is: 1. supplies the ground speed and the drift (angle) 2. determines the total temperature and the true altitude 3. receives the static pressure and the total pressure 4. supplies the true airspeed to the inertial unit 5. determines the Mach number, the outside (static) air temperature',
         options: [
@@ -7683,6 +8451,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 769
       Question(
         question: 'The mode selector of an inertial unit comprises the OFF - STBY - ALIGN - NAV - ATT positions: 1 - on "STBY", the unit aligns on the local geographic trihedron; 2 - the "ATT" position is used in automatic landing (mode LAND); 3 - on "NAV" the coordinates of the start position can be entered; 4 - the platform is levelled before azimuth alignment; 5 - in cruise, the unit can only be used in "NAV" mode. The combination regrouping all the correct statements is:',
         options: [
@@ -7693,6 +8462,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 770
       Question(
         question: 'The CVR (Cockpit Voice Recorder) includes: The combination regrouping all the correct statements is: 1. a microphone 2. a recorder in compliance with the shock and fire resistance standards 3. an independent battery 4. a flight data recorder',
         options: [
@@ -7703,6 +8473,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 771
       Question(
         question: 'The automatic synchronisation function of an autopilot control system: 1 - operates only when the autopilot is engaged 2 - prevents the aircraft\'s control system from jerking when disengaging the autopilot 3 - enables the cancellation of the rudder control signals 4 - prevents the aircraft\'s control system from jerking when engaging the autopilot The combination regrouping all the correct statements is:',
         options: [
@@ -7713,6 +8484,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 772
       Question(
         question: 'A Full Authority Digital Engine Control (FADEC) has the following functions: 1- flow regulation (fuel, decelerations and accelerations monitoring) 2- automatic starting sequence 3- transmissions of engine data to the pilot\'s instruments 4- thrust management and protection of operation limits 5- monitoring of the thrust reversers The combination regrouping all the correct statements is:',
         options: [
@@ -7723,6 +8495,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 773
       Question(
         question: 'The two main sources of information used to calculate turbojet thrust are the:',
         options: [
@@ -7733,6 +8506,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 774
       Question(
         question: 'The smoke detection in the aircraft cargo compartments is carried out by four sensors: C1, C2, C3 and C4. They are associated with the logic circuit as described in the annex. The repeating bell is activated when:',
         options: [
@@ -7743,6 +8517,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 775
       Question(
         question: 'The advantages of an "electric" fuel (float) gauge are: 1- easy construction 2- independence of indications with regard to airplane attitude 3- independence of indications with regard to the accelerations 4- independence of indications with regard to temperature variations 5- independence of indications with regard to vibrations The combination regrouping all the correct statements is:',
         options: [
@@ -7753,6 +8528,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 776
       Question(
         question: 'The disadvantages of an "electric" fuel (float) gauge are: 1- the design is complex 2- the indications are influenced by the airplane attitude variations 3- the indications are influenced by the accelerations 4- the indications are influenced by temperature variations 5- that an alternative current supply is necessary The combination regrouping all the correct statements is:',
         options: [
@@ -7763,6 +8539,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 777
       Question(
         question: 'A flight control system which can, in the event of a failure, complete automatically the approach, flare and landing is called fail ...',
         options: [
@@ -7773,6 +8550,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 778
       Question(
         question: 'An automatic landing system necessitating that the landing be continued manually in the case of a system failure during an automatic approach is called "FAIL...."',
         options: [
@@ -7783,6 +8561,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 779
       Question(
         question: 'An "altitude warning system" must at least warn the crew: 1- when approaching the pre-selected altitude 2- when the airplane is approaching the ground too fast 3- in case of a given deviation above or below the pre-selected altitude (at least by an aural warning) 4- in case of excessive vertical speed 5- when approaching the ground with the gear retracted The combination regrouping all the correct statements is:',
         options: [
@@ -7793,6 +8572,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 780
       Question(
         question: 'Four scenarios of VOR axis interception are represented in the appended annex. The one corresponding to the optimal interception path calculated by a flight director is number:',
         options: [
@@ -7803,6 +8583,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 781
       Question(
         question: 'The purpose of an airplane automatic trim system is to trim out the hinge moment of the:',
         options: [
@@ -7813,6 +8594,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 782
       Question(
         question: 'If the tanks of your aircraft only contain water, the capacitor gauges indicate:',
         options: [
@@ -7823,6 +8605,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 783
       Question(
         question: 'The automatic power control system (auto-throttle) of a transport airplane has the following mode(s): 1- capture and holding of speeds 2- capture and holding of Mach number 3- capture and holding of flight angle of attack 4- capture and holding of N1 or EPR (Engine Power Ratio) 5- capture and holding of flight paths The combination regrouping all the correct statements is:',
         options: [
@@ -7833,6 +8616,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 784
       Question(
         question: 'Among the following functions of an autopilot, those related to the airplane guidance are: 1- pitch attitude holding 2- horizontal wing holding 3- indicated airspeed or Mach number holding 4- altitude holding 5- VOR axis holding 6- yaw damping The combination regrouping all the correct statements is:',
         options: [
@@ -7843,6 +8627,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 785
       Question(
         question: 'When using the autopilot, the function of the pitch channel automatic trim is to: 1- cancel the hinge moment of the elevator 2- ease as much as possible the load of the servo-actuator 3- restore to the pilot a correctly trimmed airplane during the autopilot disengagement The combination regrouping all the correct statements is:',
         options: [
@@ -7853,6 +8638,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 786
       Question(
         question: 'An airplane is in steady cruise at flight level 290. The auto-throttle maintains a constant Mach number. If the total temperature increases, the calibrated airspeed:',
         options: [
@@ -7863,6 +8649,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 787
       Question(
         question: 'An airplane is in steady cruise at flight level 290. The auto-throttle maintains a constant Mach number. If the total temperature decreases, the calibrated airspeed:',
         options: [
@@ -7873,6 +8660,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 788
       Question(
         question: 'The calibrated airspeed (CAS) or Mach holding mode is carried out by: 1- the autopilot pitch channel in the climb mode at a constant calibrated airspeed (CAS) or Mach number 2- the auto-throttles in the climb mode at a constant calibrated airspeed (CAS) or Mach number 3- the autopilot pitch channel in the altitude or glide path holding mode 4- the auto-throttles in the altitude or glide path holding mode The combination regrouping all the correct statements is:',
         options: [
@@ -7883,6 +8671,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 789
       Question(
         question: 'The calculator combined with the stick shaker system of a modern transport airplane receives information about the: 1- angle of attack 2- engine R.P.M. 3- configuration 4- pitch and bank attitude 5- sideslip The combination regrouping all the correct statements is:',
         options: [
@@ -7893,6 +8682,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 790
       Question(
         question: 'An angle of attack sensor may consist of: 1 - an inertial system computing the difference between flight path and flight attitude 2 - a conical slotted probe which positions itself to determine the angle of attack 3 - a vane detector which positions the rotor of a synchro The combination regrouping all the correct statements is:',
         options: [
@@ -7903,6 +8693,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 791
       Question(
         question: 'The TCAS 2 data display devices can be in the form of: 1- a specific dedicated screen 2- a screen combined with the weather radar 3- a variometer represented on a liquid crystal screen which allows the display of Traffic Advisory (TA) and Resolution Advisory (RA) 4- an EFIS (Electronic Flight Instrument System) screen The combination regrouping all the correct statements is:',
         options: [
@@ -7913,6 +8704,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 792
       Question(
         question: 'A TCAS 2 (Traffic Collision Avoidance System) provides:',
         options: [
@@ -7923,6 +8715,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 793
       Question(
         question: 'A millivoltmeter measuring the electromotive force between the "hot junction" and the "cold junction" of a thermocouple can be directly graduated in temperature values provided that the temperature of the:',
         options: [
@@ -7933,6 +8726,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 794
       Question(
         question: 'The electric float gauge: 1 - gives a mass information; 2 - gives information independent of aircraft\'s manoeuvres and attitude changes; 3 - gives information all the more accurate as the tank is full; 4 - is typically a DC powered system. The combination regrouping all the correct statements is:',
         options: [
@@ -7943,6 +8737,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 795
       Question(
         question: 'The advantages of an electrical induction tachometer are: 1- the display is not sensitive to line resistance 2- the measurement is independent of aircraft power supply 3- the measurement is independent of temperature variations 4- the option to use without restriction several indicators connected in parallel to a single transmitter The combination regrouping all the correct statements is:',
         options: [
@@ -7953,6 +8748,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 796
       Question(
         question: 'The electronic tachometer sensor is composed of:',
         options: [
@@ -7963,6 +8759,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 797
       Question(
         question: 'The automatic pitch trim: 1 - ensures the aeroplane is properly trimmed when the autopilot is engaged. 2 - permits the elevator to always be in neutral position with respect to horizontal stabiliser; 3 - ensures the aeroplane is properly trimmed when the autopilot is disengaged. The combination regrouping all the correct statements is',
         options: [
@@ -7973,6 +8770,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 798
       Question(
         question: 'The stall warning system of a large transport airplane includes: 1- an angle of attack sensor 2- a computer 3- a transmitter originating from the anemometer 4- an independent pitot probe 5- a transmitter of the flap/slat position indicating system The combination regrouping all the correct statements is:',
         options: [
@@ -7983,6 +8781,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 799
       Question(
         question: 'An aeroplane is in steady cruise at flight level 270. The auto-throttle maintains a constant calibrated airspeed. If the static air temperature increases, the Mach number:',
         options: [
@@ -7993,6 +8792,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 800
       Question(
         question: 'An aeroplane is in steady cruise at flight level 270. The auto-throttle maintains a constant calibrated airspeed. If the static air temperature decreases, the Mach number:',
         options: [
@@ -8003,6 +8803,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 801
       Question(
         question: 'An aeroplane is in a steady climb. The auto-throttle maintains a constant Mach number. If the total temperature remains constant, the calibrated airspeed:',
         options: [
@@ -8013,6 +8814,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 802
       Question(
         question: 'An aeroplane is in steady descent. The auto-throttle maintains a constant calibrated airspeed. If the total temperature remains constant, the Mach number:',
         options: [
@@ -8023,6 +8825,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 803
       Question(
         question: 'An aeroplane is in steady climb. The auto-throttle maintains a constant calibrated airspeed. If the total temperature remains constant, the Mach number:',
         options: [
@@ -8033,6 +8836,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 804
       Question(
         question: 'The disadvantages of axial flow compressors compared to centrifugal flow compressors are: 1 - more expensive to manufacture 2 - lower airflow 3 - greater vulnerability to foreign object damage 4 - lower pressure ratio The combination which regroups all of the correct answers is:',
         options: [
@@ -8043,6 +8847,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 805
       Question(
         question: 'Compared to a tyre fitted with an inner tube, a tubeless tyre presents the following characteristics: 1 - high heating 2 - valve fragility 3 - lower risk of bursting 4 - better adjustment to wheels The combination containing all the correct statements is:',
         options: [
@@ -8053,6 +8858,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 806
       Question(
         question: 'Evacuation slide inflation is ensured by:',
         options: [
@@ -8063,6 +8869,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 807
       Question(
         question: 'Regarding the oxygen systems of an aeroplane:',
         options: [
@@ -8073,6 +8880,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 808
       Question(
         question: 'In very cold weather, the pilot notices during startup, a slightly higher than normal engine oil pressure. This higher pressure:',
         options: [
@@ -8083,6 +8891,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 809
       Question(
         question: 'An oxygen regulator has 3 controls: - a power lever: ON/OFF - an "O2" lever: NORMAL/100% - an emergency lever: ON/OFF Among the following statements, the correct proposition is:',
         options: [
@@ -8093,6 +8902,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 810
       Question(
         question: 'A scissor is a component found on landing gears. Its function is to:',
         options: [
@@ -8103,6 +8913,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 811
       Question(
         question: 'For an aeroplane hydraulic supply circuit, the correct statement is:',
         options: [
@@ -8113,6 +8924,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 812
       Question(
         question: 'When in flight, a piston engine is stopped and the propeller blade angle is near 90°, the propeller is said to be:',
         options: [
@@ -8123,6 +8935,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 813
       Question(
         question: 'From the cruise, with all the parameters correctly set, if the altitude is reduced, to maintain the same mixture the fuel flow should:',
         options: [
@@ -8133,6 +8946,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 814
       Question(
         question: 'The gas turbine illustrated is of the following type:',
         options: [
@@ -8143,6 +8957,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 815
       Question(
         question: 'The installation and use of on-board oxygen generators is such that: 1 - the smoking ban is imperative when used 2 - in case of accidental drop of the "continuous flow" passenger masks, no crew action is required 3 - no trace of grease must be found in the system assembly 4 - the system\'s filling adaptors must be greased with non-freezing or graphite grease The combination which regroups all of the correct statements is:',
         options: [
@@ -8153,6 +8968,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 816
       Question(
         question: 'The control of free turbine engines on turboprops, is accomplished by: - a propeller control lever used to select: 1 - propeller RPM 2 - turbine temperature 3 - turbine RPM - a fuel control lever used to select: 4 - propeller RPM 5 - torque 6 - turbine temperature The combination which regroups all of the correct statements is:',
         options: [
@@ -8163,6 +8979,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 817
       Question(
         question: 'The static thrust of a turbo-jet, at the selection of full power: The combination which regroups all of the correct statements is: 1. equals the product of the exhaust gas mass flow and the exhaust gas velocity 2. is obtained by pressure of the exhaust gas on the ambient air 3. produces zero mechanical power since the aeroplane is not moving 4. is independent of the outside air temperature',
         options: [
@@ -8173,6 +8990,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 818
       Question(
         question: 'The use of igniters is necessary or recommended on a turbo-jet: The combination which regroups all of the correct statements is: 1. throughout the operating range of the engine 2. for accelerations 3. for ground starts 4. for in-flight relights 5. during turbulence in flight 6. under heavy precipitation or in icing conditions',
         options: [
@@ -8183,6 +9001,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 819
       Question(
         question: 'The reservoirs of a hydraulic system can be pressurized:',
         options: [
@@ -8193,6 +9012,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 820
       Question(
         question: 'In a piston engine, magnetos are used to produce the spark which ignites the fuel/air mixture. The operating principle of magnetos consists in:',
         options: [
@@ -8203,6 +9023,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 821
       Question(
         question: 'The cross-feed fuel system enables:',
         options: [
@@ -8213,6 +9034,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 822
       Question(
         question: 'Fuel pumps submerged in the fuel tanks of a multi-engine aircraft are:',
         options: [
@@ -8223,6 +9045,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 823
       Question(
         question: 'An autopilot system:',
         options: [
@@ -8233,6 +9056,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 824
       Question(
         question: 'When the auto-pilot is engaged; the role of the automatic trim is to:',
         options: [
@@ -8243,6 +9067,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 825
       Question(
         question: 'Torque can be determined by measuring the:',
         options: [
@@ -8253,6 +9078,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 826
       Question(
         question: 'For an aircraft flying a true track of 360° between the 5°S and 5°N parallels, the precession error of the directional gyro due to apparent drift is equal to:',
         options: [
@@ -8263,6 +9089,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 827
       Question(
         question: 'Heading information from the gyromagnetic compass flux gate is transmitted to the:',
         options: [
@@ -8273,6 +9100,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 828
       Question(
         question: 'The maximum directional gyro error due to the earth rotation is:',
         options: [
@@ -8283,6 +9111,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 829
       Question(
         question: 'In an auto-pilot slaved powered control circuit, the system which ensures synchronisation:',
         options: [
@@ -8293,6 +9122,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 830
       Question(
         question: 'A flux valve detects the horizontal component of the earth\'s magnetic field 1- the flux valve is made of a pair of soft iron bars 2- the information can be used by a "flux gate" compass or a directional gyro 3- the flux gate valve signal comes from the magnetic compass 4- the accuracy on the value of the magnetic field indication is less than 0,5° The combination regrouping all the correct statements is:',
         options: [
@@ -8303,6 +9133,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 831
       Question(
         question: 'An aircraft takes-off on a runway with an alignment of 045°; the compass is made for the northern hemisphere. During rolling take-off, the compass indicates:',
         options: [
@@ -8313,6 +9144,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 832
       Question(
         question: 'To permit turbine exit temperatures to be measured, gas turbines are equipped with thermometers which work on the following principle:',
         options: [
@@ -8323,6 +9155,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 833
       Question(
         question: 'Among the systematic errors of the "directional gyro", the error due to the earth rotation make the north reference turn in the horizontal plane. At a mean latitude of 45°N, this reference turns by...',
         options: [
@@ -8333,6 +9166,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 834
       Question(
         question: 'During the ground run take-off phase, the auto-throttles allow to:',
         options: [
@@ -8343,6 +9177,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 835
       Question(
         question: 'In a helicopter automatic flight control system (AFCS), artificial feel is usually achieved by the use of',
         options: [
@@ -8353,6 +9188,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 836
       Question(
         question: 'The auto-throttles enables to hold: 1 - a true airspeed; 2 - a Mach number; 3 - an indicated airspeed; 4 - a N1 thrust. The combination regrouping all the correct statements is:',
         options: [
@@ -8363,6 +9199,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 837
       Question(
         question: 'If, with the automatic flight control system (AFCS) engaged, the pilot presses the force trim release button to allow a manual input to the flight controls:',
         options: [
@@ -8373,6 +9210,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 838
       Question(
         question: 'The Mach trim system allows to:',
         options: [
@@ -8383,6 +9221,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 839
       Question(
         question: 'An inner loop automatic flight control system (AFCS) is a system which:',
         options: [
@@ -8393,6 +9232,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 840
       Question(
         question: 'The parameters taken into account by the flight director computer in the altitude holding mode (ALT HOLD) are: The combination regrouping all the correct statements is: 1. altitude deviation 2. roll 3. bank angle 4. pitch angle',
         options: [
@@ -8403,6 +9243,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 841
       Question(
         question: 'On a modern transport category airplane, the engagement of the automatic pilot is checked on the display of:',
         options: [
@@ -8413,6 +9254,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 842
       Question(
         question: 'The sequence of the automatic landing comprises several phases (from final approach to touch-down) actuated by:',
         options: [
@@ -8423,6 +9265,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 843
       Question(
         question: 'During a category III automatic approach, the position signals in the vertical plane under 200 ft are based on:',
         options: [
@@ -8433,6 +9276,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 844
       Question(
         question: 'The characteristics of a centrifugal compressor are: 1 - a high pressure ratio by stage. 2 - a large diameter. 3 - a low pressure ratio by stage. 4 - a small diameter. The combination containing all of the correct statements is:',
         options: [
@@ -8443,6 +9287,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 845
       Question(
         question: 'A stability augmentation system (SAS) in a helicopter:',
         options: [
@@ -8453,6 +9298,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 846
       Question(
         question: 'The characteristics of an axial compressor are: 1 - a low pressure ratio by stage. 2 - a high pressure ratio by stage. 3 - the possibility of compressing a large mass airflow. 4 - the inability of compressing a large mass airflow. The combination containing all of the correct statements is:',
         options: [
@@ -8463,6 +9309,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 847
       Question(
         question: 'The greatest risk created by a free turbine overspeed is:',
         options: [
@@ -8473,6 +9320,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 848
       Question(
         question: 'Helicopter gas turbine compressor speed (N1 or Ng) is displayed in the cockpit as:',
         options: [
@@ -8483,6 +9331,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 849
       Question(
         question: 'In a free turbine engine, the energy delivered by the free turbine stages:',
         options: [
@@ -8493,6 +9342,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 850
       Question(
         question: 'For a free power turbine engine:',
         options: [
@@ -8503,6 +9353,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 851
       Question(
         question: 'The replenishment of an onboard oxygen bottle must be done:',
         options: [
@@ -8513,6 +9364,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 852
       Question(
         question: 'On landing and prior to shut down, a gas turbine engine should be run at "GROUND IDLE" for a short period. This allows:',
         options: [
@@ -8523,6 +9375,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 853
       Question(
         question: 'The purpose of a flight director is to:',
         options: [
@@ -8533,6 +9386,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 854
       Question(
         question: 'Exhaust gas temperature sensing is usually taken:',
         options: [
@@ -8543,6 +9397,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 855
       Question(
         question: 'During large control inputs from an automatic flight control system (AFCS), the control stick in the cockpit is moved to inform the pilot of the action. This is:',
         options: [
@@ -8553,6 +9408,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 856
       Question(
         question: 'An outer loop Automatic Flight Control System (AFCS), is a system which:',
         options: [
@@ -8563,6 +9419,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 857
       Question(
         question: 'Automatic Flight Control System (AFCS) series actuator is:',
         options: [
@@ -8573,6 +9430,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 858
       Question(
         question: 'The most common type of starter used on a helicopter engine is:',
         options: [
@@ -8583,6 +9441,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 859
       Question(
         question: 'Automatic Flight Control System (AFCS) parallel actuator position is:',
         options: [
@@ -8593,6 +9452,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 860
       Question(
         question: 'Should a defect arise in the stability augmentation system (SAS) during flight:',
         options: [
@@ -8603,6 +9463,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 861
       Question(
         question: 'The selection of bleed air to "ON" will cause:',
         options: [
@@ -8613,6 +9474,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 862
       Question(
         question: 'Engine auxiliary gearboxes:',
         options: [
@@ -8623,6 +9485,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 863
       Question(
         question: 'The compressibility correction to CAS to give EAS: 1 - may be positive 2 - is always negative 3 - depends on Mach number only 4 - depends on pressure altitude only The combination regrouping all the correct statements is:',
         options: [
@@ -8633,6 +9496,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 864
       Question(
         question: 'When climbing at a constant CAS:',
         options: [
@@ -8643,6 +9507,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 865
       Question(
         question: 'When descending at a constant CAS:',
         options: [
@@ -8653,6 +9518,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 866
       Question(
         question: 'If OAT decreases when at a constant TAS:',
         options: [
@@ -8663,6 +9529,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 867
       Question(
         question: 'If OAT increases when at a constant TAS:',
         options: [
@@ -8673,6 +9540,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 868
       Question(
         question: 'If OAT increases when at a constant Mach number:',
         options: [
@@ -8683,6 +9551,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 869
       Question(
         question: 'If OAT decreases when at a constant Mach number:',
         options: [
@@ -8693,6 +9562,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 870
       Question(
         question: 'For the same TAS, when pressure altitude increases below the tropopause:',
         options: [
@@ -8703,6 +9573,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 871
       Question(
         question: 'For the same TAS, when pressure altitude decreases below the tropopause:',
         options: [
@@ -8713,6 +9584,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 872
       Question(
         question: 'When climbing at a constant RAS:',
         options: [
@@ -8723,6 +9595,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 873
       Question(
         question: 'When descending at a constant RAS:',
         options: [
@@ -8733,6 +9606,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 874
       Question(
         question: 'Considering the relationship between RAS and EAS:',
         options: [
@@ -8743,6 +9617,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 875
       Question(
         question: 'Given: Zp = pressure altitude Zd = density altitude CAS can be obtained from which of the following data?',
         options: [
@@ -8753,6 +9628,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 876
       Question(
         question: 'If OAT increases whilst maintaining a constant CAS and flight level:',
         options: [
@@ -8763,6 +9639,7 @@ class AgkQuestions {
         ],
         correctAnswer: 0,
       ),
+      // Question 877
       Question(
         question: 'If OAT decreases whilst maintaining a constant CAS and flight level:',
         options: [

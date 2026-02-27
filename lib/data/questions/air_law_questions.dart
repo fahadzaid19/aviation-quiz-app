@@ -488,7 +488,7 @@ class AirLawQuestions {
           '60 minutes of the estimated time of departure.',
           '30 minutes of the estimated time of departure.',
         ],
-        correctAnswer: 3,
+        correctAnswer: 0,
         explanation: 'New flight plan required if delay exceeds 30 minutes of estimated departure time.',
       ),
       // Question 43
