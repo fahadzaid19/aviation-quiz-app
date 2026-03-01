@@ -164,7 +164,7 @@ class _QuizScreenState extends State<QuizScreen> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          'Question ${currentQuestionIndex + 1}',
+                          'Question ${(currentQuestion.originalIndex ?? currentQuestionIndex) + 1}',
                           style: const TextStyle(fontSize: 14, color: Colors.white70, fontWeight: FontWeight.w500),
                         ),
                         Row(
